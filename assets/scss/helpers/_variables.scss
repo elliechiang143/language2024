@@ -328,7 +328,7 @@ $theme-colors: (
   "secondary-500": $pink,
   "secondary-600": #FFA135,
   "secondary-700": #F9D4AB,
-  "neutral-100": $black,
+  "neutral-100": #201B11,
   "neutral-200": #4B4B4B,
   "neutral-300": #ACACAC,
   "neutral-400": #C2C2C2,
@@ -462,12 +462,16 @@ $spacers: (
   19: $spacer * 4.75,
   20: $spacer * 5,
   // 80px
+  21: $spacer * 6,
+  // 96px
   //以上是4的倍數
-  21: $spacer * 6.25,
+  22: $spacer * 6.25,
   // 100px
-  22: $spacer * 7.5,
+  23: $spacer * 7,
+  // 112px
+  24: $spacer * 7.5,
   // 120px
-  23: $spacer * 10,
+  25: $spacer * 10,
   // 160px
   ) !default;
 

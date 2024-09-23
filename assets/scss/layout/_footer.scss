@@ -1,4 +1,18 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
+.footer {
+  background-image: url(/assets/images/bg-sm.svg);
+  @include media-breakpoint-up(md) {
+    background-image: url(/assets/images/bg.svg);
+  }
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.follow-icon {
+  width: 24px;
+  height: 24px;
+  @include media-breakpoint-up(xl) {
+    width: 40px;
+    height: 40px;
+  }
 }
