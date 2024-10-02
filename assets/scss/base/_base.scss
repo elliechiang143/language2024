@@ -5,8 +5,14 @@ body {
 
 .material-symbols-outlined {
   line-height: 1.5;
+  &.fill{
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+  }
 }
-
 img {
   max-width: 100%;
   vertical-align: middle;
