@@ -1,3 +1,15 @@
 .index-title {
   font-size: 100px;
 }
+
+.card-img {
+  .img-badge {
+    top: 1rem;
+    left: 1rem;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0.5rem;
+    padding: 10px;
+  }
+}
