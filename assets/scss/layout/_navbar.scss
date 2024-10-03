@@ -1,3 +1,35 @@
 .nav-logo{
   width: 104px;
 }
+@include media-breakpoint-up(lg){
+  .shoppingCart-dropdown:hover .shoppingCart{
+    display: block;
+  }
+}
+.shoppingCart-list li{
+  transition: background-color 0.2s ease-in-out;
+  &:hover{
+    background-color: var(--#{$prefix}primary-bg);
+    p:nth-child(1){
+      color: $primary;
+    }
+  }
+  &::after{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: calc(100% - 48px);
+    left: 24px;
+    bottom: 0;
+    background-color: var(--#{$prefix}neutral-gray-3);
+  }
+}
+.shoppingCart{
+  transition: all 0.5s ease-in-out;
+  display: none;
+  right: 0;
+  bottom: 0;
+  transform: translateY(100%);
+  width: 415px;
+}
