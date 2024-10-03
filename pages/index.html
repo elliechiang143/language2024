@@ -14,15 +14,18 @@
     <%- include('./layout/navbar_index'); -%>
 
     <h1 class="text-center py-20">阿萴加油</h1>
-
+    <!-- course section -->
     <div class="container-fluid py-20 bg-secondary-blue">
       <div class="container">
+        <h2 class="course-titlte text-center mb-16">精選課程</h2>
         <div class="row">
           <div class="col-lg-4">
+            <!-- card component -->
             <div class="card">
+              <!-- top image container -->
               <div class="card-img p-4 positive-relative">
                 <span
-                  class="badge img-badge text-bg-primary-yellow p-3 position-absolute rounded-top-start-0"
+                  class="badge img-badge text-bg-primary-yellow text-neutral-gray fs-7 p-3 position-absolute rounded-top-start-0"
                   >熱門</span
                 >
                 <img
@@ -31,35 +34,153 @@
                   alt="..."
                 />
               </div>
-              <div class="card-body">
+              <!-- top image container end -->
+              <div class="card-body pt-0 text-neutral-gray">
                 <h5 class="card-title">進階美語口語訓練</h5>
-                <p class="card-text">Robert</p>
-                <div class="evaluate">
-                  <p>
-                    <span
-                      class="material-symbols-outlined text-secondary-orange-2"
-                    >
-                      star
-                    </span>
-                    <span class="material-symbols-outlined"> star </span>
-                    <span class="material-symbols-outlined"> star </span>
-                    <span class="material-symbols-outlined"> star </span>
-                    <span class="material-symbols-outlined"> star </span>4.7
-                  </p>
+                <p class="card-text mb-3">Robert</p>
+                <div class="evaluate d-flex align-items-center mb-4">
+                  <div class="evaluate-icon">
+                    <img src="../assets/images/star.svg" alt="" />
+                    <img src="../assets/images/star.svg" alt="" />
+                    <img src="../assets/images/star.svg" alt="" />
+                    <img src="../assets/images/star.svg" alt="" />
+                    <img src="../assets/images/star_half.svg" alt="" />
+                  </div>
+                  <p class="ms-2">4.7</p>
                 </div>
-                <div class="time-students border-bottom">
-                  <span><img src="" alt="" />16.9小時</span>
-                  <span><img src="" alt="" />873位學生 </span>
+                <div class="time-students border-bottom d-flex border-bottom-0">
+                  <div class="times d-flex align-items-center">
+                    <img src="../assets/images/ic_Clock.svg" alt="" />
+                    <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                  </div>
+                  <div class="students ms-4 d-flex">
+                    <img src="../assets/images/Vector.svg" alt="" />
+                    <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                  </div>
                 </div>
               </div>
-              <div class="p-4">
-                <div class="nt-dollars"></div>
-                <a href="" class="btn btn-primary-blue">加入課程</a>
+              <div class="px-4">
+                <hr class="card-hr m-0" />
+              </div>
+              <div
+                class="p-4 d-flex justify-content-between align-items-center"
+              >
+                <div class="nt-dollars fs-5 fw-bold text-primary-blue">
+                  NT$ 2,480
+                </div>
+                <a href="" class="btn btn-primary-blue py-3 px-5">加入課程</a>
               </div>
             </div>
+            <!-- card component end -->
           </div>
-          <div class="col-4"></div>
-          <div class="col-4"></div>
+          <div class="col-4">
+            <!-- card component -->
+            <div class="card">
+              <!-- top image container -->
+              <div class="card-img p-4 positive-relative">
+                <span
+                  class="badge img-badge text-bg-primary-yellow text-neutral-gray fs-7 p-3 position-absolute rounded-top-start-0"
+                  >免費</span
+                >
+                <img
+                  src="../assets/images/course-2.png"
+                  class="card-img-top rounded-3"
+                  alt="..."
+                />
+              </div>
+              <!-- top image container end -->
+              <div class="card-body pt-0 text-neutral-gray">
+                <h5 class="card-title">日語漢字與語法強化</h5>
+                <p class="card-text mb-3">鈴木先生</p>
+                <div class="evaluate d-flex align-items-center mb-4">
+                  <div class="evaluate-icon">
+                    <img src="../assets/images/star.svg" alt="" />
+                    <img src="../assets/images/star.svg" alt="" />
+                    <img src="../assets/images/star.svg" alt="" />
+                    <img src="../assets/images/star.svg" alt="" />
+                    <img src="../assets/images/star_half.svg" alt="" />
+                  </div>
+                  <p class="ms-2">4.3</p>
+                </div>
+                <div class="time-students border-bottom d-flex border-bottom-0">
+                  <div class="times d-flex align-items-center">
+                    <img src="../assets/images/ic_Clock.svg" alt="" />
+                    <p class="ms-1 text-neutral-gray-2">18小時</p>
+                  </div>
+                  <div class="students ms-4 d-flex">
+                    <img src="../assets/images/Vector.svg" alt="" />
+                    <p class="ms-1 text-neutral-gray-2">296位學生</p>
+                  </div>
+                </div>
+              </div>
+              <div class="px-4">
+                <hr class="card-hr m-0" />
+              </div>
+              <div
+                class="p-4 d-flex justify-content-between align-items-center"
+              >
+                <div class="nt-dollars fs-5 fw-bold text-primary-blue">
+                  NT$ 1,980
+                </div>
+                <a href="" class="btn btn-primary-blue py-3 px-5">加入課程</a>
+              </div>
+            </div>
+            <!-- card component end -->
+          </div>
+          <div class="col-4">
+            <!-- card component -->
+            <div class="card">
+              <!-- top image container -->
+              <div class="card-img p-4 positive-relative">
+                <span
+                  class="badge img-badge text-bg-primary-yellow text-neutral-gray fs-7 p-3 position-absolute rounded-top-start-0"
+                  >熱門</span
+                >
+                <img
+                  src="../assets/images/course-3.png"
+                  class="card-img-top rounded-3"
+                  alt="..."
+                />
+              </div>
+              <!-- top image container end -->
+              <div class="card-body pt-0 text-neutral-gray">
+                <h5 class="card-title">韓語聽力與理解</h5>
+                <p class="card-text mb-3 text-neutral-gray">金秀賢</p>
+                <div class="evaluate d-flex align-items-center mb-4">
+                  <div class="evaluate-icon">
+                    <img src="../assets/images/star.svg" alt="" />
+                    <img src="../assets/images/star.svg" alt="" />
+                    <img src="../assets/images/star.svg" alt="" />
+                    <img src="../assets/images/star.svg" alt="" />
+                    <img src="../assets/images/star_half.svg" alt="" />
+                  </div>
+                  <p class="ms-2 text-neutral-gray">4.6</p>
+                </div>
+                <div class="time-students border-bottom d-flex border-bottom-0">
+                  <div class="times d-flex align-items-center">
+                    <img src="../assets/images/ic_Clock.svg" alt="" />
+                    <p class="ms-1 text-neutral-gray-2">36.2小時</p>
+                  </div>
+                  <div class="students ms-4 d-flex">
+                    <img src="../assets/images/Vector.svg" alt="" />
+                    <p class="ms-1 text-neutral-gray-2">1674位學生</p>
+                  </div>
+                </div>
+              </div>
+              <div class="px-4">
+                <hr class="card-hr m-0" />
+              </div>
+              <div
+                class="p-4 d-flex justify-content-between align-items-center"
+              >
+                <div class="nt-dollars fs-5 fw-bold text-primary-blue">
+                  NT$ 7,980
+                </div>
+                <a href="" class="btn btn-primary-blue py-3 px-5">加入課程</a>
+              </div>
+            </div>
+            <!-- card component end -->
+          </div>
         </div>
       </div>
     </div>
