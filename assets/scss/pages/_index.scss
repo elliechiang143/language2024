@@ -2,6 +2,12 @@
   font-size: 100px;
 }
 
+.card-img-top {
+  max-width: 100%;
+  max-height: 13rem;
+  object-position: top;
+}
+
 .card-img {
   .img-badge {
     top: 1rem;
@@ -18,12 +24,22 @@
   border: 1px dashed var(--Neutral_gray_2, #ACACAC)
 }
 
-.course-bgi-starttop {
+.newCourse-bgi-startbottom {
   left: 1rem;
-  top: 1.5rem;
+  bottom: 0;
 }
 
-.course-bgi-endbottom {
+.newCourse-bgi-endtop {
+  right: 1rem;
+  top: 2rem;
+}
+
+.featuredCourse-bgi-starttop {
+  left: 1rem;
+  top: 2rem;
+}
+
+.featuredCourse-bgi-endbottom {
   right: 1rem;
   bottom: 0;
 }
