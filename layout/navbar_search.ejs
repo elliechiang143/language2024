@@ -17,14 +17,31 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse mt-2 mt-lg-0" id="navbarContent">
-        <ul class="navbar-nav ms-auto gap-lg-1 align-items-lg-center">
+      <div class="collapse navbar-collapse mt-2 mt-lg-0 align-items-stretch" id="navbarContent">
+        <form class="d-none d-lg-flex ms-auto position-relative" role="search">
+            <input class="form-control p-4 ps-12" type="search" placeholder="今天想學什麼語言?" aria-label="Search" style="width: 468px;">
+            <span class="material-symbols-outlined position-absolute start-0 top-50 translate-middle-y ms-4">search</span>
+            <button class="btn btn-primary-blue dropdown-toggle position-absolute end-0 top-0 bottom-0 my-2 me-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">課程分類</button>
+            <ul class="dropdown-menu border-0 shadow rounded-3 end-0 start-100" style="width: 140px;">
+                <li><a class="dropdown-item" href="#">英文</a></li>
+                <li><a class="dropdown-item" href="#">日文</a></li>
+                <li><a class="dropdown-item" href="#">韓文</a></li>
+                <li><a class="dropdown-item" href="#">西班牙文</a></li>
+                <li><a class="dropdown-item" href="#">法文</a></li>
+                <li><a class="dropdown-item" href="#">德文</a></li>
+                <li><a class="dropdown-item" href="#">阿拉伯文</a></li>
+            </ul>
+        </form>
+        <ul class="navbar-nav gap-lg-1 align-items-lg-center">
           <li class="nav-item d-lg-none d-flex align-items-center gap-3 border-bottom border-neutral-gray-3 py-3">
             <img src="/assets/images/profileimg.jpg" alt="stacy" class="object-fit-cover rounded-pill" style="width: 50px; height: 50px;">
             <div>
               <p class="fs-5 lh-sm">Stacy Lin</p>
               <p>學員Lv2</p>
             </div>
+          </li>
+          <li class="nav-item">
+
           </li>
           <li class="nav-item py-lg-0 py-2">
             <a class="nav-link" href="#">成為老師</a>

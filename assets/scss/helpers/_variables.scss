@@ -39,7 +39,8 @@ $grays: (
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
 /* $pink: #d63384 !default; */
-$red: #dc3545 !default;
+// $red: #dc3545 !default;
+$red: #FF0000 !default;
 /* $orange: #fd7e14 !default; */
 /* $yellow: #ffc107 !default; */
 /* $green: #198754 !default; */
@@ -1377,7 +1378,8 @@ $dropdown-box-shadow: var(--#{$prefix}box-shadow) !default;
 
 $dropdown-link-color: var(--#{$prefix}body-color) !default;
 $dropdown-link-hover-color: $dropdown-link-color !default;
-$dropdown-link-hover-bg: var(--#{$prefix}tertiary-bg) !default;
+// $dropdown-link-hover-bg: var(--#{$prefix}tertiary-bg) !default;
+$dropdown-link-hover-bg: var(--#{$prefix}secondary-blue) !default;
 
 $dropdown-link-active-color: $component-active-color !default;
 $dropdown-link-active-bg: $component-active-bg !default;

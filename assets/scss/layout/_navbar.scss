@@ -9,7 +9,8 @@
 .shoppingCart-list li{
   transition: background-color 0.2s ease-in-out;
   &:hover{
-    background-color: var(--#{$prefix}primary-bg);
+    // background-color: var(--#{$prefix}primary-bg);
+    // background-color: var(--#{$prefix}secondary-blue);
     p:nth-child(1){
       color: $primary;
     }
@@ -28,8 +29,15 @@
 .shoppingCart{
   transition: all 0.5s ease-in-out;
   display: none;
-  right: 0;
+  right: -50px;
   bottom: 0;
   transform: translateY(100%);
   width: 415px;
+}
+.shoppingCart-badge{
+  min-width: 20px;
+  height: 20px;
+}
+.dropdown-menu[data-bs-popper]{
+  left: initial!important;
 }
