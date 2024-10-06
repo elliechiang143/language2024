@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <title>語言+ 你的最佳語言學習夥伴 - 個人頁面</title>
+    <meta name="description" content="你的最佳語言學習夥伴-從語言+成為語言家">
+    <meta name="keywords" content="語言學習,英文,日文,法文,西班牙文,線上語言家教">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="../assets/scss/all.scss">
+  </head>
+  <body>
+    <%- include('./layout/navbar_search'); -%>
+    
+    
+    <div class="container-fluid bg-primary-bg">
+      <!-- avatar section -->
+      <div class="container py-40">
+        <div class="row pt-23 mb-16">
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="avatar avatar-md position-relative">
+                  <img src="../assets/images/profileimg.jpg" alt="profile" class="rounded-circle">
+                  <span class="material-symbols-outlined position-absolute bottom-0 right-0 bg-white">edit</span>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <h3 class="text-left fw-bold pt-3 pb-6 ms-7">Stacy Lin</h3>
+                  </div>
+                </div>
+                <div class="row text-center">
+                  <div class="col-lg-4">
+                    <div class="course-type fs-7 fw-bold">
+                      學習課程
+                    </div>
+                    <p class="number fs-2 fw-bold text-primary-blue pt-5">4</p>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="course-type fs-7 fw-bold">
+                      收藏課程
+                    </div>
+                    <p class="number fs-2 fw-bold text-primary-blue pt-5">8</p>
+                  </div>
+                  <div class="col-lg-4">
+                    <div class="course-type fs-7 fw-bold">
+                      上架課程
+                    </div>
+                    <p class="number fs-2 fw-bold text-primary-blue pt-5">1</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+          </div>
+        </div>
+      </div>
+
+      <!-- tabs section -->
+      <!-- 學習課程 / 收藏課程 / 訂單紀錄 / 上架課程 -->
+      <div class="container py-40">
+        <div class="row mb-16">
+          <div class="col-lg-12">
+            <ul class="nav nav-underline bg-white pt-5 border border-top-0 border-start-0 border-end-0 border-4 border-secondary-blue justify-content-center" id="myTab" role="tablist">
+              <li class="nav-item px-8" role="presentation">
+                <button class="nav-link border-4 active fs-6 lh-sm fw-bold text-neutral-gray border-primary-blue" id="learning-tab" data-bs-toggle="tab" data-bs-target="#learning-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">學習課程</button>
+              </li>
+              <li class="nav-item px-8" role="presentation">
+                <button class="nav-link border-4 fs-6 lh-sm fw-bold text-neutral-gray" id="collect-tab" data-bs-toggle="tab" data-bs-target="#collect-tab-pane" type="button" role="tab" aria-controls="collect-tab-pane" aria-selected="false">收藏課程</button>
+              </li>
+              <li class="nav-item px-8" role="presentation">
+                <button class="nav-link border-4 fs-6 lh-sm fw-bold text-neutral-gray" id="ordered-tab" data-bs-toggle="tab" data-bs-target="#ordered-tab-pane" type="button" role="tab" aria-controls="ordered-tab-pane" aria-selected="false">訂單紀錄</button>
+              </li>
+              <li class="nav-item px-8" role="presentation">
+                <button class="nav-link border-4 fs-6 lh-sm fw-bold text-neutral-gray" id="ready-tab" data-bs-toggle="tab" data-bs-target="#ready-tab-pane" type="button" role="tab" aria-controls="ready-tab-pane" aria-selected="false">上架課程</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="learning-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">學習課程</div>
+              <div class="tab-pane fade" id="collect-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">收藏課程</div>
+              <div class="tab-pane fade" id="ordered-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">訂單紀錄</div>
+              <div class="tab-pane fade" id="ready-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">上架課程</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 上課中 / 未上課 / 已完課 -->
+        <div class="row mb-16">
+          <div class="col-lg-6 mx-auto">
+            <ul class="nav bg-white justify-content-center rounded-pill me-n4" id="myTab" role="tablist">
+              <li class="nav-item rounded-pill bg-primary-blue" role="presentation">
+                <button class="nav-link active fs-6 lh-sm fw-bold text-neutral-gray text-white px-17 py-4" id="in-course-tab" data-bs-toggle="tab" data-bs-target="#in-course-tab-pane" type="button" role="tab" aria-controls="in-course-tab-pane" aria-selected="true">上課中</button>
+              </li>
+              <li class="nav-item rounded-pill" role="presentation">
+                <button class="nav-link fs-6 lh-sm fw-bold text-neutral-gray px-17 py-4" id="in-course-tab" data-bs-toggle="tab" data-bs-target="#not-in-course-tab-pane" type="button" role="tab" aria-controls="not-in-course-tab-pane" aria-selected="false">未上課</button>
+              </li>
+              <li class="nav-item rounded-pill" role="presentation">
+                <button class="nav-link fs-6 lh-sm fw-bold text-neutral-gray px-17 py-4" id="not-in-course-tab" data-bs-toggle="tab" data-bs-target="#finished-tab-pane" type="button" role="tab" aria-controls="finished-tab-pane" aria-selected="false">已完課</button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="in-course-tab-pane" role="tabpanel" aria-labelledby="in-course-tab" tabindex="0">上課中</div>
+              <div class="tab-pane fade" id="not-in-course-tab-pane" role="tabpanel" aria-labelledby="not-in-course-tab" tabindex="0">未上課</div>
+              <div class="tab-pane fade" id="finished-tab-pane" role="tabpanel" aria-labelledby="finished-tab" tabindex="0">已完課</div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4">
+              <dvi class="card-body">
+                <img src="../assets/images/course-1.png" class="card-img-top rounded-3" alt="..."/>              
+                <div class="card-wrapper">
+                  <h6 class="card-title"></h6>
+                  <p class="card-text mb-3">Robert</p>
+                  <div class="evaluate d-flex align-items-center mb-4">
+                    <div class="evaluate-icon">
+                      <img src="../assets/images/star.svg" alt="star" />
+                      <img src="../assets/images/star.svg" alt="star" />
+                      <img src="../assets/images/star.svg" alt="star" />
+                      <img src="../assets/images/star.svg" alt="star" />
+                      <img src="../assets/images/star_half.svg" alt="star-half" />
+                    </div>
+                    <p class="ms-2">4.7</p>
+                  </div>
+                  <div class="time-students border-bottom d-flex border-bottom-0">
+                    <div class="times d-flex align-items-center">
+                      <img src="../assets/images/ic_Clock.svg" alt="" />
+                      <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                    </div>
+                    <div class="students ms-4 d-flex">
+                      <img src="../assets/images/Vector.svg" alt="" />
+                      <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                    </div>
+                    
+                  </div>
+                  <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" style="width: 50%">50%</div>
+                  </div>
+                </div>
+              </dvi>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ 
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
