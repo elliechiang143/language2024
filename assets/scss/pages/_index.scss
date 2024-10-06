@@ -2,9 +2,21 @@
   font-size: 100px;
 }
 
+.evaluate-icon {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.nt-dollars {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
 .card-img-top {
   max-width: 100%;
-  max-height: 13rem;
+  height: 13rem;
   object-position: top;
 }
 
@@ -41,5 +53,15 @@
 
 .featuredCourse-bgi-endbottom {
   right: 1rem;
+  bottom: 0;
+}
+
+.discount-img-starttop {
+  top: 4.875rem;
+  left: 2rem;
+}
+
+.discount-img-endbottom {
+  right: 2.75rem;
   bottom: 0;
 }
