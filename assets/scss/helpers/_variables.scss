@@ -304,6 +304,16 @@ $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-100 !default;
 $dark: $gray-900 !default;
+
+$primary-bg: #F4F6FB;
+$secondary-darkblue: #0049BC;
+$secondary-blue: #E4EEFF;
+$secondary-orange-2: #FFA135;
+$secondary-orange-3: #F9D4AB;
+$neutral-black: #201B11;
+$neutral-gray: #4B4B4B;
+$neutral-gray-2: #ACACAC;
+$neutral-gray-3: #C2C2C2;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
@@ -321,18 +331,18 @@ $dark: $gray-900 !default;
 $theme-colors: (
   "primary-blue": $primary,
   "primary-yellow": $yellow,
-  "primary-bg": #F4F6FB,
-  "secondary-darkblue": #0049BC,
-  "secondary-blue": #E4EEFF,
+  "primary-bg": $primary-bg,
+  "secondary-darkblue": $secondary-darkblue,
+  "secondary-blue": $secondary-blue,
   "secondary-green": $green,
   "secondary-orange": $orange,
   "secondary-pink": $pink,
-  "secondary-orange-2": #FFA135,
-  "secondary-orange-3": #F9D4AB,
-  "neutral-black": #201B11,
-  "neutral-gray": #4B4B4B,
-  "neutral-gray-2": #ACACAC,
-  "neutral-gray-3": #C2C2C2,
+  "secondary-orange-2": $secondary-orange-2,
+  "secondary-orange-3": $secondary-orange-3,
+  "neutral-black": $neutral-black,
+  "neutral-gray": $neutral-gray,
+  "neutral-gray-2": $neutral-gray-2,
+  "neutral-gray-3": $neutral-gray-3,
   "neutral-white": $white,
   "success": $success,
   "info": $info,
@@ -402,7 +412,8 @@ $enable-cssgrid: false !default;
 $enable-button-pointers: true !default;
 $enable-rfs: true !default;
 $enable-validation-icons: true !default;
-$enable-negative-margins: false !default;
+// $enable-negative-margins: false !default;
+$enable-negative-margins: true !default;
 $enable-deprecation-messages: true !default;
 $enable-important-utilities: true !default;
 
@@ -675,7 +686,7 @@ $aspect-ratios: (
 //   "Segoe UI Emoji",
 //   "Segoe UI Symbol",
 //   "Noto Color Emoji" !default;
-$font-family-sans-serif: "Poppins", "Noto Sans TC", system-ui,
+$font-family-sans-serif: "Mulish", "Noto Sans TC", system-ui,
   -apple-system,
   "Segoe UI",
   Roboto,
@@ -1499,7 +1510,8 @@ $accordion-color: var(--#{$prefix}body-color) !default;
 $accordion-bg: var(--#{$prefix}body-bg) !default;
 $accordion-border-width: var(--#{$prefix}border-width) !default;
 $accordion-border-color: var(--#{$prefix}border-color) !default;
-$accordion-border-radius: var(--#{$prefix}border-radius) !default;
+// $accordion-border-radius: var(--#{$prefix}border-radius) !default;
+$accordion-border-radius: 1.25rem !default;
 $accordion-inner-border-radius: subtract($accordion-border-radius, $accordion-border-width) !default;
 
 $accordion-body-padding-y: $accordion-padding-y !default;
