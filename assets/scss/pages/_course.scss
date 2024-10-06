@@ -1,0 +1,29 @@
+.nav-mt{
+    margin-top: 75px;
+}
+
+.chapterAccordion{
+    .accordion-button, .accordion-button:not(.collapsed){
+        background-color: $secondary-blue;
+        box-shadow: none;
+        &:hover{
+            background-color: darken($secondary-blue, 5%);
+        }
+    }
+    .accordion-button::after{
+        background-image: url();
+        font-family: 'Material Symbols Outlined';
+        content: '\e313';
+        width: auto;
+        height: auto;
+    }
+    .list-group-numbered > .list-group-item::before{
+        color: $primary;
+        counter-increment: section;
+        content: counters(section, "\00a0") "\00a0";
+        font-weight: 600;
+    }
+    .list-group-numbered > .list-group-item:nth-child(-n+9)::before{
+        content: "0" counters(section, "\00a0") "\00a0";
+    }
+}
