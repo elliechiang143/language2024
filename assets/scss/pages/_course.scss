@@ -63,3 +63,14 @@
         bottom: 0;
     }
 }
+
+.courseReviews .swiper-btn-next, .swiper-btn-prev{
+    width: 50px;
+    height: 50px;
+}
+
+.courseReviews-swiper .swiper-slide{
+    @include media-breakpoint-down(sm){
+        width: calc(100% - 44px);
+    }
+}
