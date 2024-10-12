@@ -5,3 +5,35 @@
 .nav-item:hover{
     border-bottom: $primary;
 }
+
+.nav-underline .nav-link:hover, .nav-underline .nav-link:focus {
+    border-bottom-color: $primary;
+}
+
+
+
+.nav-pills .nav-item .button{
+    color:#4B4B4B;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    border-radius: 50em;
+}
+
+.progress{
+    height: 8px;
+}
+
+.pencil{
+    display: grid;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    text-align: center;
+}
+
+.active-page.active {
+    background-color: $primary; /* 選中狀態的背景顏色 */
+    color: white; /* 選中狀態的文字顏色 */
+}
