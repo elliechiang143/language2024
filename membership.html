@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     
-    <script type="module" crossorigin src="/language2024/assets/main-7b68d20a.js"></script>
-    <link rel="stylesheet" href="/language2024/assets/main-e8b74d81.css">
+    <script type="module" crossorigin src="/language2024/assets/main-7cff2e6c.js"></script>
+    <link rel="stylesheet" href="/language2024/assets/main-5a7db473.css">
   </head>
-  <body>
+  <body class="bg-primary-bg">
     <nav class="navbar-search navbar navbar-expand-lg bg-white border-bottom border-neutral-gray-3 fixed-top">
     <div class="container-lg">
       <a class="navbar-brand" href="index.html">
-        <img src="/language2024/assets/logo-71a97b09.svg" alt="語言+" class="nav-logo">
+        <img src="/language2024/assets/logo-ed3f3243.svg" alt="語言+" class="nav-logo">
       </a>
       <!-- 手機板購物車 -->
       <div class="position-relative shoppingCart-dropdown d-lg-none ms-auto me-2">
@@ -148,7 +148,7 @@
               <div class="col-lg-4">
                 <div class="avatar avatar-md position-relative">
                   <img src="/language2024/assets/profileimg-f4a08579.jpg" alt="profile" class="rounded-circle">
-                  <span class="material-symbols-outlined position-absolute bottom-0 right-0 bg-white">edit</span>
+                  <span class="pencil material-symbols-outlined position-absolute bottom-0 end-0 rounded-pill bg-white">edit</span>
                 </div>
               </div>
               <div class="col-lg-8">
@@ -192,7 +192,7 @@
           <div class="col-lg-12">
             <ul class="nav nav-underline bg-white pt-5 border border-top-0 border-start-0 border-end-0 border-4 border-secondary-blue justify-content-center" id="myTab" role="tablist">
               <li class="nav-item px-8" role="presentation">
-                <button class="nav-link border-4 active fs-6 lh-sm fw-bold text-neutral-gray border-primary-blue" id="learning-tab" data-bs-toggle="tab" data-bs-target="#learning-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">學習課程</button>
+                <button class="nav-link border-4 fs-6 lh-sm fw-bold text-neutral-gray" id="learning-tab" data-bs-toggle="tab" data-bs-target="#learning-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">學習課程</button>
               </li>
               <li class="nav-item px-8" role="presentation">
                 <button class="nav-link border-4 fs-6 lh-sm fw-bold text-neutral-gray" id="collect-tab" data-bs-toggle="tab" data-bs-target="#collect-tab-pane" type="button" role="tab" aria-controls="collect-tab-pane" aria-selected="false">收藏課程</button>
@@ -205,82 +205,1937 @@
               </li>
             </ul>
             <div class="tab-content" id="myTabContent">
-              <div class="tab-pane fade show active" id="learning-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">學習課程</div>
-              <div class="tab-pane fade" id="collect-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">收藏課程</div>
-              <div class="tab-pane fade" id="ordered-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">訂單紀錄</div>
-              <div class="tab-pane fade" id="ready-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">上架課程</div>
+              <div class="tab-pane fade show active" id="learning-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0"></div>
+              <div class="tab-pane fade" id="collect-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                <!-- 收藏課程內容 -->
+              </div>
+              <div class="tab-pane fade" id="ordered-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                <!-- 訂單紀錄內容 -->
+              </div>
+              <div class="tab-pane fade" id="ready-tab-pane" role="tabpanel" aria-labelledby="disabled-tab" tabindex="0">
+                <!-- 上架課程內容 -->
+              </div>
             </div>
           </div>
         </div>
 
         <!-- 上課中 / 未上課 / 已完課 -->
-        <div class="row mb-16">
+        <div class="row">
           <div class="col-lg-6 mx-auto">
-            <ul class="nav bg-white justify-content-center rounded-pill me-n4" id="myTab" role="tablist">
-              <li class="nav-item rounded-pill bg-primary-blue" role="presentation">
-                <button class="nav-link active fs-6 lh-sm fw-bold text-neutral-gray text-white px-17 py-4" id="in-course-tab" data-bs-toggle="tab" data-bs-target="#in-course-tab-pane" type="button" role="tab" aria-controls="in-course-tab-pane" aria-selected="true">上課中</button>
-              </li>
-              <li class="nav-item rounded-pill" role="presentation">
-                <button class="nav-link fs-6 lh-sm fw-bold text-neutral-gray px-17 py-4" id="in-course-tab" data-bs-toggle="tab" data-bs-target="#not-in-course-tab-pane" type="button" role="tab" aria-controls="not-in-course-tab-pane" aria-selected="false">未上課</button>
-              </li>
-              <li class="nav-item rounded-pill" role="presentation">
-                <button class="nav-link fs-6 lh-sm fw-bold text-neutral-gray px-17 py-4" id="not-in-course-tab" data-bs-toggle="tab" data-bs-target="#finished-tab-pane" type="button" role="tab" aria-controls="finished-tab-pane" aria-selected="false">已完課</button>
-              </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-              <div class="tab-pane fade show active" id="in-course-tab-pane" role="tabpanel" aria-labelledby="in-course-tab" tabindex="0">上課中</div>
-              <div class="tab-pane fade" id="not-in-course-tab-pane" role="tabpanel" aria-labelledby="not-in-course-tab" tabindex="0">未上課</div>
-              <div class="tab-pane fade" id="finished-tab-pane" role="tabpanel" aria-labelledby="finished-tab" tabindex="0">已完課</div>
-            </div>
+              <div class="">
+              <ul class="nav nav-pills bg-white justify-content-center rounded-pill me-n4" id="myTab" role="tablist">
+                <li class="nav-item rounded-pill flex-grow-1 d-flex justify-content-center" data-bs-toggle="pill" role="presentation">
+                  <button class="nav-link fs-6 lh-sm fw-bold flex-grow-1 py-4" id="in-course-tab" data-bs-toggle="tab" data-bs-target="#in-course-tab-pane" type="button" role="tab" aria-controls="in-course-tab-pane" aria-selected="true">上課中</button>
+                </li>
+                <li class="nav-item rounded-pill flex-grow-1 d-flex justify-content-center" data-bs-toggle="pill" role="presentation">
+                  <button class="nav-link fs-6 lh-sm fw-bold flex-grow-1 py-4" id="in-course-tab" data-bs-toggle="tab" data-bs-target="#not-in-course-tab-pane" type="button" role="tab" aria-controls="not-in-course-tab-pane" aria-selected="false">未上課</button>
+                </li>
+                <li class="nav-item rounded-pill flex-grow-1 d-flex justify-content-center" data-bs-toggle="pill" role="presentation">
+                  <button class="nav-link fs-6 lh-sm fw-bold flex-grow-1 py-4" id="not-in-course-tab" data-bs-toggle="tab" data-bs-target="#finished-tab-pane" type="button" role="tab" aria-controls="finished-tab-pane" aria-selected="false">已完課</button>
+                </li>
+              </ul>  
+            </div>          
           </div>
-
-          <div class="row my-16">
-            <div class="col-lg-4">
-              <dvi class="card card-body p-4">               
-                  <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
-                <div class="card-wrapper">
-                  <h6 class="card-title"></h6>
-                  <p class="card-text pb-3">Robert</p>
-                  <div class="evaluate d-flex pb-3">
-                    <div class="evaluate-icon d-flex align-items-center gap-1">
-                      <img src="/language2024/assets/star-c369b2be.svg" alt="star" />
-                      <img src="/language2024/assets/star-c369b2be.svg" alt="star" />
-                      <img src="/language2024/assets/star-c369b2be.svg" alt="star" />
-                      <img src="/language2024/assets/star-c369b2be.svg" alt="star" />
-                      <img src="/language2024/assets/star_half-5c74d789.svg" alt="star-half" />
-                    </div>
-                    <p class="ms-2">4.7</p>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="in-course-tab-pane" role="tabpanel" aria-labelledby="in-course-tab" tabindex="0">
+              <!-- 上課中 -->
+              <!-- 頁面1 -->
+              <div id="page-01" class="content">
+                <div class="row mt-16">
+                  <div class="col-lg-4">
+                    <dvi class="card card-body p-4 mb-4 mb-sm-0">               
+                        <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                      <div class="card-wrapper">
+                        <h6 class="card-title"></h6>
+                        <p class="card-text pb-3 fw-bold">Robert</p>
+                        <div class="evaluate d-flex pb-3">
+                          <div class="evaluate-icon d-flex align-items-center gap-1">
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                          </div>
+                          <p class="ms-2">4.7</p>
+                        </div>
+                        <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                          <div class="times d-flex align-items-center">
+                            <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                          </div>
+                          <div class="students ms-4 d-flex">
+                            <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                          </div>                    
+                        </div>
+                      </div>
+                        <hr class="card-hr m-0" />
+                        <div class="row pt-4 align-items-center">
+                          <div class="col-lg-8">
+                            <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar" style="width: 50%"></div>                                   
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="text-6">50%學習進度</div>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                          <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                        </div>                
+                    </dvi>
                   </div>
-                  <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
-                    <div class="times d-flex align-items-center">
-                      <img src="/language2024/assets/ic_Clock-7ddaa74e.svg" alt="" />
-                      <p class="ms-1 text-neutral-gray-2">16.9小時</p>
-                    </div>
-                    <div class="students ms-4 d-flex">
-                      <img src="/language2024/assets/Vector-1b27648f.svg" alt="" />
-                      <p class="ms-1 text-neutral-gray-2">873位學生</p>
-                    </div>                    
+                  <div class="col-lg-4">
+                    <dvi class="card card-body p-4 mb-4 mb-sm-0">               
+                        <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                      <div class="card-wrapper">
+                        <h6 class="card-title"></h6>
+                        <p class="card-text pb-3 fw-bold">Robert</p>
+                        <div class="evaluate d-flex pb-3">
+                          <div class="evaluate-icon d-flex align-items-center gap-1">
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                          </div>
+                          <p class="ms-2">4.7</p>
+                        </div>
+                        <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                          <div class="times d-flex align-items-center">
+                            <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                          </div>
+                          <div class="students ms-4 d-flex">
+                            <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                          </div>                    
+                        </div>
+                      </div>
+                        <hr class="card-hr m-0" />
+                        <div class="row pt-4 align-items-center">
+                          <div class="col-lg-8">
+                            <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar" style="width: 50%"></div>                                   
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="text-6">50%學習進度</div>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                          <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                        </div>                
+                    </dvi>
                   </div>
+                  <div class="col-lg-4">
+                    <dvi class="card card-body p-4 mb-4 mb-sm-0">               
+                        <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                      <div class="card-wrapper">
+                        <h6 class="card-title"></h6>
+                        <p class="card-text pb-3 fw-bold">Robert</p>
+                        <div class="evaluate d-flex pb-3">
+                          <div class="evaluate-icon d-flex align-items-center gap-1">
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                          </div>
+                          <p class="ms-2">4.7</p>
+                        </div>
+                        <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                          <div class="times d-flex align-items-center">
+                            <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                          </div>
+                          <div class="students ms-4 d-flex">
+                            <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                          </div>                    
+                        </div>
+                      </div>
+                        <hr class="card-hr m-0" />
+                        <div class="row pt-4 align-items-center">
+                          <div class="col-lg-8">
+                            <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar" style="width: 50%"></div>                                   
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="text-6">50%學習進度</div>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                          <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                        </div>                
+                    </dvi>
+                  </div>            
                 </div>
-                  <hr class="card-hr m-0" />
-                  <div class="row pt-4">
-                    <div class="col-lg-8">
-                      <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: 50%"></div>                                   
+                <div class="row mt-16">
+                  <div class="col-lg-4">
+                    <dvi class="card card-body p-4 mb-4 mb-sm-0">               
+                        <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                      <div class="card-wrapper">
+                        <h6 class="card-title"></h6>
+                        <p class="card-text pb-3 fw-bold">Robert</p>
+                        <div class="evaluate d-flex pb-3">
+                          <div class="evaluate-icon d-flex align-items-center gap-1">
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                          </div>
+                          <p class="ms-2">4.7</p>
+                        </div>
+                        <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                          <div class="times d-flex align-items-center">
+                            <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                          </div>
+                          <div class="students ms-4 d-flex">
+                            <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                          </div>                    
+                        </div>
+                      </div>
+                        <hr class="card-hr m-0" />
+                        <div class="row pt-4 align-items-center">
+                          <div class="col-lg-8">
+                            <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar" style="width: 50%"></div>                                   
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="text-6">50%學習進度</div>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                          <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                        </div>                
+                    </dvi>
+                  </div>
+                  <div class="col-lg-4">
+                    <dvi class="card card-body p-4 mb-4 mb-sm-0">               
+                        <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                      <div class="card-wrapper">
+                        <h6 class="card-title"></h6>
+                        <p class="card-text pb-3 fw-bold">Robert</p>
+                        <div class="evaluate d-flex pb-3">
+                          <div class="evaluate-icon d-flex align-items-center gap-1">
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                          </div>
+                          <p class="ms-2">4.7</p>
+                        </div>
+                        <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                          <div class="times d-flex align-items-center">
+                            <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                          </div>
+                          <div class="students ms-4 d-flex">
+                            <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                          </div>                    
+                        </div>
+                      </div>
+                        <hr class="card-hr m-0" />
+                        <div class="row pt-4 align-items-center">
+                          <div class="col-lg-8">
+                            <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar" style="width: 50%"></div>                                   
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="text-6">50%學習進度</div>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                          <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                        </div>                
+                    </dvi>
+                  </div>
+                  <div class="col-lg-4">
+                    <dvi class="card card-body p-4 mb-4 mb-sm-0">               
+                        <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                      <div class="card-wrapper">
+                        <h6 class="card-title"></h6>
+                        <p class="card-text pb-3 fw-bold">Robert</p>
+                        <div class="evaluate d-flex pb-3">
+                          <div class="evaluate-icon d-flex align-items-center gap-1">
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                          </div>
+                          <p class="ms-2">4.7</p>
+                        </div>
+                        <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                          <div class="times d-flex align-items-center">
+                            <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                          </div>
+                          <div class="students ms-4 d-flex">
+                            <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                          </div>                    
+                        </div>
+                      </div>
+                        <hr class="card-hr m-0" />
+                        <div class="row pt-4 align-items-center">
+                          <div class="col-lg-8">
+                            <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar" style="width: 50%"></div>                                   
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="text-6">50%學習進度</div>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                          <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                        </div>                
+                    </dvi>
+                  </div>            
+                </div>
+              01
+              </div>
+              <!-- 頁面2 -->
+              <div id="page-02" class="content">
+                <div class="row mt-16">
+                  <div class="col-lg-4">
+                    <dvi class="card card-body p-4 mb-4 mb-sm-0">               
+                        <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                      <div class="card-wrapper">
+                        <h6 class="card-title"></h6>
+                        <p class="card-text pb-3 fw-bold">Robert</p>
+                        <div class="evaluate d-flex pb-3">
+                          <div class="evaluate-icon d-flex align-items-center gap-1">
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                          </div>
+                          <p class="ms-2">4.7</p>
+                        </div>
+                        <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                          <div class="times d-flex align-items-center">
+                            <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                          </div>
+                          <div class="students ms-4 d-flex">
+                            <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                          </div>                    
+                        </div>
+                      </div>
+                        <hr class="card-hr m-0" />
+                        <div class="row pt-4 align-items-center">
+                          <div class="col-lg-8">
+                            <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar" style="width: 50%"></div>                                   
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="text-6">50%學習進度</div>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                          <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                        </div>                
+                    </dvi>
+                  </div>
+                  <div class="col-lg-4">
+                    <dvi class="card card-body p-4 mb-4 mb-sm-0">               
+                        <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                      <div class="card-wrapper">
+                        <h6 class="card-title"></h6>
+                        <p class="card-text pb-3 fw-bold">Robert</p>
+                        <div class="evaluate d-flex pb-3">
+                          <div class="evaluate-icon d-flex align-items-center gap-1">
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                          </div>
+                          <p class="ms-2">4.7</p>
+                        </div>
+                        <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                          <div class="times d-flex align-items-center">
+                            <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                          </div>
+                          <div class="students ms-4 d-flex">
+                            <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                          </div>                    
+                        </div>
+                      </div>
+                        <hr class="card-hr m-0" />
+                        <div class="row pt-4 align-items-center">
+                          <div class="col-lg-8">
+                            <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar" style="width: 50%"></div>                                   
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="text-6">50%學習進度</div>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                          <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                        </div>                
+                    </dvi>
+                  </div>
+                  <div class="col-lg-4">
+                    <dvi class="card card-body p-4 mb-4 mb-sm-0">               
+                        <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                      <div class="card-wrapper">
+                        <h6 class="card-title"></h6>
+                        <p class="card-text pb-3 fw-bold">Robert</p>
+                        <div class="evaluate d-flex pb-3">
+                          <div class="evaluate-icon d-flex align-items-center gap-1">
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                          </div>
+                          <p class="ms-2">4.7</p>
+                        </div>
+                        <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                          <div class="times d-flex align-items-center">
+                            <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                          </div>
+                          <div class="students ms-4 d-flex">
+                            <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                          </div>                    
+                        </div>
+                      </div>
+                        <hr class="card-hr m-0" />
+                        <div class="row pt-4 align-items-center">
+                          <div class="col-lg-8">
+                            <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar" style="width: 50%"></div>                                   
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="text-6">50%學習進度</div>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                          <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                        </div>                
+                    </dvi>
+                  </div>            
+                </div>
+                <div class="row mt-16">
+                  <div class="col-lg-4">
+                    <dvi class="card card-body p-4">               
+                        <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                      <div class="card-wrapper">
+                        <h6 class="card-title"></h6>
+                        <p class="card-text pb-3 fw-bold">Robert</p>
+                        <div class="evaluate d-flex pb-3">
+                          <div class="evaluate-icon d-flex align-items-center gap-1">
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                          </div>
+                          <p class="ms-2">4.7</p>
+                        </div>
+                        <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                          <div class="times d-flex align-items-center">
+                            <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                          </div>
+                          <div class="students ms-4 d-flex">
+                            <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                          </div>                    
+                        </div>
+                      </div>
+                        <hr class="card-hr m-0" />
+                        <div class="row pt-4 align-items-center">
+                          <div class="col-lg-8">
+                            <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar" style="width: 50%"></div>                                   
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="text-6">50%學習進度</div>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                          <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                        </div>                
+                    </dvi>
+                  </div>
+                  <div class="col-lg-4">
+                    <dvi class="card card-body p-4">               
+                        <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                      <div class="card-wrapper">
+                        <h6 class="card-title"></h6>
+                        <p class="card-text pb-3 fw-bold">Robert</p>
+                        <div class="evaluate d-flex pb-3">
+                          <div class="evaluate-icon d-flex align-items-center gap-1">
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                          </div>
+                          <p class="ms-2">4.7</p>
+                        </div>
+                        <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                          <div class="times d-flex align-items-center">
+                            <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                          </div>
+                          <div class="students ms-4 d-flex">
+                            <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                          </div>                    
+                        </div>
+                      </div>
+                        <hr class="card-hr m-0" />
+                        <div class="row pt-4 align-items-center">
+                          <div class="col-lg-8">
+                            <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar" style="width: 50%"></div>                                   
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="text-6">50%學習進度</div>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                          <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                        </div>                
+                    </dvi>
+                  </div>
+                  <div class="col-lg-4">
+                    <dvi class="card card-body p-4">               
+                        <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                      <div class="card-wrapper">
+                        <h6 class="card-title"></h6>
+                        <p class="card-text pb-3 fw-bold">Robert</p>
+                        <div class="evaluate d-flex pb-3">
+                          <div class="evaluate-icon d-flex align-items-center gap-1">
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                          </div>
+                          <p class="ms-2">4.7</p>
+                        </div>
+                        <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                          <div class="times d-flex align-items-center">
+                            <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                          </div>
+                          <div class="students ms-4 d-flex">
+                            <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                          </div>                    
+                        </div>
+                      </div>
+                        <hr class="card-hr m-0" />
+                        <div class="row pt-4 align-items-center">
+                          <div class="col-lg-8">
+                            <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar" style="width: 50%"></div>                                   
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="text-6">50%學習進度</div>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                          <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                        </div>                
+                    </dvi>
+                  </div>            
+                </div>
+              02
+              </div>
+              <!-- 頁面3 -->
+              <div id="page-03" class="content">
+                <div class="row mt-16">
+                  <div class="col-lg-4">
+                    <dvi class="card card-body p-4 mb-4 mb-sm-0">               
+                        <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                      <div class="card-wrapper">
+                        <h6 class="card-title"></h6>
+                        <p class="card-text pb-3 fw-bold">Robert</p>
+                        <div class="evaluate d-flex pb-3">
+                          <div class="evaluate-icon d-flex align-items-center gap-1">
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                          </div>
+                          <p class="ms-2">4.7</p>
+                        </div>
+                        <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                          <div class="times d-flex align-items-center">
+                            <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                          </div>
+                          <div class="students ms-4 d-flex">
+                            <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                          </div>                    
+                        </div>
+                      </div>
+                        <hr class="card-hr m-0" />
+                        <div class="row pt-4 align-items-center">
+                          <div class="col-lg-8">
+                            <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar" style="width: 50%"></div>                                   
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="text-6">50%學習進度</div>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                          <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                        </div>                
+                    </dvi>
+                  </div>
+                  <div class="col-lg-4">
+                    <dvi class="card card-body p-4 mb-4 mb-sm-0">               
+                        <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                      <div class="card-wrapper">
+                        <h6 class="card-title"></h6>
+                        <p class="card-text pb-3 fw-bold">Robert</p>
+                        <div class="evaluate d-flex pb-3">
+                          <div class="evaluate-icon d-flex align-items-center gap-1">
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                          </div>
+                          <p class="ms-2">4.7</p>
+                        </div>
+                        <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                          <div class="times d-flex align-items-center">
+                            <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                          </div>
+                          <div class="students ms-4 d-flex">
+                            <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                          </div>                    
+                        </div>
+                      </div>
+                        <hr class="card-hr m-0" />
+                        <div class="row pt-4 align-items-center">
+                          <div class="col-lg-8">
+                            <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar" style="width: 50%"></div>                                   
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="text-6">50%學習進度</div>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                          <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                        </div>                
+                    </dvi>
+                  </div>
+                  <div class="col-lg-4">
+                    <dvi class="card card-body p-4 mb-4 mb-sm-0">               
+                        <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                      <div class="card-wrapper">
+                        <h6 class="card-title"></h6>
+                        <p class="card-text pb-3 fw-bold">Robert</p>
+                        <div class="evaluate d-flex pb-3">
+                          <div class="evaluate-icon d-flex align-items-center gap-1">
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                          </div>
+                          <p class="ms-2">4.7</p>
+                        </div>
+                        <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                          <div class="times d-flex align-items-center">
+                            <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                          </div>
+                          <div class="students ms-4 d-flex">
+                            <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                          </div>                    
+                        </div>
+                      </div>
+                        <hr class="card-hr m-0" />
+                        <div class="row pt-4 align-items-center">
+                          <div class="col-lg-8">
+                            <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar" style="width: 50%"></div>                                   
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="text-6">50%學習進度</div>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                          <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                        </div>                
+                    </dvi>
+                  </div>            
+                </div>
+                <div class="row mt-16">
+                  <div class="col-lg-4">
+                    <dvi class="card card-body p-4 mb-4 mb-sm-0">               
+                        <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                      <div class="card-wrapper">
+                        <h6 class="card-title"></h6>
+                        <p class="card-text pb-3 fw-bold">Robert</p>
+                        <div class="evaluate d-flex pb-3">
+                          <div class="evaluate-icon d-flex align-items-center gap-1">
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                          </div>
+                          <p class="ms-2">4.7</p>
+                        </div>
+                        <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                          <div class="times d-flex align-items-center">
+                            <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                          </div>
+                          <div class="students ms-4 d-flex">
+                            <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                          </div>                    
+                        </div>
+                      </div>
+                        <hr class="card-hr m-0" />
+                        <div class="row pt-4 align-items-center">
+                          <div class="col-lg-8">
+                            <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar" style="width: 50%"></div>                                   
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="text-6">50%學習進度</div>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                          <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                        </div>                
+                    </dvi>
+                  </div>
+                  <div class="col-lg-4">
+                    <dvi class="card card-body p-4 mb-4 mb-sm-0">               
+                        <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                      <div class="card-wrapper">
+                        <h6 class="card-title"></h6>
+                        <p class="card-text pb-3 fw-bold">Robert</p>
+                        <div class="evaluate d-flex pb-3">
+                          <div class="evaluate-icon d-flex align-items-center gap-1">
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                          </div>
+                          <p class="ms-2">4.7</p>
+                        </div>
+                        <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                          <div class="times d-flex align-items-center">
+                            <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                          </div>
+                          <div class="students ms-4 d-flex">
+                            <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                          </div>                    
+                        </div>
+                      </div>
+                        <hr class="card-hr m-0" />
+                        <div class="row pt-4 align-items-center">
+                          <div class="col-lg-8">
+                            <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar" style="width: 50%"></div>                                   
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="text-6">50%學習進度</div>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                          <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                        </div>                
+                    </dvi>
+                  </div>
+                  <div class="col-lg-4">
+                    <dvi class="card card-body p-4 mb-4 mb-sm-0">               
+                        <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                      <div class="card-wrapper">
+                        <h6 class="card-title"></h6>
+                        <p class="card-text pb-3 fw-bold">Robert</p>
+                        <div class="evaluate d-flex pb-3">
+                          <div class="evaluate-icon d-flex align-items-center gap-1">
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                            <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                          </div>
+                          <p class="ms-2">4.7</p>
+                        </div>
+                        <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                          <div class="times d-flex align-items-center">
+                            <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                          </div>
+                          <div class="students ms-4 d-flex">
+                            <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                            <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                          </div>                    
+                        </div>
+                      </div>
+                        <hr class="card-hr m-0" />
+                        <div class="row pt-4 align-items-center">
+                          <div class="col-lg-8">
+                            <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                              <div class="progress-bar" style="width: 50%"></div>                                   
+                            </div>
+                          </div>
+                          <div class="col-lg-4">
+                            <div class="text-6">50%學習進度</div>
+                          </div>
+                        </div>
+                        <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                          <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                        </div>                
+                    </dvi>
+                  </div>            
+                </div>
+              03
+              </div>
+              <!-- 分頁功能 -->
+              <nav aria-label="Page navigation" class="my-11 d-flex justify-content-center">
+                <ul class="pagination pagination-lg">
+                    <li class="page-item"><a class="page-link bg-secondary-blue me-8 fw-bold rounded-0" href="#">上一頁</a></li>
+                    <li class="page-item"><a class="page-link bg-secondary-blue mx-2 fw-bold rounded-0" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link bg-secondary-blue mx-2 fw-bold rounded-0" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link bg-secondary-blue mx-2 fw-bold rounded-0" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link bg-secondary-blue ms-8 fw-bold rounded-0" href="#">下一頁</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="tab-pane fade" id="not-in-course-tab-pane" role="tabpanel" aria-labelledby="not-in-course-tab" tabindex="0">
+              <!-- 未上課 -->
+              <!-- 頁面1 -->    
+              <div class="row mt-16">
+                <div class="col-lg-4">
+                  <dvi class="card card-body p-4">               
+                      <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                    <div class="card-wrapper">
+                      <h6 class="card-title"></h6>
+                      <p class="card-text pb-3 fw-bold">Robert</p>
+                      <div class="evaluate d-flex pb-3">
+                        <div class="evaluate-icon d-flex align-items-center gap-1">
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                        </div>
+                        <p class="ms-2">4.7</p>
+                      </div>
+                      <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                        <div class="times d-flex align-items-center">
+                          <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                        </div>
+                        <div class="students ms-4 d-flex">
+                          <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                        </div>                    
                       </div>
                     </div>
-                    <div class="col-lg-4">
-                      <div class="text-6">50% 學習進度</div>
+                      <hr class="card-hr m-0" />
+                      <div class="row pt-4 align-items-center">
+                        <div class="col-lg-8">
+                          <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%"></div>                                   
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="text-6">0%學習進度</div>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                        <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                      </div>                
+                  </dvi>
+                </div>
+                <div class="col-lg-4">
+                  <dvi class="card card-body p-4">               
+                      <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                    <div class="card-wrapper">
+                      <h6 class="card-title"></h6>
+                      <p class="card-text pb-3 fw-bold">Robert</p>
+                      <div class="evaluate d-flex pb-3">
+                        <div class="evaluate-icon d-flex align-items-center gap-1">
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                        </div>
+                        <p class="ms-2">4.7</p>
+                      </div>
+                      <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                        <div class="times d-flex align-items-center">
+                          <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                        </div>
+                        <div class="students ms-4 d-flex">
+                          <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                        </div>                    
+                      </div>
                     </div>
-                  </div>
-                  <div class="d-grid gap-2 col-12 mx-auto pt-4">
-                    <button class="btn btn-primary-blue py-3" type="button">上課去</button>
-                  </div>
-                
-              </dvi>
+                      <hr class="card-hr m-0" />
+                      <div class="row pt-4 align-items-center">
+                        <div class="col-lg-8">
+                          <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%"></div>                                   
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="text-6">0%學習進度</div>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                        <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                      </div>                
+                  </dvi>
+                </div>
+                <div class="col-lg-4">
+                  <dvi class="card card-body p-4">               
+                      <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                    <div class="card-wrapper">
+                      <h6 class="card-title"></h6>
+                      <p class="card-text pb-3 fw-bold">Robert</p>
+                      <div class="evaluate d-flex pb-3">
+                        <div class="evaluate-icon d-flex align-items-center gap-1">
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                        </div>
+                        <p class="ms-2">4.7</p>
+                      </div>
+                      <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                        <div class="times d-flex align-items-center">
+                          <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                        </div>
+                        <div class="students ms-4 d-flex">
+                          <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                        </div>                    
+                      </div>
+                    </div>
+                      <hr class="card-hr m-0" />
+                      <div class="row pt-4 align-items-center">
+                        <div class="col-lg-8">
+                          <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%"></div>                                   
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="text-6">0%學習進度</div>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                        <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                      </div>                
+                  </dvi>
+                </div>            
+              </div>
+              <div class="row mt-16">
+                <div class="col-lg-4">
+                  <dvi class="card card-body p-4">               
+                      <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                    <div class="card-wrapper">
+                      <h6 class="card-title"></h6>
+                      <p class="card-text pb-3 fw-bold">Robert</p>
+                      <div class="evaluate d-flex pb-3">
+                        <div class="evaluate-icon d-flex align-items-center gap-1">
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                        </div>
+                        <p class="ms-2">4.7</p>
+                      </div>
+                      <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                        <div class="times d-flex align-items-center">
+                          <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                        </div>
+                        <div class="students ms-4 d-flex">
+                          <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                        </div>                    
+                      </div>
+                    </div>
+                      <hr class="card-hr m-0" />
+                      <div class="row pt-4 align-items-center">
+                        <div class="col-lg-8">
+                          <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%"></div>                                   
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="text-6">0%學習進度</div>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                        <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                      </div>                
+                  </dvi>
+                </div>
+                <div class="col-lg-4">
+                  <dvi class="card card-body p-4">               
+                      <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                    <div class="card-wrapper">
+                      <h6 class="card-title"></h6>
+                      <p class="card-text pb-3 fw-bold">Robert</p>
+                      <div class="evaluate d-flex pb-3">
+                        <div class="evaluate-icon d-flex align-items-center gap-1">
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                        </div>
+                        <p class="ms-2">4.7</p>
+                      </div>
+                      <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                        <div class="times d-flex align-items-center">
+                          <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                        </div>
+                        <div class="students ms-4 d-flex">
+                          <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                        </div>                    
+                      </div>
+                    </div>
+                      <hr class="card-hr m-0" />
+                      <div class="row pt-4 align-items-center">
+                        <div class="col-lg-8">
+                          <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%"></div>                                   
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="text-6">0%學習進度</div>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                        <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                      </div>                
+                  </dvi>
+                </div>
+                <div class="col-lg-4">
+                  <dvi class="card card-body p-4">               
+                      <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                    <div class="card-wrapper">
+                      <h6 class="card-title"></h6>
+                      <p class="card-text pb-3 fw-bold">Robert</p>
+                      <div class="evaluate d-flex pb-3">
+                        <div class="evaluate-icon d-flex align-items-center gap-1">
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                        </div>
+                        <p class="ms-2">4.7</p>
+                      </div>
+                      <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                        <div class="times d-flex align-items-center">
+                          <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                        </div>
+                        <div class="students ms-4 d-flex">
+                          <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                        </div>                    
+                      </div>
+                    </div>
+                      <hr class="card-hr m-0" />
+                      <div class="row pt-4 align-items-center">
+                        <div class="col-lg-8">
+                          <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%"></div>                                   
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="text-6">0%學習進度</div>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                        <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                      </div>                
+                  </dvi>
+                </div>            
+              </div>
+              01
+              <!-- 頁面2 -->
+              <div class="row mt-16">
+                <div class="col-lg-4">
+                  <dvi class="card card-body p-4">               
+                      <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                    <div class="card-wrapper">
+                      <h6 class="card-title"></h6>
+                      <p class="card-text pb-3 fw-bold">Robert</p>
+                      <div class="evaluate d-flex pb-3">
+                        <div class="evaluate-icon d-flex align-items-center gap-1">
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                        </div>
+                        <p class="ms-2">4.7</p>
+                      </div>
+                      <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                        <div class="times d-flex align-items-center">
+                          <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                        </div>
+                        <div class="students ms-4 d-flex">
+                          <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                        </div>                    
+                      </div>
+                    </div>
+                      <hr class="card-hr m-0" />
+                      <div class="row pt-4 align-items-center">
+                        <div class="col-lg-8">
+                          <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%"></div>                                   
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="text-6">0%學習進度</div>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                        <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                      </div>                
+                  </dvi>
+                </div>
+                <div class="col-lg-4">
+                  <dvi class="card card-body p-4">               
+                      <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                    <div class="card-wrapper">
+                      <h6 class="card-title"></h6>
+                      <p class="card-text pb-3 fw-bold">Robert</p>
+                      <div class="evaluate d-flex pb-3">
+                        <div class="evaluate-icon d-flex align-items-center gap-1">
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                        </div>
+                        <p class="ms-2">4.7</p>
+                      </div>
+                      <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                        <div class="times d-flex align-items-center">
+                          <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                        </div>
+                        <div class="students ms-4 d-flex">
+                          <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                        </div>                    
+                      </div>
+                    </div>
+                      <hr class="card-hr m-0" />
+                      <div class="row pt-4 align-items-center">
+                        <div class="col-lg-8">
+                          <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%"></div>                                   
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="text-6">0%學習進度</div>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                        <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                      </div>                
+                  </dvi>
+                </div>
+                <div class="col-lg-4">
+                  <dvi class="card card-body p-4">               
+                      <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                    <div class="card-wrapper">
+                      <h6 class="card-title"></h6>
+                      <p class="card-text pb-3 fw-bold">Robert</p>
+                      <div class="evaluate d-flex pb-3">
+                        <div class="evaluate-icon d-flex align-items-center gap-1">
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                        </div>
+                        <p class="ms-2">4.7</p>
+                      </div>
+                      <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                        <div class="times d-flex align-items-center">
+                          <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                        </div>
+                        <div class="students ms-4 d-flex">
+                          <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                        </div>                    
+                      </div>
+                    </div>
+                      <hr class="card-hr m-0" />
+                      <div class="row pt-4 align-items-center">
+                        <div class="col-lg-8">
+                          <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%"></div>                                   
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="text-6">0%學習進度</div>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                        <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                      </div>                
+                  </dvi>
+                </div>            
+              </div>
+              <div class="row mt-16">
+                <div class="col-lg-4">
+                  <dvi class="card card-body p-4">               
+                      <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                    <div class="card-wrapper">
+                      <h6 class="card-title"></h6>
+                      <p class="card-text pb-3 fw-bold">Robert</p>
+                      <div class="evaluate d-flex pb-3">
+                        <div class="evaluate-icon d-flex align-items-center gap-1">
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                        </div>
+                        <p class="ms-2">4.7</p>
+                      </div>
+                      <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                        <div class="times d-flex align-items-center">
+                          <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                        </div>
+                        <div class="students ms-4 d-flex">
+                          <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                        </div>                    
+                      </div>
+                    </div>
+                      <hr class="card-hr m-0" />
+                      <div class="row pt-4 align-items-center">
+                        <div class="col-lg-8">
+                          <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%"></div>                                   
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="text-6">0%學習進度</div>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                        <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                      </div>                
+                  </dvi>
+                </div>
+                <div class="col-lg-4">
+                  <dvi class="card card-body p-4">               
+                      <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                    <div class="card-wrapper">
+                      <h6 class="card-title"></h6>
+                      <p class="card-text pb-3 fw-bold">Robert</p>
+                      <div class="evaluate d-flex pb-3">
+                        <div class="evaluate-icon d-flex align-items-center gap-1">
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                        </div>
+                        <p class="ms-2">4.7</p>
+                      </div>
+                      <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                        <div class="times d-flex align-items-center">
+                          <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                        </div>
+                        <div class="students ms-4 d-flex">
+                          <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                        </div>                    
+                      </div>
+                    </div>
+                      <hr class="card-hr m-0" />
+                      <div class="row pt-4 align-items-center">
+                        <div class="col-lg-8">
+                          <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%"></div>                                   
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="text-6">0%學習進度</div>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                        <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                      </div>                
+                  </dvi>
+                </div>
+                <div class="col-lg-4">
+                  <dvi class="card card-body p-4">               
+                      <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                    <div class="card-wrapper">
+                      <h6 class="card-title"></h6>
+                      <p class="card-text pb-3 fw-bold">Robert</p>
+                      <div class="evaluate d-flex pb-3">
+                        <div class="evaluate-icon d-flex align-items-center gap-1">
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                        </div>
+                        <p class="ms-2">4.7</p>
+                      </div>
+                      <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                        <div class="times d-flex align-items-center">
+                          <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                        </div>
+                        <div class="students ms-4 d-flex">
+                          <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                        </div>                    
+                      </div>
+                    </div>
+                      <hr class="card-hr m-0" />
+                      <div class="row pt-4 align-items-center">
+                        <div class="col-lg-8">
+                          <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%"></div>                                   
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="text-6">0%學習進度</div>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                        <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                      </div>                
+                  </dvi>
+                </div>            
+              </div>
+              02
+              <!-- 頁面3 -->
+              <div class="row mt-16">
+                <div class="col-lg-4">
+                  <dvi class="card card-body p-4">               
+                      <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                    <div class="card-wrapper">
+                      <h6 class="card-title"></h6>
+                      <p class="card-text pb-3 fw-bold">Robert</p>
+                      <div class="evaluate d-flex pb-3">
+                        <div class="evaluate-icon d-flex align-items-center gap-1">
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                        </div>
+                        <p class="ms-2">4.7</p>
+                      </div>
+                      <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                        <div class="times d-flex align-items-center">
+                          <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                        </div>
+                        <div class="students ms-4 d-flex">
+                          <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                        </div>                    
+                      </div>
+                    </div>
+                      <hr class="card-hr m-0" />
+                      <div class="row pt-4 align-items-center">
+                        <div class="col-lg-8">
+                          <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%"></div>                                   
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="text-6">0%學習進度</div>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                        <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                      </div>                
+                  </dvi>
+                </div>
+                <div class="col-lg-4">
+                  <dvi class="card card-body p-4">               
+                      <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                    <div class="card-wrapper">
+                      <h6 class="card-title"></h6>
+                      <p class="card-text pb-3 fw-bold">Robert</p>
+                      <div class="evaluate d-flex pb-3">
+                        <div class="evaluate-icon d-flex align-items-center gap-1">
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                        </div>
+                        <p class="ms-2">4.7</p>
+                      </div>
+                      <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                        <div class="times d-flex align-items-center">
+                          <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                        </div>
+                        <div class="students ms-4 d-flex">
+                          <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                        </div>                    
+                      </div>
+                    </div>
+                      <hr class="card-hr m-0" />
+                      <div class="row pt-4 align-items-center">
+                        <div class="col-lg-8">
+                          <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%"></div>                                   
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="text-6">0%學習進度</div>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                        <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                      </div>                
+                  </dvi>
+                </div>
+                <div class="col-lg-4">
+                  <dvi class="card card-body p-4">               
+                      <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                    <div class="card-wrapper">
+                      <h6 class="card-title"></h6>
+                      <p class="card-text pb-3 fw-bold">Robert</p>
+                      <div class="evaluate d-flex pb-3">
+                        <div class="evaluate-icon d-flex align-items-center gap-1">
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                        </div>
+                        <p class="ms-2">4.7</p>
+                      </div>
+                      <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                        <div class="times d-flex align-items-center">
+                          <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                        </div>
+                        <div class="students ms-4 d-flex">
+                          <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                        </div>                    
+                      </div>
+                    </div>
+                      <hr class="card-hr m-0" />
+                      <div class="row pt-4 align-items-center">
+                        <div class="col-lg-8">
+                          <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%"></div>                                   
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="text-6">0%學習進度</div>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                        <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                      </div>                
+                  </dvi>
+                </div>            
+              </div>
+              <div class="row mt-16">
+                <div class="col-lg-4">
+                  <dvi class="card card-body p-4">               
+                      <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                    <div class="card-wrapper">
+                      <h6 class="card-title"></h6>
+                      <p class="card-text pb-3 fw-bold">Robert</p>
+                      <div class="evaluate d-flex pb-3">
+                        <div class="evaluate-icon d-flex align-items-center gap-1">
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                        </div>
+                        <p class="ms-2">4.7</p>
+                      </div>
+                      <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                        <div class="times d-flex align-items-center">
+                          <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                        </div>
+                        <div class="students ms-4 d-flex">
+                          <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                        </div>                    
+                      </div>
+                    </div>
+                      <hr class="card-hr m-0" />
+                      <div class="row pt-4 align-items-center">
+                        <div class="col-lg-8">
+                          <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%"></div>                                   
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="text-6">0%學習進度</div>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                        <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                      </div>                
+                  </dvi>
+                </div>
+                <div class="col-lg-4">
+                  <dvi class="card card-body p-4">               
+                      <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                    <div class="card-wrapper">
+                      <h6 class="card-title"></h6>
+                      <p class="card-text pb-3 fw-bold">Robert</p>
+                      <div class="evaluate d-flex pb-3">
+                        <div class="evaluate-icon d-flex align-items-center gap-1">
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                        </div>
+                        <p class="ms-2">4.7</p>
+                      </div>
+                      <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                        <div class="times d-flex align-items-center">
+                          <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                        </div>
+                        <div class="students ms-4 d-flex">
+                          <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                        </div>                    
+                      </div>
+                    </div>
+                      <hr class="card-hr m-0" />
+                      <div class="row pt-4 align-items-center">
+                        <div class="col-lg-8">
+                          <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%"></div>                                   
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="text-6">0%學習進度</div>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                        <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                      </div>                
+                  </dvi>
+                </div>
+                <div class="col-lg-4">
+                  <dvi class="card card-body p-4">               
+                      <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                    <div class="card-wrapper">
+                      <h6 class="card-title"></h6>
+                      <p class="card-text pb-3 fw-bold">Robert</p>
+                      <div class="evaluate d-flex pb-3">
+                        <div class="evaluate-icon d-flex align-items-center gap-1">
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                        </div>
+                        <p class="ms-2">4.7</p>
+                      </div>
+                      <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                        <div class="times d-flex align-items-center">
+                          <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                        </div>
+                        <div class="students ms-4 d-flex">
+                          <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                        </div>                    
+                      </div>
+                    </div>
+                      <hr class="card-hr m-0" />
+                      <div class="row pt-4 align-items-center">
+                        <div class="col-lg-8">
+                          <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%"></div>                                   
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="text-6">0%學習進度</div>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                        <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                      </div>                
+                  </dvi>
+                </div>            
+              </div>
+              03
+
+              <!-- 分頁功能 -->
+              <nav aria-label="Page navigation" class="my-11 d-flex justify-content-center">
+                <ul class="pagination pagination-lg">
+                    <li class="page-item"><a class="page-link bg-secondary-blue me-8 fw-bold" href="#">上一頁</a></li>
+                    <li class="page-item"><a class="page-link bg-secondary-blue mx-2 fw-bold" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link bg-secondary-blue mx-2 fw-bold" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link bg-secondary-blue mx-2 fw-bold" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link bg-secondary-blue ms-8 fw-bold" href="#">下一頁</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="tab-pane fade" id="finished-tab-pane" role="tabpanel" aria-labelledby="finished-tab" tabindex="0">
+              <!-- 已完課 -->
+              <!-- 頁面1 -->
+              <div class="row mt-16">
+                <div class="col-lg-4">
+                  <dvi class="card card-body p-4">               
+                      <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                    <div class="card-wrapper">
+                      <h6 class="card-title"></h6>
+                      <p class="card-text pb-3 fw-bold">Robert</p>
+                      <div class="evaluate d-flex pb-3">
+                        <div class="evaluate-icon d-flex align-items-center gap-1">
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                        </div>
+                        <p class="ms-2">4.7</p>
+                      </div>
+                      <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                        <div class="times d-flex align-items-center">
+                          <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                        </div>
+                        <div class="students ms-4 d-flex">
+                          <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                        </div>                    
+                      </div>
+                    </div>
+                      <hr class="card-hr m-0" />
+                      <div class="row pt-4 align-items-center">
+                        <div class="col-lg-8">
+                          <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 100%"></div>                                   
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="text-6">100%學習進度</div>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                        <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                      </div>                
+                  </dvi>
+                </div>
+                <div class="col-lg-4">
+                  <dvi class="card card-body p-4">               
+                      <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                    <div class="card-wrapper">
+                      <h6 class="card-title"></h6>
+                      <p class="card-text pb-3 fw-bold">Robert</p>
+                      <div class="evaluate d-flex pb-3">
+                        <div class="evaluate-icon d-flex align-items-center gap-1">
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                        </div>
+                        <p class="ms-2">4.7</p>
+                      </div>
+                      <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                        <div class="times d-flex align-items-center">
+                          <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                        </div>
+                        <div class="students ms-4 d-flex">
+                          <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                        </div>                    
+                      </div>
+                    </div>
+                      <hr class="card-hr m-0" />
+                      <div class="row pt-4 align-items-center">
+                        <div class="col-lg-8">
+                          <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 100%"></div>                                   
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="text-6">100%學習進度</div>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                        <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                      </div>                
+                  </dvi>
+                </div>
+                <div class="col-lg-4">
+                  <dvi class="card card-body p-4">               
+                      <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                    <div class="card-wrapper">
+                      <h6 class="card-title"></h6>
+                      <p class="card-text pb-3 fw-bold">Robert</p>
+                      <div class="evaluate d-flex pb-3">
+                        <div class="evaluate-icon d-flex align-items-center gap-1">
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                        </div>
+                        <p class="ms-2">4.7</p>
+                      </div>
+                      <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                        <div class="times d-flex align-items-center">
+                          <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                        </div>
+                        <div class="students ms-4 d-flex">
+                          <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                        </div>                    
+                      </div>
+                    </div>
+                      <hr class="card-hr m-0" />
+                      <div class="row pt-4 align-items-center">
+                        <div class="col-lg-8">
+                          <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 100%"></div>                                   
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="text-6">100%學習進度</div>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                        <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                      </div>                
+                  </dvi>
+                </div>            
+              </div>
+              <div class="row mt-16">
+                <div class="col-lg-4">
+                  <dvi class="card card-body p-4">               
+                      <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                    <div class="card-wrapper">
+                      <h6 class="card-title"></h6>
+                      <p class="card-text pb-3 fw-bold">Robert</p>
+                      <div class="evaluate d-flex pb-3">
+                        <div class="evaluate-icon d-flex align-items-center gap-1">
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                        </div>
+                        <p class="ms-2">4.7</p>
+                      </div>
+                      <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                        <div class="times d-flex align-items-center">
+                          <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                        </div>
+                        <div class="students ms-4 d-flex">
+                          <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                        </div>                    
+                      </div>
+                    </div>
+                      <hr class="card-hr m-0" />
+                      <div class="row pt-4 align-items-center">
+                        <div class="col-lg-8">
+                          <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 100%"></div>                                   
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="text-6">100%學習進度</div>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                        <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                      </div>                
+                  </dvi>
+                </div>
+                <div class="col-lg-4">
+                  <dvi class="card card-body p-4">               
+                      <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                    <div class="card-wrapper">
+                      <h6 class="card-title"></h6>
+                      <p class="card-text pb-3 fw-bold">Robert</p>
+                      <div class="evaluate d-flex pb-3">
+                        <div class="evaluate-icon d-flex align-items-center gap-1">
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                        </div>
+                        <p class="ms-2">4.7</p>
+                      </div>
+                      <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                        <div class="times d-flex align-items-center">
+                          <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                        </div>
+                        <div class="students ms-4 d-flex">
+                          <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                        </div>                    
+                      </div>
+                    </div>
+                      <hr class="card-hr m-0" />
+                      <div class="row pt-4 align-items-center">
+                        <div class="col-lg-8">
+                          <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 100%"></div>                                   
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="text-6">100%學習進度</div>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                        <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                      </div>                
+                  </dvi>
+                </div>
+                <div class="col-lg-4">
+                  <dvi class="card card-body p-4">               
+                      <img src="/language2024/assets/card-cover_01-59c87861.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_01">
+                    <div class="card-wrapper">
+                      <h6 class="card-title"></h6>
+                      <p class="card-text pb-3 fw-bold">Robert</p>
+                      <div class="evaluate d-flex pb-3">
+                        <div class="evaluate-icon d-flex align-items-center gap-1">
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star-a8f68854.svg" alt="star" />
+                          <img src="/language2024/assets/star_half-858e02f1.svg" alt="star-half" />
+                        </div>
+                        <p class="ms-2">4.7</p>
+                      </div>
+                      <div class="time-students border-bottom d-flex border-bottom-0 pb-4">
+                        <div class="times d-flex align-items-center">
+                          <img src="/language2024/assets/ic_Clock-1168307b.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                        </div>
+                        <div class="students ms-4 d-flex">
+                          <img src="/language2024/assets/Vector-21698937.svg" alt="" />
+                          <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                        </div>                    
+                      </div>
+                    </div>
+                      <hr class="card-hr m-0" />
+                      <div class="row pt-4 align-items-center">
+                        <div class="col-lg-8">
+                          <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 100%"></div>                                   
+                          </div>
+                        </div>
+                        <div class="col-lg-4">
+                          <div class="text-6">100%學習進度</div>
+                        </div>
+                      </div>
+                      <div class="d-grid gap-2 col-12 mx-auto pt-4">
+                        <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                      </div>                
+                  </dvi>
+                </div>            
+              </div>
+              <!-- 頁面2 -->
+
+              <!-- 頁面3 -->
+              <!-- 分頁功能 -->
+              <nav aria-label="Page navigation" class="my-11 d-flex justify-content-center">
+                <ul class="pagination pagination-lg">
+                    <li class="page-item"><a class="page-link bg-secondary-blue me-8 fw-bold active-page" href="#">上一頁</a></li>
+                    <li class="page-item"><a class="page-link bg-secondary-blue mx-2 fw-bold active-page" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link bg-secondary-blue mx-2 fw-bold active-page" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link bg-secondary-blue mx-2 fw-bold active-page" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link bg-secondary-blue ms-8 fw-bold active-page" href="#">下一頁</a></li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
+        
       </div>
     </div>
 
@@ -292,7 +2147,7 @@
     >
       <img
         class="mb-16 mb-md-0"
-        src="/language2024/assets/logo-71a97b09.svg"
+        src="/language2024/assets/logo-ed3f3243.svg"
         alt="footer logo"
       />
       <div
@@ -327,28 +2182,28 @@
             <a href="#">
               <img
                 class="follow-icon"
-                src="/language2024/assets/fb-6fe34d2f.svg"
+                src="/language2024/assets/fb-69cba12a.svg"
                 alt="facebook icon"
               />
             </a>
             <a href="#">
               <img
                 class="follow-icon"
-                src="/language2024/assets/ig-1e9f1fb8.svg"
+                src="/language2024/assets/ig-702d276c.svg"
                 alt="instagram icon"
               />
             </a>
             <a href="#">
               <img
                 class="follow-icon"
-                src="/language2024/assets/line-14cbb043.svg"
+                src="/language2024/assets/line-6603b2d5.svg"
                 alt="line icon"
               />
             </a>
             <a href="#">
               <img
                 class="follow-icon"
-                src="/language2024/assets/twitter-bb62982a.svg"
+                src="/language2024/assets/twitter-922e8e56.svg"
                 alt="twitter icon"
               />
             </a>
@@ -364,22 +2219,22 @@
       <div class="follow-icons d-flex align-items-center gap-6">
         <img
           class="follow-icon"
-          src="/language2024/assets/fb-6fe34d2f.svg"
+          src="/language2024/assets/fb-69cba12a.svg"
           alt="facebook icon"
         />
         <img
           class="follow-icon"
-          src="/language2024/assets/ig-1e9f1fb8.svg"
+          src="/language2024/assets/ig-702d276c.svg"
           alt="instagram icon"
         />
         <img
           class="follow-icon"
-          src="/language2024/assets/line-14cbb043.svg"
+          src="/language2024/assets/line-6603b2d5.svg"
           alt="line icon"
         />
         <img
           class="follow-icon"
-          src="/language2024/assets/twitter-bb62982a.svg"
+          src="/language2024/assets/twitter-922e8e56.svg"
           alt="twitter icon"
         />
       </div>
@@ -388,6 +2243,39 @@
   </div>
 </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function() {
+      // 初始設定
+      let currentPage = 1;
+      const totalPages = 3;
+
+      // 顯示指定頁面的內容
+      function showPage(page) {
+        $(".content").hide(); // 隱藏所有內容區
+        $("#page-0" + page).show(); // 顯示選中的內容區
+      }
+
+      // 分頁按鈕點擊事件
+      $(".page-link").click(function(e) {
+        e.preventDefault(); // 防止預設的連結行為
+        const pageText = $(this).text();
+
+        if (pageText === "上一頁") {
+          if (currentPage > 1) currentPage--;
+        } else if (pageText === "下一頁") {
+          if (currentPage < totalPages) currentPage++;
+        } else {
+          currentPage = parseInt(pageText); // 點擊數字按鈕時，獲取頁碼
+        }
+
+        showPage(currentPage);
+      });
+
+      // 初始化顯示第一頁
+      showPage(currentPage);
+    });
+    </script>
     
   </body>
 </html>
