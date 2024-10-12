@@ -66,6 +66,19 @@
   bottom: 0;
 }
 
+
+.topicSwiper {
+  .swiper-slide {
+    width: 240px;
+    height: 240px;
+
+    .flag-img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+
 .courseSwiper {
   .swiper-slide {
     width: 327px;

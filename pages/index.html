@@ -19,6 +19,152 @@
     <%- include('./layout/navbar_index'); -%>
 
     <h1 class="text-center py-20">阿萴加油</h1>
+    <!-- course topic swiper -->
+    <div class="container-fluid py-20 bg-primary-bg">
+      <div class="container position-relative">
+        <h2 class="course-titlte text-center fs-1 mb-16">課程主題</h2>
+        <!-- swiper section -->
+        <div class="swiper topicSwiper me-n3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide position-relative">
+              <!-- topic card component -->
+              <div
+                class="h-100 d-flex flex-column justify-content-center align-items-center"
+              >
+                <h3 class="text-neutral-gray">美語</h3>
+                <img
+                  class="flag-img"
+                  src="../assets/images/flag_usa.svg"
+                  alt="usa flag img"
+                />
+              </div>
+              <img
+                class="position-absolute top-0 z-n1"
+                src="../assets/images/category_usa.png"
+                alt="usa bg img"
+              />
+              <!-- topic card component -->
+            </div>
+            <div class="swiper-slide position-relative">
+              <!-- topic card component -->
+              <div
+                class="h-100 d-flex flex-column justify-content-center align-items-center"
+              >
+                <h3 class="text-neutral-gray">英語</h3>
+                <img
+                  class="flag-img"
+                  src="../assets/images/flag_uk.svg"
+                  alt="uk flag img"
+                />
+              </div>
+              <img
+                class="position-absolute top-0 z-n1"
+                src="../assets/images/category_uk.png"
+                alt="uk bg img"
+              />
+              <!-- topic card component -->
+            </div>
+            <div class="swiper-slide position-relative">
+              <!-- topic card component -->
+              <div
+                class="h-100 d-flex flex-column justify-content-center align-items-center"
+              >
+                <h3 class="text-neutral-gray">日語</h3>
+                <img
+                  class="flag-img"
+                  src="../assets/images/flag_japan.svg"
+                  alt="japan flag img"
+                />
+              </div>
+              <img
+                class="position-absolute top-0 z-n1"
+                src="../assets/images/category_japan.png"
+                alt="japan bg img"
+              />
+              <!-- topic card component -->
+            </div>
+            <div class="swiper-slide position-relative">
+              <!-- topic card component -->
+              <div
+                class="h-100 d-flex flex-column justify-content-center align-items-center"
+              >
+                <h3 class="text-neutral-gray">韓語</h3>
+                <img
+                  class="flag-img"
+                  src="../assets/images/flag_korea.svg"
+                  alt="korea flag img"
+                />
+              </div>
+              <img
+                class="position-absolute top-0 z-n1"
+                src="../assets/images/category_korea.png"
+                alt="korea bg img"
+              />
+              <!-- topic card component -->
+            </div>
+            <div class="swiper-slide position-relative">
+              <!-- topic card component -->
+              <div
+                class="h-100 d-flex flex-column justify-content-center align-items-center"
+              >
+                <h3 class="text-neutral-gray">法語</h3>
+                <img
+                  class="flag-img"
+                  src="../assets/images/flag_france.svg"
+                  alt="france flag img"
+                />
+              </div>
+              <img
+                class="position-absolute top-0 z-n1"
+                src="../assets/images/category_france.png"
+                alt="france bg img"
+              />
+              <!-- topic card component -->
+            </div>
+            <div class="swiper-slide position-relative">
+              <!-- topic card component -->
+              <div
+                class="h-100 d-flex flex-column justify-content-center align-items-center"
+              >
+                <h3 class="text-neutral-gray">西班牙語</h3>
+                <img
+                  class="flag-img"
+                  src="../assets/images/flag_spain.svg"
+                  alt="spain flag img"
+                />
+              </div>
+              <img
+                class="position-absolute top-0 z-n1"
+                src="../assets/images/category_spain.png"
+                alt="spain bg img"
+              />
+              <!-- topic card component -->
+            </div>
+            <div class="swiper-slide position-relative">
+              <!-- topic card component -->
+              <div
+                class="h-100 d-flex flex-column justify-content-center align-items-center"
+              >
+                <h3 class="text-neutral-gray">阿拉伯語</h3>
+                <img
+                  class="flag-img"
+                  src="../assets/images/flag_arab.svg"
+                  alt="arab flag img"
+                />
+              </div>
+              <img
+                class="position-absolute top-0 z-n1"
+                src="../assets/images/category_arab.png"
+                alt="arab bg img"
+              />
+              <!-- topic card component -->
+            </div>
+          </div>
+        </div>
+        <!-- swiper section end -->
+      </div>
+    </div>
+    <!-- course topic end swiper -->
     <!-- new course section swiper -->
     <div class="container-fluid py-20 bg-secondary-blue">
       <div class="container pb-21 position-relative">
@@ -37,7 +183,7 @@
         <h2 class="course-titlte text-center fs-1 mb-16">最新課程</h2>
         <!-- swiper section -->
         <div class="swiper courseSwiper me-n3">
-          <div class="swiper-wrapper justify-content-between">
+          <div class="swiper-wrapper">
             <div class="swiper-slide">
               <!-- card component -->
               <div class="card">
@@ -232,7 +378,7 @@
         <h2 class="course-titlte text-center fs-1 mb-16">優惠課程</h2>
         <div class="swiper courseSwiper me-n3">
           <!-- swiper section -->
-          <div class="swiper-wrapper justify-content-between">
+          <div class="swiper-wrapper">
             <div class="swiper-slide">
               <!-- card component -->
               <div class="card">
@@ -441,7 +587,7 @@
         <h2 class="course-titlte text-center fs-1 mb-16">精選課程</h2>
         <!-- swiper section -->
         <div class="swiper courseSwiper me-n3">
-          <div class="swiper-wrapper justify-content-between">
+          <div class="swiper-wrapper">
             <div class="swiper-slide">
               <!-- card component -->
               <div class="card">
@@ -624,7 +770,7 @@
       const topicSwiper = new Swiper(".topicSwiper", {
         loop: true,
         slidesPerView: "auto",
-        spaceBetween: 12,
+        spaceBetween: 24,
         // breakpoints: {
         //   // when window width >= 576
         //   576: {
@@ -644,24 +790,7 @@
       const courseSwiper = new Swiper(".courseSwiper", {
         loop: true,
         slidesPerView: "auto",
-        spaceBetween: 12,
-        breakpoints: {
-          // when window width is >= 576
-          // 576: {
-          //   slidesPerView: "auto",
-          //   spaceBetween: 12,
-          // },
-          // // when window width is >= 768
-          // 768: {
-          //   slidesPerView: 2,
-          //   spaceBetween: 24,
-          // },
-          // // when window width is >= 992
-          // 992: {
-          //   slidesPerView: 3,
-          //   spaceBetween: 24,
-          // },
-        },
+        spaceBetween: 24,
       });
     </script>
   </body>
