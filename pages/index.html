@@ -36,8 +36,8 @@
         <!-- new course background image end -->
         <h2 class="course-titlte text-center fs-1 mb-16">最新課程</h2>
         <!-- swiper section -->
-        <div class="swiper">
-          <div class="swiper-wrapper">
+        <div class="swiper courseSwiper me-n3">
+          <div class="swiper-wrapper justify-content-between">
             <div class="swiper-slide">
               <!-- card component -->
               <div class="card">
@@ -230,9 +230,9 @@
         />
         <!-- discount course background image end -->
         <h2 class="course-titlte text-center fs-1 mb-16">優惠課程</h2>
-        <div class="swiper">
+        <div class="swiper courseSwiper me-n3">
           <!-- swiper section -->
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper justify-content-between">
             <div class="swiper-slide">
               <!-- card component -->
               <div class="card">
@@ -440,8 +440,8 @@
         <!-- featured course background image end -->
         <h2 class="course-titlte text-center fs-1 mb-16">精選課程</h2>
         <!-- swiper section -->
-        <div class="swiper">
-          <div class="swiper-wrapper">
+        <div class="swiper courseSwiper me-n3">
+          <div class="swiper-wrapper justify-content-between">
             <div class="swiper-slide">
               <!-- card component -->
               <div class="card">
@@ -621,26 +621,46 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="../main.js"></script>
     <script>
-      const swiper = new Swiper(".swiper", {
+      const topicSwiper = new Swiper(".topicSwiper", {
+        loop: true,
+        slidesPerView: "auto",
+        spaceBetween: 12,
+        // breakpoints: {
+        //   // when window width >= 576
+        //   576: {
+        //     slidesPerView: 1,
+        //     spaceBetween: 12,
+        //   },
+        //   768: {
+        //     slidesPerView: 2,
+        //     spaceBetween: 12,
+        //   },
+        //   992: {
+        //     slidesPerView: "auto",
+        //     spaceBetween: 12,
+        //   },
+        // },
+      });
+      const courseSwiper = new Swiper(".courseSwiper", {
         loop: true,
         slidesPerView: "auto",
         spaceBetween: 12,
         breakpoints: {
           // when window width is >= 576
-          576: {
-            slidesPerView: 1,
-            spaceBetween: 12,
-          },
-          // when window width is >= 768
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 24,
-          },
-          // when window width is >= 992
-          992: {
-            slidesPerView: 3,
-            spaceBetween: 24,
-          },
+          // 576: {
+          //   slidesPerView: "auto",
+          //   spaceBetween: 12,
+          // },
+          // // when window width is >= 768
+          // 768: {
+          //   slidesPerView: 2,
+          //   spaceBetween: 24,
+          // },
+          // // when window width is >= 992
+          // 992: {
+          //   slidesPerView: 3,
+          //   spaceBetween: 24,
+          // },
         },
       });
     </script>

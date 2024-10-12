@@ -65,3 +65,13 @@
   right: 2.75rem;
   bottom: 0;
 }
+
+.courseSwiper {
+  .swiper-slide {
+    width: 327px;
+
+    @include media-breakpoint-up(md) {
+      width: 416px;
+    }
+  }
+}
