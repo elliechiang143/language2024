@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>結帳-Payment</title>
+  </head>
+  <body class="bg-primary-bg overflow-x-hidden">
+    <%- include('./layout/navbar_search'); -%>
+    <section class="nav-top">
+      <div class="container mt-10 position-relative">
+        <img
+          src="../assets/images/circle_03.png"
+          alt=""
+          class="position-absolute deco-img-top"
+        />
+        <img
+          src="../assets/images/circle_04.png"
+          alt=""
+          class="position-absolute deco-img-bottom"
+        />
+        <h2>結帳</h2>
+        <hr class="my-6">
+        <div class="row mt-16 mb-20">
+          <div class="col-md-7">
+            <div class="card py-10 px-6 mb-4 border-0">
+              <div class="fs-5 fw-bold">學員資訊</div>
+              <form>
+                <div class="row mt-6">
+                  <div class="col">
+                    <label for="name" class="fs-6 fw-bold">姓名</label>
+                    <input type="text" class="form-control mt-2 w-100" id="name" placeholder="請輸入姓名">
+                  </div>
+                  <div class="col">
+                    <label for="phone" class="fs-6 fw-bold">聯絡電話</label>
+                    <input type="tel" class="form-control mt-2 w-100" id="phone" placeholder="請輸入連絡電話">
+                  </div>
+                </div>
+                <div class="mt-6">
+                  <label for="email" class="fs-6 fw-bold">電子郵件</label><br>
+                  <input type="email" class="form-control mt-2 w-100" id="email" placeholder="請輸入電子郵件">
+                </div>
+                <hr class="my-10">
+                <h3 class="mb-3">信用卡資訊</h3>
+                <div class="d-flex flex-column gap-4">
+                  <div class="mb-3 d-flex align-items-center">
+                    <label for="cardNumber" class="fs-6 fw-bold mb-0 card-info-title">信用卡卡號</label>
+                    <div class="input-group flex-grow-1">
+                      <input type="text" class="form-control" placeholder="請輸入數字">
+                      <div class="d-flex justify-content-center align-items-center py-3 px-2">-</div>
+                      <input type="text" class="form-control" placeholder="請輸入數字">
+                      <div class="d-flex justify-content-center align-items-center py-3 px-2">-</div>
+                      <input type="text" class="form-control" placeholder="請輸入數字">
+                      <div class="d-flex justify-content-center align-items-center py-3 px-2">-</div>
+                      <input type="text" class="form-control" placeholder="請輸入數字">
+                    </div>
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <label for="expiry" class="fs-6 fw-bold card-info-title">卡片有效期限</label>
+                    <input type="text" class="form-control" id="expiry" placeholder="請輸入卡片有效期限" style="max-width: 172px;">
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <label for="cvv" class="fs-6 fw-bold card-info-title">驗證碼</label>
+                    <input type="text" class="form-control" id="cvv" placeholder="請輸入驗證碼" style="max-width: 172px;">
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <label for="cardName" class="fs-6 fw-bold card-info-title">持卡人姓名</label>
+                    <input type="text" class="form-control" id="cardName" placeholder="請輸入持卡人姓名" style="max-width: 270px;">
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <label for="cardBirth" class="fs-6 fw-bold card-info-title">持卡人生日</label>
+                    <input type="date" class="form-control" id="cardBirth" style="max-width: 270px;">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="card py-10 px-6 mb-4 border-0">
+              <h3 class="mb-3 fs-5 fw-bold">您的訂單</h3>
+              <div class="d-flex justify-content-between fw-bold mt-6 mb-2">
+                <span class="fs-6 fw-bold">課程</span>
+                <span class="fs-6 fw-bold">售價</span>
+              </div>
+              <hr>
+              <ul class="list-group mb-24">
+                <li class="list-group-item px-0 border-0 d-flex justify-content-between">
+                  <span>TOPIK II 高分技巧：成為單字富翁的祕密</span>
+                  <span>NT$ 2,990</span>
+                </li>
+                <li class="list-group-item px-0 border-0 d-flex justify-content-between">
+                  <span>看動畫看日劇，零到 N4 道地說英文</span>
+                  <span>NT$ 1,980</span>
+                </li>
+                <li class="list-group-item px-0 border-0 d-flex justify-content-between">
+                  <span>破解道地英文對話！八大主題輕鬆聽懂開口說</span>
+                  <span>NT$ 990</span>
+                </li>
+              </ul>
+              <div class="d-flex justify-content-between fw-bold mb-2">
+                <span class="fs-6 fw-bold">折扣</span>
+                <span class="fs-6 fw-bold">售價</span>
+              </div>
+              <hr>
+              <ul class="list-group mb-24">
+                <li class="list-group-item px-0 border-0 d-flex justify-content-between">
+                  <span>歪國人優惠卷 (IMGOOD666)</span>
+                  <span>-NT$ 50</span>
+                </li>
+              </ul>
+              <hr>
+              <div class="d-flex justify-content-between fw-bold">
+                <span class="fs-6 fw-bold">總計</span>
+                <span class="fs-6 fw-bolder text-primary-blue">NT$ 5,910</span>
+              </div>
+              <div class="d-flex justify-content-end gap-10 mt-4">
+                <button class="btn btn-primary-blue">返回購物車</button>
+                <button class="btn btn-primary-blue">送出訂單</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
