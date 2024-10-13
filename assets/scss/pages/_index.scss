@@ -2,6 +2,10 @@
   font-size: 100px;
 }
 
+::placeholder {
+  color: #ACACAC !important;
+}
+
 .evaluate-icon {
   display: flex;
   align-items: center;
@@ -34,6 +38,52 @@
 
 .card-hr {
   border: 1px dashed var(--Neutral_gray_2, #ACACAC)
+}
+
+.topic-search {
+  .topic-title-righttopImg {
+    width: 46px;
+    height: 28px;
+    top: -0.5rem;
+    right: -2rem;
+
+    transform: rotate(25deg);
+
+    @include media-breakpoint-up(md) {
+      width: 68px;
+      height: 48px;
+      top: -1.5rem;
+      right: -2.875rem;
+      transform: rotate(0deg);
+    }
+  }
+
+  .topic-title-bottomImg {
+    right: 0;
+    bottom: -1rem;
+  }
+
+  .topic-slogan {
+    font-weight: normal;
+    font-size: 1rem;
+
+    @include media-breakpoint-up(lg) {
+      font-weight: bold;
+      font-size: 2.25rem;
+    }
+  }
+
+  .btn-search {
+    right: 1.5rem;
+  }
+
+  .search-icon {
+    left: 1.5rem;
+  }
+}
+
+.topic-image {
+  max-width: 100%;
 }
 
 .newCourse-bgi-startbottom {

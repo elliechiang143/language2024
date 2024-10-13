@@ -19,12 +19,77 @@
     <%- include('./layout/navbar_index'); -%>
 
     <h1 class="text-center py-20">阿萴加油</h1>
+    <!-- banner and search section -->
+    <div class="container-fluid pt-11 bg-primary-bg">
+      <div
+        class="container d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center"
+      >
+        <!-- topic search section -->
+        <div class="topic-search mb-6 mb-lg-0">
+          <h1 class="topic-title fs-1 mb-6">
+            你的最佳語言
+            <div class="ms-0 ms-md-n3 d-block d-md-inline">
+              <span class="topic-title-span position-relative"
+                >學習夥伴
+                <img
+                  class="topic-title-bottomImg position-absolute"
+                  src="../assets/images/vector_01.svg"
+                  alt=""
+                />
+                <img
+                  class="topic-title-righttopImg position-absolute"
+                  src="../assets/images/vector_02.svg"
+                  alt=""
+                />
+              </span>
+            </div>
+          </h1>
+          <h2 class="topic-slogan text-neutral-gray">從語言+成為語言家</h2>
+          <!-- topic search bar -->
+          <nav class="navbar bg-body-tertiary mt-6">
+            <div class="container-fluid px-0">
+              <form
+                class="d-grid d-lg-flex w-100 position-relative rounded-3"
+                role="search"
+              >
+                <span
+                  class="material-symbols-outlined search-icon position-absolute top-50 translate-middle-y"
+                >
+                  search
+                </span>
+                <input
+                  class="form-control py-8 px-lg-16"
+                  type="search"
+                  placeholder="今天想學什麼語言？"
+                  aria-label="Search"
+                />
+                <button
+                  class="btn btn-primary-blue btn-search position-absolute top-50 translate-middle-y"
+                  type="submit"
+                >
+                  Search
+                </button>
+              </form>
+            </div>
+          </nav>
+          <!-- topic search bar end -->
+        </div>
+        <!-- topic search section end -->
+        <div></div>
+        <!-- topic banner -->
+        <div class="topic-image">
+          <img src="../assets/images/hero.png" alt="" />
+        </div>
+        <!-- topic banner end -->
+      </div>
+    </div>
+    <!-- banner and search section end -->
     <!-- course topic swiper -->
     <div class="container-fluid py-20 bg-primary-bg">
       <div class="container position-relative">
         <h2 class="course-titlte text-center fs-1 mb-16">課程主題</h2>
         <!-- swiper section -->
-        <div class="swiper topicSwiper me-n3">
+        <div class="swiper topicSwiper me-0 me-md-n3">
           <div class="swiper-wrapper">
             <div class="swiper-slide position-relative">
               <!-- topic card component -->
@@ -182,7 +247,7 @@
         <!-- new course background image end -->
         <h2 class="course-titlte text-center fs-1 mb-16">最新課程</h2>
         <!-- swiper section -->
-        <div class="swiper courseSwiper me-n3">
+        <div class="swiper courseSwiper me-0 me-md-n3">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <!-- card component -->
@@ -376,7 +441,7 @@
         />
         <!-- discount course background image end -->
         <h2 class="course-titlte text-center fs-1 mb-16">優惠課程</h2>
-        <div class="swiper courseSwiper me-n3">
+        <div class="swiper courseSwiper me-0 me-md-n3">
           <!-- swiper section -->
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -586,7 +651,7 @@
         <!-- featured course background image end -->
         <h2 class="course-titlte text-center fs-1 mb-16">精選課程</h2>
         <!-- swiper section -->
-        <div class="swiper courseSwiper me-n3">
+        <div class="swiper courseSwiper me-0 me-md-n3">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <!-- card component -->
