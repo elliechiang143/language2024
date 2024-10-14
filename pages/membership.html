@@ -14,7 +14,8 @@
   <body class="bg-primary-bg">
     <%- include('./layout/navbar_search'); -%>    
     <div class="nav-mt"></div>
-    <div class="container">
+    
+    <div class="container py-lg-20">
       <!-- avatar section -->
         <!-- <div class="row mb-16">
           <div class="col-lg-6">
@@ -27,7 +28,7 @@
               </div>
               <div class="col-lg-8">
                 <div class="row">
-                  <div class="col-lg-12">
+                  <div class="">
                     <h3 class="text-left fw-bold pt-3 pb-6 ms-7">Stacy Lin</h3>
                   </div>
                 </div>
@@ -58,31 +59,31 @@
           </div>
         </div> -->
 
-        <div class="avatar d-flex mb-16">
+        <div class="avatar d-flex mb-lg-16 mb-10 align-items-center">
           <div class="avatar-img position-relative">
-            <img src="../assets/images/profileimg.jpg" alt="profile" class="rounded-circle width-100">
-            <span class="pencil material-symbols-outlined position-absolute bottom-0 end-0 rounded-pill bg-white">edit</span>
+            <img src="../assets/images/profileimg.jpg" alt="profile" class="rounded-circle">
+            <span class="pencil material-symbols-outlined position-absolute rounded-pill bg-white bottom-0 end-0">edit</span>
           </div>
           <div class="profile">
-            <h3 class="text-left fw-bold pt-3 pb-6 ms-7">Stacy Lin</h3>
-            <div class="course d-flex">
+            <h3 class="name text-left fs-lg-5 fs-6 fw-bold mt-lg-4 mt-1 mb-lg-8 mb-3">Stacy Lin</h3>
+            <div class="course d-flex gap-lg-10 gap-5 text-center">
               <div class="course-type fs-7 fw-bold">
-                <div class="course-type fs-7 fw-bold">
+                <div class="course-type fs-7 fw-bold mb-lg-5 mb-1">
                   學習課程
                 </div>
-                <p class="number fs-2 fw-bold text-primary-blue pt-5">4</p>
+                <p class="number fs-lg-2 fs-3 fw-bold text-primary-blue">4</p>
               </div>
               <div class="course-type fs-7 fw-bold">
-                <div class="course-type fs-7 fw-bold">
-                  學習課程
+                <div class="course-type fs-7 fw-bold mb-lg-5 mb-1">
+                  收藏課程
                 </div>
-                <p class="number fs-2 fw-bold text-primary-blue pt-5">4</p>
+                <p class="number fs-lg-2 fs-3 fw-bold text-primary-blue">8</p>
               </div>
               <div class="course-type fs-7 fw-bold">
-                <div class="course-type fs-7 fw-bold">
-                  學習課程
+                <div class="course-type fs-7 fw-bold mb-lg-5 mb-1">
+                  上架課程
                 </div>
-                <p class="number fs-2 fw-bold text-primary-blue pt-5">4</p>
+                <p class="number fs-lg-2 fs-3 fw-bold text-primary-blue">1</p>
               </div>
             </div>
           </div>
@@ -92,18 +93,18 @@
       <div class="container py-40">
         <div class="row mb-16">
           <div class="">
-            <ul class="nav nav-underline bg-white pt-5 border border-top-0 border-start-0 border-end-0 border-4 border-secondary-blue justify-content-center" id="myTab" role="tablist">
-              <li class="nav-item px-8" role="presentation">
-                <button class="nav-link border-4 fs-6 lh-sm fw-bold text-neutral-gray" id="learning-tab" data-bs-toggle="tab" data-bs-target="#learning-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">學習課程</button>
+            <ul class="nav-member-color nav nav-underline bg-white border border-top-0 border-start-0 border-end-0 border-4 border-secondary-blue justify-content-center" id="myTab" role="tablist">
+              <li class="nav-member-item nav-item px-lg-8" role="presentation">
+                <button class="nav-button nav-link border-4 fs-lg-6 lh-sm fw-bold text-neutral-gray pt-5" id="learning-tab" data-bs-toggle="tab" data-bs-target="#learning-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">學習課程</button>
               </li>
-              <li class="nav-item px-8" role="presentation">
-                <button class="nav-link border-4 fs-6 lh-sm fw-bold text-neutral-gray" id="collect-tab" data-bs-toggle="tab" data-bs-target="#collect-tab-pane" type="button" role="tab" aria-controls="collect-tab-pane" aria-selected="false">收藏課程</button>
+              <li class="nav-member-item nav-item px-lg-8" role="presentation">
+                <button class="nav-button nav-link border-4 fs-lg-6 lh-sm fw-bold text-neutral-gray pt-5" id="collect-tab" data-bs-toggle="tab" data-bs-target="#collect-tab-pane" type="button" role="tab" aria-controls="collect-tab-pane" aria-selected="false">收藏課程</button>
               </li>
-              <li class="nav-item px-8" role="presentation">
-                <button class="nav-link border-4 fs-6 lh-sm fw-bold text-neutral-gray" id="ordered-tab" data-bs-toggle="tab" data-bs-target="#ordered-tab-pane" type="button" role="tab" aria-controls="ordered-tab-pane" aria-selected="false">訂單紀錄</button>
+              <li class="nav-member-item nav-item px-lg-8" role="presentation">
+                <button class="nav-button nav-link border-4 fs-lg-6 lh-sm fw-bold text-neutral-gray pt-5" id="ordered-tab" data-bs-toggle="tab" data-bs-target="#ordered-tab-pane" type="button" role="tab" aria-controls="ordered-tab-pane" aria-selected="false">訂單紀錄</button>
               </li>
-              <li class="nav-item px-8" role="presentation">
-                <button class="nav-link border-4 fs-6 lh-sm fw-bold text-neutral-gray" id="ready-tab" data-bs-toggle="tab" data-bs-target="#ready-tab-pane" type="button" role="tab" aria-controls="ready-tab-pane" aria-selected="false">上架課程</button>
+              <li class="nav-member-item nav-item px-lg-8" role="presentation">
+                <button class="nav-button nav-link border-4 fs-lg-6 lh-sm fw-bold text-neutral-gray pt-5" id="ready-tab" data-bs-toggle="tab" data-bs-target="#ready-tab-pane" type="button" role="tab" aria-controls="ready-tab-pane" aria-selected="false">上架課程</button>
               </li>
             </ul>
             <div class="tab-content" id="myTabContent">
@@ -160,7 +161,7 @@
                             <img src="../assets/images/star.svg" alt="star" />
                             <img src="../assets/images/star_half.svg" alt="star-half" />
                           </div>
-                          <p class="ms-2 me-4">4.8</p><a href="#" class="border-bottom">我要評價</a>
+                          <p class="ms-2 me-4">4.8</p><a href="#" class="border-bottom link-primary-blue">我要評價</a>
                         </div>
                         <div class="time-students border-bottom d-flex border-bottom-0 mb-4">
                           <div class="times d-flex align-items-center">
@@ -221,7 +222,7 @@
                             <img src="../assets/images/star.svg" alt="star" />
                             <img src="../assets/images/star_half.svg" alt="star-half" />
                           </div>
-                          <p class="ms-2 me-4">4.8</p><a href="#" class="border-bottom">我要評價</a>
+                          <p class="ms-2 me-4">4.8</p><a href="#" class="border-bottom link-primary-blue">我要評價</a>
                         </div>
                         <div class="time-students border-bottom d-flex border-bottom-0 mb-4">
                           <div class="times d-flex align-items-center">
@@ -282,7 +283,7 @@
                             <img src="../assets/images/star.svg" alt="star" />
                             <img src="../assets/images/star_half.svg" alt="star-half" />
                           </div>
-                          <p class="ms-2 me-4">4.8</p><a href="#" class="border-bottom">我要評價</a>
+                          <p class="ms-2 me-4">4.8</p><a href="#" class="border-bottom link-primary-blue">我要評價</a>
                         </div>
                         <div class="time-students border-bottom d-flex border-bottom-0 mb-4">
                           <div class="times d-flex align-items-center">
@@ -1539,11 +1540,11 @@
           <!-- 分頁功能 -->
           <nav aria-label="Page navigation" class="py-11 d-flex justify-content-center">
             <ul class="pagination pagination-lg">
-                <li class="page-item"><a class="page-link bg-secondary-blue me-8 fw-bold" href="#">上一頁</a></li>
+                <li class="page-item"><a class="page-link bg-secondary-blue me-lg-8 fw-bold" href="#">上一頁</a></li>
                 <li class="page-item"><a class="page-link bg-secondary-blue mx-2 fw-bold" href="#">1</a></li>
                 <li class="page-item"><a class="page-link bg-secondary-blue mx-2 fw-bold" href="#">2</a></li>
                 <li class="page-item"><a class="page-link bg-secondary-blue mx-2 fw-bold" href="#">3</a></li>
-                <li class="page-item"><a class="page-link bg-secondary-blue ms-8 fw-bold" href="#">下一頁</a></li>
+                <li class="page-item"><a class="page-link bg-secondary-blue ms-lg-8 fw-bold" href="#">下一頁</a></li>
             </ul>
           </nav>
         </div>

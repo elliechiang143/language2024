@@ -1,18 +1,16 @@
-.nav-link{
+.nav-button{
     padding-bottom: 17px;
 }
 
-.nav-item:hover{
+.nav-member-item:hover{
     border-bottom: $primary;
 }
 
-.nav-underline .nav-link:hover, .nav-underline .nav-link:focus, .nav-underline .nav-link:active {
+.nav-member-color .nav-link:hover, .nav-member-color .nav-link:focus, .nav-member-color .nav-link:active {
     border-bottom-color: $primary;
 }
 
-
-
-.nav-pills .nav-item .button{
+.nav-pills .nav-member-item .button{
     color:#4B4B4B;
 }
 
@@ -29,8 +27,17 @@
     display: grid;
     width: 44px;
     height: 44px;
+    top:129px;
+    left:134px;
     align-items: center;
     text-align: center;
+
+    @include media-breakpoint-down(sm){
+        width: 35px;
+        height: 35px;
+        top:63px;
+        left:55px;
+    }
 }
 
 .active-page.active {
@@ -38,7 +45,24 @@
     color: white; /* 選中狀態的文字顏色 */
 }
 
+
 .avatar-img img{
     width: 163px;
     height: 163px;
+    margin-right: 64px;
+
+    
+    @include media-breakpoint-down(sm){
+        width: 94px;
+        height: 94px;
+        margin-right: 14px;
+    }
 }
+
+
+.profile .name{
+    @include media-breakpoint-down(sm){
+        margin-bottom: 8px;
+    }
+}
+
