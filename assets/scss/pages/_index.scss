@@ -41,6 +41,8 @@
 }
 
 .topic-search {
+  max-width: 100%;
+
   .topic-title-righttopImg {
     width: 46px;
     height: 28px;
@@ -67,23 +69,33 @@
     font-weight: normal;
     font-size: 1rem;
 
-    @include media-breakpoint-up(lg) {
+    @include media-breakpoint-up(md) {
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+
+    @include media-breakpoint-up(xl) {
       font-weight: bold;
       font-size: 2.25rem;
     }
   }
 
   .btn-search {
-    right: 1.5rem;
+    right: 0.5rem;
   }
 
   .search-icon {
-    left: 1.5rem;
+    left: 1rem;
   }
 }
 
 .topic-image {
-  max-width: 100%;
+  text-align: center;
+  width: 100%;
+
+  @include media-breakpoint-up(lg) {
+    width: 43%;
+  }
 }
 
 .newCourse-bgi-startbottom {
