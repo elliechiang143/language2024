@@ -6,7 +6,7 @@
     border-bottom: $primary;
 }
 
-.nav-underline .nav-link:hover, .nav-underline .nav-link:focus {
+.nav-underline .nav-link:hover, .nav-underline .nav-link:focus, .nav-underline .nav-link:active {
     border-bottom-color: $primary;
 }
 
@@ -36,4 +36,9 @@
 .active-page.active {
     background-color: $primary; /* 選中狀態的背景顏色 */
     color: white; /* 選中狀態的文字顏色 */
+}
+
+.avatar-img img{
+    width: 163px;
+    height: 163px;
 }
