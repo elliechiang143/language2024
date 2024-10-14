@@ -14,118 +14,267 @@
     />
 
     <title>index</title>
-    <script type="module" crossorigin src="/language2024/assets/main-7cff2e6c.js"></script>
-    <link rel="stylesheet" href="/language2024/assets/main-5a7db473.css">
+    <script type="module" crossorigin src="/language2024/assets/main-432ad9da.js"></script>
+    <link rel="stylesheet" href="/language2024/assets/main-65cff65b.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-white border-bottom border-neutral-gray-3 fixed-top">
-    <div class="container-lg">
-      <a class="navbar-brand" href="index.html">
-        <img src="/language2024/assets/logo-ed3f3243.svg" alt="語言+" class="nav-logo">
+  <div class="container-lg">
+    <a class="navbar-brand" href="index.html">
+      <img src="/language2024/assets/logo-ed3f3243.svg" alt="語言+" class="nav-logo" />
+    </a>
+    <!-- 手機板購物車 -->
+    <div class="position-relative shoppingCart-dropdown d-lg-none ms-auto me-2">
+      <a class="nav-link text-secondary-darkblue p-0 shoppingCart-dropdown-btn lh-1" href="#">
+        <span class="position-relative d-inline-block">
+          <span class="material-symbols-outlined fill lh-1">shopping_cart</span>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger shoppingCart-badge px-1">3</span>
+        </span>
       </a>
-      <!-- 手機板購物車 -->
-      <div class="position-relative shoppingCart-dropdown d-lg-none ms-auto me-2">
-        <a class="nav-link text-secondary-darkblue p-0 shoppingCart-dropdown-btn lh-1" href="#">
-          <span class="position-relative d-inline-block">
-            <span class="material-symbols-outlined fill lh-1">shopping_cart</span>
-            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger shoppingCart-badge px-1">3</span>
-          </span>
-        </a>
-      </div>
+    </div>
 
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse mt-2 mt-lg-0" id="navbarContent">
-        <ul class="navbar-nav ms-auto gap-lg-1 align-items-lg-center">
-          <li class="nav-item d-lg-none d-flex align-items-center gap-3 border-bottom border-neutral-gray-3 py-3">
-            <img src="/language2024/assets/profileimg-f4a08579.jpg" alt="stacy" class="object-fit-cover rounded-pill" style="width: 50px; height: 50px;">
-            <div>
-              <p class="fs-5 lh-sm">Stacy Lin</p>
-              <p>學員Lv2</p>
+    <div class="collapse navbar-collapse mt-2 mt-lg-0" id="navbarContent">
+      <ul class="navbar-nav ms-auto gap-lg-1 align-items-lg-center">
+        <li class="nav-item d-lg-none d-flex align-items-center gap-3 border-bottom border-neutral-gray-3 py-3">
+          <img src="/language2024/assets/profileimg-f4a08579.jpg" alt="stacy" class="object-fit-cover rounded-pill" style="width: 50px; height: 50px" />
+          <div>
+            <p class="fs-5 lh-sm">Stacy Lin</p>
+            <p>學員Lv2</p>
+          </div>
+        </li>
+        <li class="nav-item py-lg-0 py-2">
+          <a class="nav-link" href="#">成為老師</a>
+        </li>
+        <li class="nav-item d-lg-none border-bottom border-top border-neutral-gray-3 py-3">
+          <p class="fw-medium py-2">課程分類</p>
+          <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>英文</a>
+          <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>日文</a>
+          <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>韓文</a>
+          <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>西班牙文</a>
+          <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>法文</a>
+          <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>德文</a>
+          <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>阿拉伯文</a>
+        </li>
+        <!-- 電腦版購物車，手機版時隱藏 -->
+        <li class="nav-item position-relative shoppingCart-dropdown d-none d-lg-block">
+          <a class="nav-link text-secondary-darkblue shoppingCart-dropdown-btn px-3 lh-1" href="#">
+            <span class="position-relative d-inline-block">
+              <span class="material-symbols-outlined fill lh-1">shopping_cart</span>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger shoppingCart-badge px-1">3</span>
+            </span>
+          </a>
+          <div class="shoppingCart position-absolute bg-white rounded-3 shadow z-1 overflow-hidden">
+            <ul class="shoppingCart-list list-unstyled">
+              <li class="position-relative">
+                <a href="#" class="d-flex gap-5 p-6">
+                  <div class="flex-shrink-0">
+                    <img src="/language2024/assets/card-cover_05-db54da27.jpg" alt="Me revoila！用法文暢談日常：對話·文法·動詞" class="rounded-1 object-fit-cover" style="width: 114px; height: 92px" />
+                  </div>
+                  <div class="d-flex flex-column gap-1">
+                    <p>Me revoila！用法文暢談日常：對話·文法·動詞</p>
+                    <p class="fs-9">Peng Xiao</p>
+                    <p class="fw-900">NT$ 2,800</p>
+                  </div>
+                </a>
+              </li>
+              <li class="position-relative">
+                <a href="#" class="d-flex gap-5 p-6">
+                  <div class="flex-shrink-0">
+                    <img src="/language2024/assets/card-cover_08-05a6833f.jpg" alt="征服多益首部曲：文法字彙一網打盡！" class="rounded-1 object-fit-cover" style="width: 114px; height: 92px" />
+                  </div>
+                  <div class="d-flex flex-column gap-1">
+                    <p>征服多益首部曲：文法字彙一網打盡！</p>
+                    <p class="fs-9">Tony Wang</p>
+                    <p class="fw-900">NT$ 3,400</p>
+                  </div>
+                </a>
+              </li>
+              <li class="position-relative">
+                <a href="#" class="d-flex gap-5 p-6">
+                  <div class="flex-shrink-0">
+                    <img src="/language2024/assets/card-cover_15-842f8587.jpg" alt="雅思基礎套裝課程 快速養成奪分寶典" class="rounded-1 object-fit-cover" style="width: 114px; height: 92px" />
+                  </div>
+                  <div class="d-flex flex-column gap-1">
+                    <p>雅思基礎套裝課程 快速養成奪分寶典</p>
+                    <p class="fs-9">Amie Wu</p>
+                    <p class="fw-900">NT$ 5,800</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="p-6">
+              <h3 class="fs-5 mb-6">總計：<span class="text-primary-blue fw-900">NT$ 12,000</span></h3>
+              <a href="cart.html" class="btn btn-primary-blue w-100 d-flex justify-content-center align-items-center text-decoration-none">
+                <span class="material-symbols-outlined me-1">shopping_cart_checkout</span>前往購物車
+              </a>
             </div>
-          </li>
-          <li class="nav-item py-lg-0 py-2">
-            <a class="nav-link" href="#">成為老師</a>
-          </li>
-          <li class="nav-item d-lg-none border-bottom border-top border-neutral-gray-3 py-3">
-            <p class="fw-medium py-2">課程分類</p>
-            <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>英文</a>
-            <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>日文</a>
-            <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>韓文</a>
-            <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>西班牙文</a>
-            <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>法文</a>
-            <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>德文</a>
-            <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>阿拉伯文</a>
-          </li>
-          <!-- 電腦版購物車，手機版時隱藏 -->
-          <li class="nav-item position-relative shoppingCart-dropdown d-none d-lg-block">
-            <a class="nav-link text-secondary-darkblue shoppingCart-dropdown-btn px-3 lh-1" href="#">
-              <span class="position-relative d-inline-block">
-                <span class="material-symbols-outlined fill lh-1">shopping_cart</span>
-                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger shoppingCart-badge px-1">3</span>
-              </span>
-            </a>
-            <div class="shoppingCart position-absolute bg-white rounded-3 shadow z-1 overflow-hidden">
-              <ul class="shoppingCart-list list-unstyled">
-                <li class="position-relative">
-                  <a href="#" class="d-flex gap-5 p-6">
-                    <div class="flex-shrink-0">
-                      <img src="/language2024/assets/card-cover_05-db54da27.jpg" alt="Me revoila！用法文暢談日常：對話·文法·動詞" class="rounded-1 object-fit-cover" style="width: 114px; height: 92px;">
-                    </div>
-                    <div class="d-flex flex-column gap-1">
-                      <p>Me revoila！用法文暢談日常：對話·文法·動詞</p>
-                      <p class="fs-9">Peng Xiao</p>
-                      <p class="fw-900">NT$ 2,800</p>
-                    </div>
-                  </a>
-                </li>
-                <li class="position-relative">
-                  <a href="#" class="d-flex gap-5 p-6">
-                    <div class="flex-shrink-0">
-                      <img src="/language2024/assets/card-cover_08-05a6833f.jpg" alt="征服多益首部曲：文法字彙一網打盡！" class="rounded-1 object-fit-cover" style="width: 114px; height: 92px;">
-                    </div>
-                    <div class="d-flex flex-column gap-1">
-                      <p>征服多益首部曲：文法字彙一網打盡！</p>
-                      <p class="fs-9">Tony Wang</p>
-                      <p class="fw-900">NT$ 3,400</p>
-                    </div>
-                  </a>
-                </li>
-                <li class="position-relative">
-                  <a href="#" class="d-flex gap-5 p-6">
-                    <div class="flex-shrink-0">
-                      <img src="/language2024/assets/card-cover_15-842f8587.jpg" alt="雅思基礎套裝課程 快速養成奪分寶典" class="rounded-1 object-fit-cover" style="width: 114px; height: 92px;">
-                    </div>
-                    <div class="d-flex flex-column gap-1">
-                      <p>雅思基礎套裝課程 快速養成奪分寶典</p>
-                      <p class="fs-9">Amie Wu</p>
-                      <p class="fw-900">NT$ 5,800</p>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-              <div class="p-6">
-                <h3 class="fs-5 mb-6">總計：<span class="text-primary-blue fw-900">NT$ 12,000</span></h3>
-                <button type="button" class="btn btn-primary-blue w-100 d-flex justify-content-center align-items-center"><span class="material-symbols-outlined me-1">shopping_cart_checkout</span>前往購物車</button>
-              </div>
-            </div>
-          </li>
+          </div>
+        </li>
 
-          <li class="nav-item">
-            <a class="nav-link d-none d-lg-block" href="#">登入/註冊</a>
-            <a class="nav-link d-flex align-items-center d-lg-none" href="#"><span class="material-symbols-outlined">logout</span>登出</a>
-          </li>
-          <!-- 登入後 -->
-          <!-- <li class="nav-item d-none d-lg-flex align-items-center gap-3">
+        <li class="nav-item">
+          <a class="nav-link d-none d-lg-block" href="#">登入/註冊</a>
+          <a class="nav-link d-flex align-items-center d-lg-none" href="#"><span class="material-symbols-outlined">logout</span>登出</a>
+        </li>
+        <!-- 登入後 -->
+        <!-- <li class="nav-item d-none d-lg-flex align-items-center gap-3">
             <img src="/assets/images/profileimg.jpg" alt="stacy" class="object-fit-cover rounded-pill" style="width: 50px; height: 50px;">
           </li> -->
-        </ul>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <h1 class="text-center py-20">阿萴加油</h1>
+    <!-- course topic swiper -->
+    <div class="container-fluid py-20 bg-primary-bg">
+      <div class="container position-relative">
+        <h2 class="course-titlte text-center fs-1 mb-16">課程主題</h2>
+        <!-- swiper section -->
+        <div class="swiper topicSwiper me-n3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide position-relative">
+              <!-- topic card component -->
+              <div
+                class="h-100 d-flex flex-column justify-content-center align-items-center"
+              >
+                <h3 class="text-neutral-gray">美語</h3>
+                <img
+                  class="flag-img"
+                  src="/language2024/assets/flag_usa-01a0265f.svg"
+                  alt="usa flag img"
+                />
+              </div>
+              <img
+                class="position-absolute top-0 z-n1"
+                src="/language2024/assets/category_usa-7574424f.png"
+                alt="usa bg img"
+              />
+              <!-- topic card component -->
+            </div>
+            <div class="swiper-slide position-relative">
+              <!-- topic card component -->
+              <div
+                class="h-100 d-flex flex-column justify-content-center align-items-center"
+              >
+                <h3 class="text-neutral-gray">英語</h3>
+                <img
+                  class="flag-img"
+                  src="/language2024/assets/flag_uk-dcbc422f.svg"
+                  alt="uk flag img"
+                />
+              </div>
+              <img
+                class="position-absolute top-0 z-n1"
+                src="/language2024/assets/category_uk-651c79e7.png"
+                alt="uk bg img"
+              />
+              <!-- topic card component -->
+            </div>
+            <div class="swiper-slide position-relative">
+              <!-- topic card component -->
+              <div
+                class="h-100 d-flex flex-column justify-content-center align-items-center"
+              >
+                <h3 class="text-neutral-gray">日語</h3>
+                <img
+                  class="flag-img"
+                  src="/language2024/assets/flag_japan-37c2fb87.svg"
+                  alt="japan flag img"
+                />
+              </div>
+              <img
+                class="position-absolute top-0 z-n1"
+                src="/language2024/assets/category_japan-21a21d06.png"
+                alt="japan bg img"
+              />
+              <!-- topic card component -->
+            </div>
+            <div class="swiper-slide position-relative">
+              <!-- topic card component -->
+              <div
+                class="h-100 d-flex flex-column justify-content-center align-items-center"
+              >
+                <h3 class="text-neutral-gray">韓語</h3>
+                <img
+                  class="flag-img"
+                  src="/language2024/assets/flag_korea-bd27f4c4.svg"
+                  alt="korea flag img"
+                />
+              </div>
+              <img
+                class="position-absolute top-0 z-n1"
+                src="/language2024/assets/category_korea-3d147cc1.png"
+                alt="korea bg img"
+              />
+              <!-- topic card component -->
+            </div>
+            <div class="swiper-slide position-relative">
+              <!-- topic card component -->
+              <div
+                class="h-100 d-flex flex-column justify-content-center align-items-center"
+              >
+                <h3 class="text-neutral-gray">法語</h3>
+                <img
+                  class="flag-img"
+                  src="/language2024/assets/flag_france-424facaa.svg"
+                  alt="france flag img"
+                />
+              </div>
+              <img
+                class="position-absolute top-0 z-n1"
+                src="/language2024/assets/category_france-164ce215.png"
+                alt="france bg img"
+              />
+              <!-- topic card component -->
+            </div>
+            <div class="swiper-slide position-relative">
+              <!-- topic card component -->
+              <div
+                class="h-100 d-flex flex-column justify-content-center align-items-center"
+              >
+                <h3 class="text-neutral-gray">西班牙語</h3>
+                <img
+                  class="flag-img"
+                  src="/language2024/assets/flag_spain-c44aa9a6.svg"
+                  alt="spain flag img"
+                />
+              </div>
+              <img
+                class="position-absolute top-0 z-n1"
+                src="/language2024/assets/category_spain-3c6140a1.png"
+                alt="spain bg img"
+              />
+              <!-- topic card component -->
+            </div>
+            <div class="swiper-slide position-relative">
+              <!-- topic card component -->
+              <div
+                class="h-100 d-flex flex-column justify-content-center align-items-center"
+              >
+                <h3 class="text-neutral-gray">阿拉伯語</h3>
+                <img
+                  class="flag-img"
+                  src="/language2024/assets/flag_arab-1852e517.svg"
+                  alt="arab flag img"
+                />
+              </div>
+              <img
+                class="position-absolute top-0 z-n1"
+                src="/language2024/assets/category_arab-a160f014.png"
+                alt="arab bg img"
+              />
+              <!-- topic card component -->
+            </div>
+          </div>
+        </div>
+        <!-- swiper section end -->
       </div>
     </div>
-</nav>
-    <h1 class="text-center py-20">阿萴加油</h1>
+    <!-- course topic end swiper -->
     <!-- new course section swiper -->
     <div class="container-fluid py-20 bg-secondary-blue">
       <div class="container pb-21 position-relative">
@@ -143,7 +292,7 @@
         <!-- new course background image end -->
         <h2 class="course-titlte text-center fs-1 mb-16">最新課程</h2>
         <!-- swiper section -->
-        <div class="swiper">
+        <div class="swiper courseSwiper me-n3">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <!-- card component -->
@@ -337,7 +486,7 @@
         />
         <!-- discount course background image end -->
         <h2 class="course-titlte text-center fs-1 mb-16">優惠課程</h2>
-        <div class="swiper">
+        <div class="swiper courseSwiper me-n3">
           <!-- swiper section -->
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -547,7 +696,7 @@
         <!-- featured course background image end -->
         <h2 class="course-titlte text-center fs-1 mb-16">精選課程</h2>
         <!-- swiper section -->
-        <div class="swiper">
+        <div class="swiper courseSwiper me-n3">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <!-- card component -->
@@ -829,27 +978,30 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     
     <script>
-      const swiper = new Swiper(".swiper", {
+      const topicSwiper = new Swiper(".topicSwiper", {
         loop: true,
         slidesPerView: "auto",
-        spaceBetween: 12,
-        breakpoints: {
-          // when window width is >= 576
-          576: {
-            slidesPerView: 1,
-            spaceBetween: 12,
-          },
-          // when window width is >= 768
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 24,
-          },
-          // when window width is >= 992
-          992: {
-            slidesPerView: 3,
-            spaceBetween: 24,
-          },
-        },
+        spaceBetween: 24,
+        // breakpoints: {
+        //   // when window width >= 576
+        //   576: {
+        //     slidesPerView: 1,
+        //     spaceBetween: 12,
+        //   },
+        //   768: {
+        //     slidesPerView: 2,
+        //     spaceBetween: 12,
+        //   },
+        //   992: {
+        //     slidesPerView: "auto",
+        //     spaceBetween: 12,
+        //   },
+        // },
+      });
+      const courseSwiper = new Swiper(".courseSwiper", {
+        loop: true,
+        slidesPerView: "auto",
+        spaceBetween: 24,
       });
     </script>
   </body>

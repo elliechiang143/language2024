@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>結帳-Payment</title>
+    <script type="module" crossorigin src="/language2024/assets/main-432ad9da.js"></script>
+    <link rel="stylesheet" href="/language2024/assets/main-65cff65b.css">
+  </head>
+  <body class="bg-primary-bg overflow-x-hidden">
+    <nav class="navbar-search navbar navbar-expand-lg bg-white border-bottom border-neutral-gray-3 fixed-top">
+  <div class="container-lg">
+    <a class="navbar-brand" href="index.html">
+      <img src="/language2024/assets/logo-ed3f3243.svg" alt="語言+" class="nav-logo" />
+    </a>
+    <!-- 手機板購物車 -->
+    <div class="position-relative shoppingCart-dropdown d-lg-none ms-auto me-2">
+      <a class="nav-link text-secondary-darkblue p-0 shoppingCart-dropdown-btn lh-1" href="#">
+        <span class="position-relative d-inline-block">
+          <span class="material-symbols-outlined fill lh-1">shopping_cart</span>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger shoppingCart-badge px-1">3</span>
+        </span>
+      </a>
+    </div>
+
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse mt-2 mt-lg-0 align-items-stretch" id="navbarContent">
+      <form class="d-none d-lg-flex ms-auto position-relative" role="search">
+        <input class="form-control p-4 ps-12" type="search" placeholder="今天想學什麼語言?" aria-label="Search" style="width: 468px" />
+        <span class="material-symbols-outlined position-absolute start-0 top-50 translate-middle-y ms-4">search</span>
+        <button class="btn btn-primary-blue dropdown-toggle position-absolute end-0 top-0 bottom-0 my-2 me-2" type="button" data-bs-toggle="dropdown" aria-expanded="false">課程分類</button>
+        <ul class="dropdown-menu border-0 shadow rounded-3 end-0 start-100" style="width: 140px">
+          <li><a class="dropdown-item" href="#">英文</a></li>
+          <li><a class="dropdown-item" href="#">日文</a></li>
+          <li><a class="dropdown-item" href="#">韓文</a></li>
+          <li><a class="dropdown-item" href="#">西班牙文</a></li>
+          <li><a class="dropdown-item" href="#">法文</a></li>
+          <li><a class="dropdown-item" href="#">德文</a></li>
+          <li><a class="dropdown-item" href="#">阿拉伯文</a></li>
+        </ul>
+      </form>
+      <ul class="navbar-nav gap-lg-1 align-items-lg-center">
+        <li class="nav-item d-lg-none d-flex align-items-center gap-3 border-bottom border-neutral-gray-3 py-3">
+          <img src="/language2024/assets/profileimg-f4a08579.jpg" alt="stacy" class="object-fit-cover rounded-pill" style="width: 50px; height: 50px" />
+          <div>
+            <p class="fs-5 lh-sm">Stacy Lin</p>
+            <p>學員Lv2</p>
+          </div>
+        </li>
+        <li class="nav-item"></li>
+        <li class="nav-item py-lg-0 py-2">
+          <a class="nav-link" href="#">成為老師</a>
+        </li>
+        <li class="nav-item d-lg-none border-bottom border-top border-neutral-gray-3 py-3">
+          <p class="fw-medium py-2">課程分類</p>
+          <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>英文</a>
+          <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>日文</a>
+          <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>韓文</a>
+          <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>西班牙文</a>
+          <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>法文</a>
+          <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>德文</a>
+          <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>阿拉伯文</a>
+        </li>
+        <!-- 電腦版購物車，手機版時隱藏 -->
+        <li class="nav-item position-relative shoppingCart-dropdown d-none d-lg-block">
+          <a class="nav-link text-secondary-darkblue shoppingCart-dropdown-btn px-3 lh-1" href="#">
+            <span class="position-relative d-inline-block">
+              <span class="material-symbols-outlined fill lh-1">shopping_cart</span>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger shoppingCart-badge px-1">3</span>
+            </span>
+          </a>
+          <div class="shoppingCart position-absolute bg-white rounded-3 shadow z-1 overflow-hidden">
+            <ul class="shoppingCart-list list-unstyled">
+              <li class="position-relative">
+                <a href="#" class="d-flex gap-5 p-6">
+                  <div class="flex-shrink-0">
+                    <img src="/language2024/assets/card-cover_05-db54da27.jpg" alt="Me revoila！用法文暢談日常：對話·文法·動詞" class="rounded-1 object-fit-cover" style="width: 114px; height: 92px" />
+                  </div>
+                  <div class="d-flex flex-column gap-1">
+                    <p>Me revoila！用法文暢談日常：對話·文法·動詞</p>
+                    <p class="fs-9">Peng Xiao</p>
+                    <p class="fw-900">NT$ 2,800</p>
+                  </div>
+                </a>
+              </li>
+              <li class="position-relative">
+                <a href="#" class="d-flex gap-5 p-6">
+                  <div class="flex-shrink-0">
+                    <img src="/language2024/assets/card-cover_08-05a6833f.jpg" alt="征服多益首部曲：文法字彙一網打盡！" class="rounded-1 object-fit-cover" style="width: 114px; height: 92px" />
+                  </div>
+                  <div class="d-flex flex-column gap-1">
+                    <p>征服多益首部曲：文法字彙一網打盡！</p>
+                    <p class="fs-9">Tony Wang</p>
+                    <p class="fw-900">NT$ 3,400</p>
+                  </div>
+                </a>
+              </li>
+              <li class="position-relative">
+                <a href="#" class="d-flex gap-5 p-6">
+                  <div class="flex-shrink-0">
+                    <img src="/language2024/assets/card-cover_15-842f8587.jpg" alt="雅思基礎套裝課程 快速養成奪分寶典" class="rounded-1 object-fit-cover" style="width: 114px; height: 92px" />
+                  </div>
+                  <div class="d-flex flex-column gap-1">
+                    <p>雅思基礎套裝課程 快速養成奪分寶典</p>
+                    <p class="fs-9">Amie Wu</p>
+                    <p class="fw-900">NT$ 5,800</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="p-6">
+              <h3 class="fs-5 mb-6">總計：<span class="text-primary-blue fw-900">NT$ 12,000</span></h3>
+              <a href="cart.html" class="btn btn-primary-blue w-100 d-flex justify-content-center align-items-center text-decoration-none">
+                <span class="material-symbols-outlined me-1">shopping_cart_checkout</span>前往購物車
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link d-none d-lg-block" href="#">登入/註冊</a>
+          <a class="nav-link d-flex align-items-center d-lg-none" href="#"><span class="material-symbols-outlined">logout</span>登出</a>
+        </li>
+        <!-- 登入後 -->
+        <!-- <li class="nav-item d-none d-lg-flex align-items-center gap-3">
+            <img src="/assets/images/profileimg.jpg" alt="stacy" class="object-fit-cover rounded-pill" style="width: 50px; height: 50px;">
+          </li> -->
+      </ul>
+    </div>
+  </div>
+</nav>
+    <section class="nav-top">
+      <div class="container mt-10 position-relative">
+        <img src="data:image/png;base64,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" alt="" class="position-absolute deco-img-top" />
+        <img src="/language2024/assets/circle_04-24b63aa5.png" alt="" class="position-absolute deco-img-bottom" />
+        <h2>結帳</h2>
+        <hr class="my-6" />
+        <div class="row mt-16 mb-20">
+          <div class="col-md-7">
+            <div class="card py-10 px-6 mb-4 border-0">
+              <div class="fs-5 fw-bold">學員資訊</div>
+              <form>
+                <div class="row mt-6">
+                  <div class="col">
+                    <label for="name" class="fs-6 fw-bold">姓名</label>
+                    <input type="text" class="form-control payment-input mt-2 w-100" id="name" placeholder="請輸入姓名" />
+                  </div>
+                  <div class="col">
+                    <label for="phone" class="fs-6 fw-bold">聯絡電話</label>
+                    <input type="tel" class="form-control payment-input mt-2 w-100" id="phone" placeholder="請輸入連絡電話" />
+                  </div>
+                </div>
+                <div class="mt-6">
+                  <label for="email" class="fs-6 fw-bold">電子郵件</label><br />
+                  <input type="email" class="form-control payment-input mt-2 w-100" id="email" placeholder="請輸入電子郵件" />
+                </div>
+                <hr class="my-10" />
+                <h3 class="mb-3">信用卡資訊</h3>
+                <div class="d-flex flex-column gap-4">
+                  <div class="mb-3 d-flex align-items-center">
+                    <label for="cardNumber" class="fs-6 fw-bold mb-0 card-info-title">信用卡卡號</label>
+                    <div class="card-info input-group flex-grow-1">
+                      <input type="text" class="form-control payment-input" placeholder="請輸入數字" />
+                      <div class="d-flex justify-content-center align-items-center py-3 px-2">-</div>
+                      <input type="text" class="form-control payment-input" placeholder="請輸入數字" />
+                      <div class="d-flex justify-content-center align-items-center py-3 px-2">-</div>
+                      <input type="text" class="form-control payment-input" placeholder="請輸入數字" />
+                      <div class="d-flex justify-content-center align-items-center py-3 px-2">-</div>
+                      <input type="text" class="form-control payment-input" placeholder="請輸入數字" />
+                    </div>
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <label for="expiry" class="fs-6 fw-bold card-info-title">卡片有效期限</label>
+                    <input type="text" class="form-control payment-input" id="expiry" placeholder="請輸入卡片有效期限" style="max-width: 172px" />
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <label for="cvv" class="fs-6 fw-bold card-info-title">驗證碼</label>
+                    <input type="text" class="form-control payment-input" id="cvv" placeholder="請輸入驗證碼" style="max-width: 172px" />
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <label for="cardName" class="fs-6 fw-bold card-info-title">持卡人姓名</label>
+                    <input type="text" class="form-control payment-input" id="cardName" placeholder="請輸入持卡人姓名" style="max-width: 270px" />
+                  </div>
+                  <div class="mb-3 d-flex align-items-center">
+                    <label for="cardBirth" class="fs-6 fw-bold card-info-title">持卡人生日</label>
+                    <input type="date" class="form-control payment-input" id="cardBirth" style="max-width: 270px" />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="card py-10 px-6 mb-4 border-0">
+              <h3 class="mb-3 fs-5 fw-bold">您的訂單</h3>
+              <div class="d-flex justify-content-between fw-bold mt-6 mb-2">
+                <span class="fs-6 fw-bold">課程</span>
+                <span class="fs-6 fw-bold">售價</span>
+              </div>
+              <hr />
+              <ul class="list-group mb-24">
+                <li class="list-group-item px-0 border-0 d-flex justify-content-between">
+                  <span>TOPIK II 高分技巧：成為單字富翁的祕密</span>
+                  <span>NT$ 2,990</span>
+                </li>
+                <li class="list-group-item px-0 border-0 d-flex justify-content-between">
+                  <span>看動畫看日劇，零到 N4 道地說英文</span>
+                  <span>NT$ 1,980</span>
+                </li>
+                <li class="list-group-item px-0 border-0 d-flex justify-content-between">
+                  <span>破解道地英文對話！八大主題輕鬆聽懂開口說</span>
+                  <span>NT$ 990</span>
+                </li>
+              </ul>
+              <div class="d-flex justify-content-between fw-bold mb-2">
+                <span class="fs-6 fw-bold">折扣</span>
+                <span class="fs-6 fw-bold">售價</span>
+              </div>
+              <hr />
+              <ul class="list-group mb-24">
+                <li class="list-group-item px-0 border-0 d-flex justify-content-between">
+                  <span>歪國人優惠卷 (IMGOOD666)</span>
+                  <span>-NT$ 50</span>
+                </li>
+              </ul>
+              <hr />
+              <div class="d-flex justify-content-between fw-bold">
+                <span class="fs-6 fw-bold">總計</span>
+                <span class="fs-6 fw-bolder text-primary-blue">NT$ 5,910</span>
+              </div>
+              <div class="d-flex justify-content-end gap-10 mt-4">
+                <a href="cart.html" class="btn btn-primary-blue d-flex align-items-center"> <span class="material-symbols-outlined me-2">shopping_cart</span>返回購物車 </a>
+                <a href="index.html" class="btn btn-primary-blue d-flex align-items-center"> <span class="material-symbols-outlined me-2">check_circle</span>送出訂單 </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer container-fluid">
+  <div class="container pt-15 pb-6 pt-md-23 pb-md-11">
+    <div
+      class="d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-between"
+    >
+      <img
+        class="mb-16 mb-md-0"
+        src="/language2024/assets/logo-ed3f3243.svg"
+        alt="footer logo"
+      />
+      <div
+        class="footer-content w-100 d-flex justify-content-between ms-auto ms-md-21"
+      >
+        <div class="w-100 d-flex flex-column gap-6 text-neutral-gray">
+          <p class="fw-bold text-neutral-black">加入</p>
+          <a href="#featured-course">精選課程</a>
+          <a href="#">成為老師</a>
+          <a href="#">企業教育課程</a>
+          <a href="#">最新消息</a>
+        </div>
+        <div class="w-100 d-flex flex-column gap-6 text-neutral-gray">
+          <p class="fw-bold text-neutral-black">關於</p>
+          <a href="#">關於我們</a>
+          <a href="#">部落格</a>
+          <a href="#">免責聲明</a>
+          <a href="#">隱私權政策</a>
+        </div>
+        <div class="w-100 d-flex flex-column gap-6 text-warp text-neutral-gray">
+          <p class="fw-bold text-neutral-black">聯絡我們</p>
+          <a href="tel:02-537-9437">02-537-9437</a>
+          <a
+            href="mailto:sevice@language.com.tw"
+            class="text-break fs-9 fs-lg-7"
+            >sevice@language.com.tw
+          </a>
+        </div>
+        <div class="w-100 d-none d-xl-flex flex-column gap-6">
+          <p class="fw-bold text-neutral-black">追蹤</p>
+          <div class="follow-icons d-flex align-items-center gap-6">
+            <a href="#">
+              <img
+                class="follow-icon"
+                src="/language2024/assets/fb-69cba12a.svg"
+                alt="facebook icon"
+              />
+            </a>
+            <a href="#">
+              <img
+                class="follow-icon"
+                src="/language2024/assets/ig-702d276c.svg"
+                alt="instagram icon"
+              />
+            </a>
+            <a href="#">
+              <img
+                class="follow-icon"
+                src="/language2024/assets/line-6603b2d5.svg"
+                alt="line icon"
+              />
+            </a>
+            <a href="#">
+              <img
+                class="follow-icon"
+                src="/language2024/assets/twitter-922e8e56.svg"
+                alt="twitter icon"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="my-6" />
+    <div
+      class="div d-flex d-xl-none align-items-center justify-content-between mb-6"
+    >
+      <p class="fw-bold text-neutral-black">追蹤</p>
+      <div class="follow-icons d-flex align-items-center gap-6">
+        <img
+          class="follow-icon"
+          src="/language2024/assets/fb-69cba12a.svg"
+          alt="facebook icon"
+        />
+        <img
+          class="follow-icon"
+          src="/language2024/assets/ig-702d276c.svg"
+          alt="instagram icon"
+        />
+        <img
+          class="follow-icon"
+          src="/language2024/assets/line-6603b2d5.svg"
+          alt="line icon"
+        />
+        <img
+          class="follow-icon"
+          src="/language2024/assets/twitter-922e8e56.svg"
+          alt="twitter icon"
+        />
+      </div>
+    </div>
+    <p class="text-center text-neutral-gray">© 2024 language + Limited.</p>
+  </div>
+</div>
+
+    
+  </body>
+</html>
