@@ -14,8 +14,8 @@
     />
 
     <title>index</title>
-    <script type="module" crossorigin src="/language2024/assets/main-865d364b.js"></script>
-    <link rel="stylesheet" href="/language2024/assets/main-dff7d3ab.css">
+    <script type="module" crossorigin src="/language2024/assets/main-ff4a3091.js"></script>
+    <link rel="stylesheet" href="/language2024/assets/main-0655ab62.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-white border-bottom border-neutral-gray-3 fixed-top">
@@ -128,7 +128,6 @@
   </div>
 </nav>
 
-    <h1 class="text-center py-20">阿萴加油</h1>
     <!-- banner and search section -->
     <div class="container-fluid pt-11 bg-primary-bg">
       <div
@@ -136,7 +135,7 @@
       >
         <!-- topic search section -->
         <div class="topic-search mb-6 mb-lg-0">
-          <h1 class="topic-title fs-1 mb-6">
+          <h1 class="topic-title fs-5 fs-md-1 mb-6">
             你的最佳語言
             <div class="ms-0 ms-md-n3 d-block d-md-inline">
               <span class="topic-title-span position-relative"
@@ -165,37 +164,32 @@
                   search
                 </span>
                 <input
-                  class="form-control py-7 px-10 px-xl-16"
+                  class="form-control py-5 py-md-7 px-10 px-md-16"
                   type="search"
                   placeholder="今天想學什麼語言？"
                   aria-label="Search"
                 />
-                <!-- Example single danger button -->
-                <div
-                  class="btn-group btn-search position-absolute top-50 translate-middle-y"
+                <!-- search dropdown button -->
+                <!-- <div class="dropdown position-absolute top-0 bottom-0 end-0"> -->
+                <button
+                  class="btn btn-primary-blue dropdown-toggle position-absolute top-0 bottom-0 end-0 me-2 me-md-3 my-2 my-md-4"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
-                  <button
-                    type="button"
-                    class="btn btn-primary-blue dropdown-toggle px-5 px-lg-3 py-3"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    課程分類
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
-                    </li>
-                  </ul>
-                </div>
+                  課程分類
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+                <!-- </div> -->
+                <!-- search dropdown button end -->
               </form>
             </div>
           </nav>
@@ -212,9 +206,9 @@
     </div>
     <!-- banner and search section end -->
     <!-- course topic swiper -->
-    <div class="container-fluid py-20 bg-primary-bg">
+    <div class="container-fluid py-11 py-lg-20 bg-primary-bg">
       <div class="container position-relative">
-        <h2 class="course-titlte text-center fs-1 mb-16">課程主題</h2>
+        <h2 class="course-titlte text-center fs-5 fs-md-1 mb-16">課程主題</h2>
         <!-- swiper section -->
         <div class="swiper topicSwiper me-0 me-md-n3">
           <div class="swiper-wrapper">
@@ -358,7 +352,7 @@
     </div>
     <!-- course topic end swiper -->
     <!-- new course section swiper -->
-    <div class="container-fluid py-20 bg-secondary-blue">
+    <div class="container-fluid py-11 py-lg-20 bg-secondary-blue">
       <div class="container pb-21 position-relative">
         <!-- new course background image -->
         <img
@@ -372,7 +366,7 @@
           class="newCourse-bgi-endtop position-absolute"
         />
         <!-- new course background image end -->
-        <h2 class="course-titlte text-center fs-1 mb-16">最新課程</h2>
+        <h2 class="course-titlte text-center fs-5 fs-md-1 mb-16">最新課程</h2>
         <!-- swiper section -->
         <div class="swiper courseSwiper me-0 me-md-n3">
           <div class="swiper-wrapper">
@@ -553,7 +547,7 @@
     </div>
     <!-- new course section swiper end -->
     <!-- discount course section -->
-    <div class="container-fluid py-20 bg-primary-bg">
+    <div class="container-fluid py-11 py-lg-20 bg-primary-bg">
       <div class="container pb-21 position-relative">
         <!-- discount course background image -->
         <img
@@ -567,7 +561,7 @@
           class="position-absolute discount-img-endbottom"
         />
         <!-- discount course background image end -->
-        <h2 class="course-titlte text-center fs-1 mb-16">優惠課程</h2>
+        <h2 class="course-titlte text-center fs-5 fs-md-1 mb-16">優惠課程</h2>
         <div class="swiper courseSwiper me-0 me-md-n3">
           <!-- swiper section -->
           <div class="swiper-wrapper">
@@ -762,7 +756,10 @@
 
     <!-- discount course section end -->
     <!-- featured course section -->
-    <div id="featured-course" class="container-fluid py-20 bg-secondary-blue">
+    <div
+      id="featured-course"
+      class="container-fluid py-11 py-lg-20 bg-secondary-blue"
+    >
       <div class="container pb-21 position-relative">
         <!-- featured course background image -->
         <img
@@ -776,7 +773,7 @@
           class="position-absolute featuredCourse-bgi-endbottom"
         />
         <!-- featured course background image end -->
-        <h2 class="course-titlte text-center fs-1 mb-16">精選課程</h2>
+        <h2 class="course-titlte text-center fs-5 fs-md-1 mb-16">精選課程</h2>
         <!-- swiper section -->
         <div class="swiper courseSwiper me-0 me-md-n3">
           <div class="swiper-wrapper">
@@ -955,10 +952,10 @@
     </div>
     <!-- featured course section end -->
     <!-- course evaluation section -->
-    <div class="container-fluid py-20 bg-primary-bg">
+    <div class="container-fluid py-11 py-lg-20 bg-primary-bg">
       <section class="courseReviews">
         <div class="container">
-          <h3 class="fs-1 mb-16 text-center">課程評價</h3>
+          <h3 class="fs-5 fs-md-1 mb-16 text-center">課程評價</h3>
           <div class="position-relative me-n3 me-sm-0">
             <div class="swiper courseReviews-swiper">
               <div class="swiper-wrapper">
@@ -1113,6 +1110,197 @@
       </section>
     </div>
     <!-- course evaluation section end -->
+    <!-- course Q & A section -->
+    <div class="container-fluid py-11 py-lg-20 bg-primary-bg">
+      <div class="container">
+        <h2 class="fs-5 fs-md-1 text-center mb-6">Q&A</h2>
+        <!-- QA unordered list section -->
+        <ul class="list-group list-group-flush">
+          <!-- list data -->
+          <li class="list-group-item bg-primary-bg pb-3 pb-md-6">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="fs-7 fs-md-3 fw-bold text-neutral-gray">
+                關於哪些人適合語言+？
+              </p>
+              <!-- collapse button -->
+              <button
+                class="btn"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseQuestion1"
+                aria-expanded="false"
+              >
+                <span class="material-symbols-outlined text-primary-blue">
+                  add
+                </span>
+              </button>
+              <!-- collapse button end -->
+            </div>
+            <!-- collapse content -->
+            <div class="collapse" id="collapseQuestion1">
+              <div
+                class="card card-body fs-9 fs-md-7 answer border-0 p-0 bg-primary-bg"
+              >
+                每個想要學習語言的人，都適合在語言+ 學習語言。
+              </div>
+            </div>
+            <!-- collapse content end -->
+          </li>
+          <!-- list data end -->
+          <!-- list data -->
+          <li class="list-group-item bg-primary-bg pb-3 pb-md-6">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="fs-7 fs-md-3 fw-bold text-neutral-gray">
+                在語言+可以學到什麼語言？
+              </p>
+              <!-- collapse button -->
+              <button
+                class="btn"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseQuestion2"
+                aria-expanded="false"
+              >
+                <span class="material-symbols-outlined text-primary-blue">
+                  add
+                </span>
+              </button>
+              <!-- collapse button end -->
+            </div>
+            <!-- collapse content -->
+            <div class="collapse" id="collapseQuestion2">
+              <div
+                class="card card-body fs-9 fs-md-7 answer border-0 p-0 bg-primary-bg"
+              >
+                目前語言+ 提供7種語言的服務喔。
+              </div>
+            </div>
+            <!-- collapse content end -->
+          </li>
+          <!-- list data end -->
+          <!-- list data -->
+          <li class="list-group-item bg-primary-bg pb-3 pb-md-6">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="fs-7 fs-md-3 fw-bold text-neutral-gray">
+                如果還沒上課可以退費嗎？
+              </p>
+              <!-- collapse button -->
+              <button
+                class="btn"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseQuestion3"
+                aria-expanded="false"
+              >
+                <span class="material-symbols-outlined text-primary-blue">
+                  add
+                </span>
+              </button>
+              <!-- collapse button end -->
+            </div>
+            <!-- collapse content -->
+            <div class="collapse" id="collapseQuestion3">
+              <div
+                class="card card-body fs-9 fs-md-7 answer border-0 p-0 bg-primary-bg"
+              >
+                可以的，請參考語言+ 的退費流程。
+              </div>
+            </div>
+            <!-- collapse content end -->
+          </li>
+          <!-- list data end -->
+          <!-- list data -->
+          <li class="list-group-item bg-primary-bg pb-3 pb-md-6">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="fs-7 fs-md-3 fw-bold text-neutral-gray">
+                有問題可以線上問老師嗎？
+              </p>
+              <!-- collapse button -->
+              <button
+                class="btn"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseQuestion4"
+                aria-expanded="false"
+              >
+                <span class="material-symbols-outlined text-primary-blue">
+                  add
+                </span>
+              </button>
+              <!-- collapse button end -->
+            </div>
+            <!-- collapse content -->
+            <div class="collapse" id="collapseQuestion4">
+              <div
+                class="card card-body fs-9 fs-md-7 answer border-0 p-0 bg-primary-bg"
+              >
+                當然可以！有任何問題都可以在上課頁面下方留言哦~
+              </div>
+            </div>
+            <!-- collapse content end -->
+          </li>
+          <!-- list data end -->
+          <!-- list data -->
+          <li class="list-group-item bg-primary-bg pb-3 pb-md-6">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="fs-7 fs-md-3 fw-bold text-neutral-gray">
+                課程觀看期限多久？
+              </p>
+              <!-- collapse button -->
+              <button
+                class="btn"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseQuestion5"
+                aria-expanded="false"
+              >
+                <span class="material-symbols-outlined text-primary-blue">
+                  add
+                </span>
+              </button>
+              <!-- collapse button end -->
+            </div>
+            <!-- collapse content -->
+            <div class="collapse" id="collapseQuestion5">
+              <div
+                class="card card-body fs-9 fs-md-7 answer border-0 p-0 bg-primary-bg"
+              >
+                課程是買斷制的，沒有觀看期限的問題喔。
+              </div>
+            </div>
+            <!-- collapse content end -->
+          </li>
+          <!-- list data end -->
+          <!-- list data -->
+          <li class="list-group-item bg-primary-bg pb-3 pb-md-6">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="fs-7 fs-md-3 fw-bold text-neutral-gray">
+                課程沒上完可以轉給其他朋友嗎？
+              </p>
+              <!-- collapse button -->
+              <button
+                class="btn"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseQuestion6"
+                aria-expanded="false"
+              >
+                <span class="material-symbols-outlined text-primary-blue">
+                  add
+                </span>
+              </button>
+              <!-- collapse button end -->
+            </div>
+            <!-- collapse content -->
+            <div class="collapse" id="collapseQuestion6">
+              <div
+                class="card card-body fs-9 fs-md-7 answer border-0 p-0 bg-primary-bg"
+              >
+                沒有辦法喔，課程只能提供購買帳號觀看權限喔。
+              </div>
+            </div>
+            <!-- collapse content end -->
+          </li>
+          <!-- list data end -->
+        </ul>
+        <!-- QA unordered list section end -->
+      </div>
+    </div>
+    <!-- course Q & A section end -->
 
     <div class="footer container-fluid bg-primary-bg">
   <div class="container pt-15 pb-6 pt-md-23 pb-md-11">
