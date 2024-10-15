@@ -55,37 +55,32 @@
                   search
                 </span>
                 <input
-                  class="form-control py-7 px-10 px-xl-16"
+                  class="form-control py-5 py-md-7 px-10 px-md-16"
                   type="search"
                   placeholder="今天想學什麼語言？"
                   aria-label="Search"
                 />
-                <!-- Example single danger button -->
-                <div
-                  class="btn-group btn-search position-absolute top-50 translate-middle-y"
+                <!-- search dropdown button -->
+                <!-- <div class="dropdown position-absolute top-0 bottom-0 end-0"> -->
+                <button
+                  class="btn btn-primary-blue dropdown-toggle position-absolute top-0 bottom-0 end-0 me-2 me-md-3 my-2 my-md-4"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
                 >
-                  <button
-                    type="button"
-                    class="btn btn-primary-blue dropdown-toggle px-5 px-lg-3 py-3"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    課程分類
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Separated link</a>
-                    </li>
-                  </ul>
-                </div>
+                  課程分類
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+                <!-- </div> -->
+                <!-- search dropdown button end -->
               </form>
             </div>
           </nav>

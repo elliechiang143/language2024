@@ -85,7 +85,11 @@
   }
 
   .search-icon {
-    left: 1rem;
+    left: 0.5rem;
+
+    @include media-breakpoint-up(md) {
+      left: 1rem;
+    }
   }
 }
 
