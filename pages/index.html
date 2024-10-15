@@ -18,13 +18,89 @@
   <body>
     <%- include('./layout/navbar_index'); -%>
 
-    <h1 class="text-center py-20">阿萴加油</h1>
+    <!-- banner and search section -->
+    <div class="container-fluid pt-23 pt-md-22 bg-primary-bg">
+      <div
+        class="container d-flex flex-column flex-lg-row justify-content-between align-items-lg-center"
+      >
+        <!-- topic search section -->
+        <div class="topic-search mb-6 mb-lg-0">
+          <h1 class="topic-title fs-5 fs-md-1 mb-6">
+            你的最佳語言
+            <div class="ms-0 ms-md-n3 d-block d-md-inline">
+              <span class="topic-title-span position-relative"
+                >學習夥伴
+                <img
+                  class="topic-title-bottomImg position-absolute"
+                  src="../assets/images/vector_01.svg"
+                  alt=""
+                />
+                <img
+                  class="topic-title-righttopImg position-absolute"
+                  src="../assets/images/vector_02.svg"
+                  alt=""
+                />
+              </span>
+            </div>
+          </h1>
+          <h2 class="topic-slogan text-neutral-gray">從語言+成為語言家</h2>
+          <!-- topic search bar -->
+          <nav class="navbar bg-body-tertiary mt-6">
+            <div class="container-fluid px-0">
+              <form class="w-100 position-relative rounded-3" role="search">
+                <span
+                  class="material-symbols-outlined search-icon position-absolute top-50 translate-middle-y"
+                >
+                  search
+                </span>
+                <input
+                  class="form-control py-5 py-md-7 px-10 px-md-16"
+                  type="search"
+                  placeholder="今天想學什麼語言？"
+                  aria-label="Search"
+                />
+                <!-- search dropdown button -->
+                <!-- <div class="dropdown position-absolute top-0 bottom-0 end-0"> -->
+                <button
+                  class="btn btn-primary-blue dropdown-toggle position-absolute top-0 bottom-0 end-0 me-2 me-md-3 my-2 my-md-4"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  課程分類
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+                <!-- </div> -->
+                <!-- search dropdown button end -->
+              </form>
+            </div>
+          </nav>
+          <!-- topic search bar end -->
+        </div>
+        <!-- topic search section end -->
+        <div></div>
+        <!-- topic banner -->
+        <div class="topic-image">
+          <img src="../assets/images/hero.png" alt="" />
+        </div>
+        <!-- topic banner end -->
+      </div>
+    </div>
+    <!-- banner and search section end -->
     <!-- course topic swiper -->
-    <div class="container-fluid py-20 bg-primary-bg">
+    <div class="container-fluid py-11 py-lg-20 bg-primary-bg">
       <div class="container position-relative">
-        <h2 class="course-titlte text-center fs-1 mb-16">課程主題</h2>
+        <h2 class="course-titlte text-center fs-5 fs-md-1 mb-16">課程主題</h2>
         <!-- swiper section -->
-        <div class="swiper topicSwiper me-n3">
+        <div class="swiper topicSwiper me-0 me-md-n3">
           <div class="swiper-wrapper">
             <div class="swiper-slide position-relative">
               <!-- topic card component -->
@@ -166,7 +242,7 @@
     </div>
     <!-- course topic end swiper -->
     <!-- new course section swiper -->
-    <div class="container-fluid py-20 bg-secondary-blue">
+    <div class="container-fluid py-11 py-lg-20 bg-secondary-blue">
       <div class="container pb-21 position-relative">
         <!-- new course background image -->
         <img
@@ -180,9 +256,9 @@
           class="newCourse-bgi-endtop position-absolute"
         />
         <!-- new course background image end -->
-        <h2 class="course-titlte text-center fs-1 mb-16">最新課程</h2>
+        <h2 class="course-titlte text-center fs-5 fs-md-1 mb-16">最新課程</h2>
         <!-- swiper section -->
-        <div class="swiper courseSwiper me-n3">
+        <div class="swiper courseSwiper me-0 me-md-n3">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <!-- card component -->
@@ -361,7 +437,7 @@
     </div>
     <!-- new course section swiper end -->
     <!-- discount course section -->
-    <div class="container-fluid py-20">
+    <div class="container-fluid py-11 py-lg-20 bg-primary-bg">
       <div class="container pb-21 position-relative">
         <!-- discount course background image -->
         <img
@@ -375,8 +451,8 @@
           class="position-absolute discount-img-endbottom"
         />
         <!-- discount course background image end -->
-        <h2 class="course-titlte text-center fs-1 mb-16">優惠課程</h2>
-        <div class="swiper courseSwiper me-n3">
+        <h2 class="course-titlte text-center fs-5 fs-md-1 mb-16">優惠課程</h2>
+        <div class="swiper courseSwiper me-0 me-md-n3">
           <!-- swiper section -->
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -570,7 +646,10 @@
 
     <!-- discount course section end -->
     <!-- featured course section -->
-    <div id="featured-course" class="container-fluid py-20 bg-secondary-blue">
+    <div
+      id="featured-course"
+      class="container-fluid py-11 py-lg-20 bg-secondary-blue"
+    >
       <div class="container pb-21 position-relative">
         <!-- featured course background image -->
         <img
@@ -584,9 +663,9 @@
           class="position-absolute featuredCourse-bgi-endbottom"
         />
         <!-- featured course background image end -->
-        <h2 class="course-titlte text-center fs-1 mb-16">精選課程</h2>
+        <h2 class="course-titlte text-center fs-5 fs-md-1 mb-16">精選課程</h2>
         <!-- swiper section -->
-        <div class="swiper courseSwiper me-n3">
+        <div class="swiper courseSwiper me-0 me-md-n3">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <!-- card component -->
@@ -762,6 +841,358 @@
       </div>
     </div>
     <!-- featured course section end -->
+    <!-- course evaluation section -->
+    <div class="container-fluid py-11 py-lg-20 bg-primary-bg">
+      <section class="courseReviews">
+        <div class="container">
+          <h3 class="fs-5 fs-md-1 mb-16 text-center">課程評價</h3>
+          <div class="position-relative me-n3 me-sm-0">
+            <div class="swiper courseReviews-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card border-0">
+                    <div class="card-body p-8">
+                      <div class="d-flex mb-4 gap-3 align-items-center">
+                        <img src="/assets/images/avatar_blank.png" alt="" />
+                        <div>
+                          <p class="fw-bold">黛西</p>
+                          <p class="fs-9 text-neutral-gray">2024/08/24</p>
+                          <div class="d-flex gap-1" style="height: 1rem">
+                            <img src="/assets/images/star.svg" alt="" />
+                            <img src="/assets/images/star.svg" alt="" />
+                            <img src="/assets/images/star.svg" alt="" />
+                            <img src="/assets/images/star.svg" alt="" />
+                            <img src="/assets/images/star.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <h5 class="card-title">推薦給想學發音的人</h5>
+                      <p
+                        class="card-text mb-3 overflow-hidden courseReviews-text position-relative"
+                      >
+                        大約十年前學過法文，但因為當時是跟一個不會說中文的法文老師學的，上課時老師也很少說英文，因此對於字母的發音規則不是很清楚，這堂課針對發音規則說得很詳細。杰宇老師教的也非常實用，當年學了一年去法國玩用的法語，也就是差不多這樣。最棒的是老師還教了一些口語的用法，加碼的文化課程也很受用。上完這堂課，我已經決定要繼續重新學習法文。
+                      </p>
+                      <a href="#" class="link-primary-blue">查看更多</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card border-0">
+                    <div class="card-body p-8">
+                      <div class="d-flex mb-4 gap-3 align-items-center">
+                        <img src="/assets/images/avatar_blank.png" alt="" />
+                        <div>
+                          <p class="fw-bold">子恆</p>
+                          <p class="fs-9 text-neutral-gray">2024/07/15</p>
+                          <div class="d-flex gap-1" style="height: 1rem">
+                            <img src="/assets/images/star.svg" alt="" />
+                            <img src="/assets/images/star.svg" alt="" />
+                            <img src="/assets/images/star.svg" alt="" />
+                            <img src="/assets/images/star.svg" alt="" />
+                            <img src="/assets/images/star.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <h5 class="card-title">平易近人的教學</h5>
+                      <p
+                        class="card-text mb-3 overflow-hidden courseReviews-text position-relative"
+                      >
+                        很久以前就有稍微接觸法文，也買很多法文書，但最後都虎頭蛇尾。杰宇老師在發音上會很詳細講解，很容易掌握，例如e
+                        é ê è
+                        ë的發音技巧，有些還會用台語發音，沒錯是台語！例如：qui、chaud
+                        等。我是蠻沒有恆心的一個人，但這法文課我在Hahow
+                        是第一次完成課程
+                      </p>
+                      <a href="#" class="link-primary-blue">查看更多</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card border-0">
+                    <div class="card-body p-8">
+                      <div class="d-flex mb-4 gap-3 align-items-center">
+                        <img src="/assets/images/avatar_blank.png" alt="" />
+                        <div>
+                          <p class="fw-bold">萴</p>
+                          <p class="fs-9 text-neutral-gray">2024/05/25</p>
+                          <div class="d-flex gap-1" style="height: 1rem">
+                            <img src="/assets/images/star.svg" alt="" />
+                            <img src="/assets/images/star.svg" alt="" />
+                            <img src="/assets/images/star.svg" alt="" />
+                            <img src="/assets/images/star.svg" alt="" />
+                            <img src="/assets/images/star.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <h5 class="card-title">法語優雅,真是太令人沉醉</h5>
+                      <p
+                        class="card-text mb-3 overflow-hidden courseReviews-text position-relative"
+                      >
+                        Bonjour~謝謝老師讓法語變的生活化與好上口,曾經坊間買了好久的法語入門書無從唸起,
+                        上了老師的課,真的太棒了,循序漸進,法語真是讓我沉迷,這堂課真是讓入門者更有信心,希望能再找到老師的法語課程~Merci
+                        beaucoup professeur!
+                      </p>
+                      <a href="#" class="link-primary-blue">查看更多</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card border-0">
+                    <div class="card-body p-8">
+                      <div class="d-flex mb-4 gap-3 align-items-center">
+                        <img src="/assets/images/avatar_blank.png" alt="" />
+                        <div>
+                          <p class="fw-bold">艾利</p>
+                          <p class="fs-9 text-neutral-gray">2024/03/05</p>
+                          <div class="d-flex gap-1" style="height: 1rem">
+                            <img src="/assets/images/star.svg" alt="" />
+                            <img src="/assets/images/star.svg" alt="" />
+                            <img src="/assets/images/star.svg" alt="" />
+                            <img src="/assets/images/star.svg" alt="" />
+                            <img src="/assets/images/star.svg" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <h5 class="card-title">強烈推薦初學者!</h5>
+                      <p
+                        class="card-text mb-3 overflow-hidden courseReviews-text position-relative"
+                      >
+                        Bonjour !<br />
+                        雖然很喜歡法文，但是覺得很難，認為自己不可能學會，但是上了老師的課程，覺得開口說法語不是那麼難。而且老師教法淺顯易懂，對我這種沒接觸過的人很適合。老師教學的方法跟步調很適合我。<br />
+                        Merci professedly!
+                      </p>
+                      <a href="#" class="link-primary-blue">查看更多</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 電腦版swiper按鈕 -->
+            <div
+              class="swiper-btn-prev position-absolute bg-white shadow text-primary-blue z-1 start-0 top-50 translate-middle rounded-pill d-md-flex d-none align-items-center justify-content-center"
+            >
+              <span class="material-symbols-outlined fs-3">chevron_left</span>
+            </div>
+            <div
+              class="swiper-btn-next position-absolute bg-white shadow text-primary-blue z-1 start-100 top-50 translate-middle rounded-pill d-md-flex d-none align-items-center justify-content-center"
+            >
+              <span class="material-symbols-outlined fs-3 ms-1"
+                >chevron_right</span
+              >
+            </div>
+            <!-- 手機板swiper按鈕 -->
+            <div class="d-flex d-md-none mt-4 gap-2 justify-content-center">
+              <div
+                class="swiper-btn-prev bg-white text-primary-blue rounded-pill d-flex align-items-center justify-content-center"
+              >
+                <span class="material-symbols-outlined fs-3">chevron_left</span>
+              </div>
+              <div
+                class="swiper-btn-next bg-white text-primary-blue rounded-pill d-flex align-items-center justify-content-center"
+              >
+                <span class="material-symbols-outlined fs-3 ms-1"
+                  >chevron_right</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- course evaluation section end -->
+    <!-- course Q & A section -->
+    <div class="container-fluid py-11 py-lg-20 bg-primary-bg">
+      <div class="container">
+        <h2 class="fs-5 fs-md-1 text-center mb-6">Q&A</h2>
+        <!-- QA unordered list section -->
+        <ul class="list-group list-group-flush">
+          <!-- list data -->
+          <li class="list-group-item bg-primary-bg pb-3 pb-md-6 px-0">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="fs-7 fs-md-6 fw-bold text-neutral-gray">
+                關於哪些人適合語言+？
+              </p>
+              <!-- collapse button -->
+              <button
+                class="btn px-0"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseQuestion1"
+                aria-expanded="false"
+              >
+                <span class="material-symbols-outlined text-primary-blue">
+                  add
+                </span>
+              </button>
+              <!-- collapse button end -->
+            </div>
+            <!-- collapse content -->
+            <div class="collapse" id="collapseQuestion1">
+              <div
+                class="card card-body pt-2 pt-md-4 fs-9 fs-md-7 answer border-0 p-0 bg-primary-bg"
+              >
+                每個想要學習語言的人，都適合在語言+ 學習語言。
+              </div>
+            </div>
+            <!-- collapse content end -->
+          </li>
+          <!-- list data end -->
+          <!-- list data -->
+          <li class="list-group-item bg-primary-bg pb-3 pb-md-6 px-0">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="fs-7 fs-md-6 fw-bold text-neutral-gray">
+                在語言+可以學到什麼語言？
+              </p>
+              <!-- collapse button -->
+              <button
+                class="btn px-0"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseQuestion2"
+                aria-expanded="false"
+              >
+                <span class="material-symbols-outlined text-primary-blue">
+                  add
+                </span>
+              </button>
+              <!-- collapse button end -->
+            </div>
+            <!-- collapse content -->
+            <div class="collapse" id="collapseQuestion2">
+              <div
+                class="card card-body pt-2 pt-md-4 fs-9 fs-md-7 answer border-0 p-0 bg-primary-bg"
+              >
+                目前語言+ 提供7種語言的服務喔。
+              </div>
+            </div>
+            <!-- collapse content end -->
+          </li>
+          <!-- list data end -->
+          <!-- list data -->
+          <li class="list-group-item bg-primary-bg pb-3 pb-md-6 px-0">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="fs-7 fs-md-6 fw-bold text-neutral-gray">
+                如果還沒上課可以退費嗎？
+              </p>
+              <!-- collapse button -->
+              <button
+                class="btn px-0"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseQuestion3"
+                aria-expanded="false"
+              >
+                <span class="material-symbols-outlined text-primary-blue">
+                  add
+                </span>
+              </button>
+              <!-- collapse button end -->
+            </div>
+            <!-- collapse content -->
+            <div class="collapse" id="collapseQuestion3">
+              <div
+                class="card card-body pt-2 pt-md-4 fs-9 fs-md-7 answer border-0 p-0 bg-primary-bg"
+              >
+                可以的，請參考語言+ 的退費流程。
+              </div>
+            </div>
+            <!-- collapse content end -->
+          </li>
+          <!-- list data end -->
+          <!-- list data -->
+          <li class="list-group-item bg-primary-bg pb-3 pb-md-6 px-0">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="fs-7 fs-md-6 fw-bold text-neutral-gray">
+                有問題可以線上問老師嗎？
+              </p>
+              <!-- collapse button -->
+              <button
+                class="btn px-0"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseQuestion4"
+                aria-expanded="false"
+              >
+                <span
+                  class="material-symbols-outlined text-primary-blue qa-icon"
+                >
+                  add
+                </span>
+              </button>
+              <!-- collapse button end -->
+            </div>
+            <!-- collapse content -->
+            <div class="collapse" id="collapseQuestion4">
+              <div
+                class="card card-body pt-2 pt-md-4 fs-9 fs-md-7 answer border-0 p-0 bg-primary-bg"
+              >
+                當然可以！有任何問題都可以在上課頁面下方留言哦~
+              </div>
+            </div>
+            <!-- collapse content end -->
+          </li>
+          <!-- list data end -->
+          <!-- list data -->
+          <li class="list-group-item bg-primary-bg pb-3 pb-md-6 px-0">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="fs-7 fs-md-6 fw-bold text-neutral-gray">
+                課程觀看期限多久？
+              </p>
+              <!-- collapse button -->
+              <button
+                class="btn px-0"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseQuestion5"
+                aria-expanded="false"
+              >
+                <span class="material-symbols-outlined text-primary-blue">
+                  add
+                </span>
+              </button>
+              <!-- collapse button end -->
+            </div>
+            <!-- collapse content -->
+            <div class="collapse" id="collapseQuestion5">
+              <div
+                class="card card-body pt-2 pt-md-4 fs-9 fs-md-7 answer border-0 p-0 bg-primary-bg"
+              >
+                課程是買斷制的，沒有觀看期限的問題喔。
+              </div>
+            </div>
+            <!-- collapse content end -->
+          </li>
+          <!-- list data end -->
+          <!-- list data -->
+          <li class="list-group-item bg-primary-bg pb-3 pb-md-6 px-0">
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="fs-7 fs-md-6 fw-bold text-neutral-gray">
+                課程沒上完可以轉給其他朋友嗎？
+              </p>
+              <!-- collapse button -->
+              <button
+                class="btn px-0"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseQuestion6"
+                aria-expanded="false"
+              >
+                <span class="material-symbols-outlined text-primary-blue">
+                  add
+                </span>
+              </button>
+              <!-- collapse button end -->
+            </div>
+            <!-- collapse content -->
+            <div class="collapse" id="collapseQuestion6">
+              <div
+                class="card card-body pt-2 pt-md-4 fs-9 fs-md-7 answer border-0 p-0 bg-primary-bg"
+              >
+                沒有辦法喔，課程只能提供購買帳號觀看權限喔。
+              </div>
+            </div>
+            <!-- collapse content end -->
+          </li>
+          <!-- list data end -->
+        </ul>
+        <!-- QA unordered list section end -->
+      </div>
+    </div>
+    <!-- course Q & A section end -->
 
     <%- include('./layout/footer'); -%>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -771,26 +1202,37 @@
         loop: true,
         slidesPerView: "auto",
         spaceBetween: 24,
-        // breakpoints: {
-        //   // when window width >= 576
-        //   576: {
-        //     slidesPerView: 1,
-        //     spaceBetween: 12,
-        //   },
-        //   768: {
-        //     slidesPerView: 2,
-        //     spaceBetween: 12,
-        //   },
-        //   992: {
-        //     slidesPerView: "auto",
-        //     spaceBetween: 12,
-        //   },
-        // },
       });
       const courseSwiper = new Swiper(".courseSwiper", {
         loop: true,
         slidesPerView: "auto",
         spaceBetween: 24,
+      });
+      const evaluateSwiper = new Swiper(".courseReviews-swiper", {
+        slidesPerView: "auto",
+        spaceBetween: 12,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-btn-next",
+          prevEl: ".swiper-btn-prev",
+        },
+        breakpoints: {
+          // when window width is >= 576
+          576: {
+            slidesPerView: 1,
+            spaceBetween: 12,
+          },
+          // when window width is >= 768
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 24,
+          },
+          // when window width is >= 992
+          992: {
+            slidesPerView: 3,
+            spaceBetween: 24,
+          },
+        },
       });
     </script>
   </body>
