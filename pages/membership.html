@@ -15,7 +15,7 @@
     <%- include('./layout/navbar_search'); -%>    
     <div class="nav-mt"></div>
     
-    <div class="container py-lg-20">
+    <div class="container py-lg-20 px-0">
       <!-- avatar section -->
         <!-- <div class="row mb-16">
           <div class="col-lg-6">
@@ -125,7 +125,6 @@
         <!-- 上課中 / 未上課 / 已完課 -->
         <div class="row">
           <div class="col-lg-6 mx-auto">
-              <div class="">
               <ul class="nav nav-pills bg-white justify-content-center rounded-pill me-n4" id="myTab" role="tablist">
                 <li class="nav-item rounded-pill flex-grow-1 d-flex justify-content-center show active" data-bs-toggle="pill" role="presentation">
                   <button class="nav-link fs-6 lh-sm fw-bold flex-grow-1 py-4" id="in-course-tab" data-bs-toggle="tab" data-bs-target="#in-course-tab-pane" type="button" role="tab" aria-controls="in-course-tab-pane" aria-selected="true">上課中</button>
@@ -136,8 +135,7 @@
                 <li class="nav-item rounded-pill flex-grow-1 d-flex justify-content-center" data-bs-toggle="pill" role="presentation">
                   <button class="nav-link fs-6 lh-sm fw-bold flex-grow-1 py-4" id="not-in-course-tab" data-bs-toggle="tab" data-bs-target="#finished-tab-pane" type="button" role="tab" aria-controls="finished-tab-pane" aria-selected="false">已完課</button>
                 </li>
-              </ul>  
-            </div>          
+              </ul>
           </div>
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="in-course-tab-pane" role="tabpanel" aria-labelledby="in-course-tab" tabindex="0">
@@ -147,11 +145,62 @@
                 <div class="row mt-16">
                   <div class="col-lg-4">
                     <div class="card border-0 shadow">
+                      <div class="card-body p-0">
+                        <div class="d-flex flex-lg-column">
+                          <div class="card-img p-4 mb-4 mb-sm-0">               
+                            <img src="../assets/images/card-cover_10.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_10">
+                          </div>
+                          <div class="flex-grow-1 p-lg-4 p-0">
+                            <h5 class="card-title fs-lg-6 fs-7">TOPIK II 高分技巧：成為單字富翁的秘密</h5>
+                            <p class="card-text mb-3 fw-bold">Willson</p>
+                            <div class="evaluate d-flex mb-3">
+                              <div class="evaluate-icon d-flex align-items-center gap-1">
+                                <img src="../assets/images/star.svg" alt="star" />
+                                <img src="../assets/images/star.svg" alt="star" />
+                                <img src="../assets/images/star.svg" alt="star" />
+                                <img src="../assets/images/star.svg" alt="star" />
+                                <img src="../assets/images/star_half.svg" alt="star-half" />
+                              </div>
+                              <p class="ms-2 me-4">4.8</p>
+                              <a href="#" class="border-bottom link-primary-blue">我要評價</a>
+                            </div>
+                            <div class="time-students border-bottom d-flex border-bottom-0 mb-4">
+                              <div class="times d-flex align-items-center">
+                                <img src="../assets/images/ic_Clock.svg" alt="clock" />
+                                <p class="ms-1 text-neutral-gray-2">16.9小時</p>
+                              </div>
+                              <div class="students ms-4 d-flex">
+                                <img src="../assets/images/Vector.svg" alt="vector" />
+                                <p class="ms-1 text-neutral-gray-2">873位學生</p>
+                              </div>                    
+                            </div>                      
+                            <hr class="card-hr m-0" />
+                            <div class="row py-4 align-items-center">
+                              <div class="col-lg-8">
+                                <div class="progress rounded-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                  <div class="progress-bar" style="width: 50%"></div>                                   
+                                </div>
+                              </div>
+                              <div class="col-lg-4">
+                                <div class="text-6">50%學習進度</div>
+                              </div>
+                            </div>
+                            <div class="d-grid gap-2 col-12 mx-auto">
+                              <button class="btn btn-primary-blue py-3 fw-bold rounded-3" type="button">上課去</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="col-lg-4">
+                    <div class="card border-0 shadow">
                       <dvi class="card-img p-4 mb-4 mb-sm-0">               
                           <img src="../assets/images/card-cover_10.jpg" class="card-img-top object-fit-cover rounded-3" alt="card-cover_10">
                       </dvi>
                       <div class="card-body pt-0">
-                        <h5 class="card-title">TOPIK II 高分技巧：成為單字富翁的秘密</h5>
+                        <h5 class="card-title fs-6">TOPIK II 高分技巧：成為單字富翁的秘密</h5>
                         <p class="card-text mb-3 fw-bold">Willson</p>
                         <div class="evaluate d-flex mb-3">
                           <div class="evaluate-icon d-flex align-items-center gap-1">
