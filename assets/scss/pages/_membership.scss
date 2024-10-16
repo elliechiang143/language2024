@@ -1,71 +1,98 @@
-.nav-button{
-    padding-bottom: 17px;
-}
+.membership-container{
 
-.nav-member-item:hover{
-    border-bottom: $primary;
-}
-
-.nav-member-color .nav-link:hover, .nav-member-color .nav-link:focus, .nav-member-color .nav-link:active {
-    border-bottom-color: $primary;
-}
-
-.nav-pills .nav-member-item .button{
-    color:#4B4B4B;
-}
-
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-    color: var(--bs-nav-pills-link-active-color);
-    border-radius: 50em;
-}
-
-.progress{
-    height: 8px;
-}
-
-.pencil{
-    display: grid;
-    width: 44px;
-    height: 44px;
-    top:129px;
-    left:134px;
-    align-items: center;
-    text-align: center;
-
-    @include media-breakpoint-down(sm){
-        width: 35px;
-        height: 35px;
-        top:63px;
-        left:55px;
+    .nav-button{
+        padding-bottom: 17px;
     }
-}
-
-.active-page.active {
-    background-color: $primary; /* 選中狀態的背景顏色 */
-    color: white; /* 選中狀態的文字顏色 */
-}
-
-
-.avatar-img img{
-    width: 163px;
-    height: 163px;
-    margin-right: 64px;
-
     
-    @include media-breakpoint-down(sm){
-        width: 94px;
-        height: 94px;
-        margin-right: 14px;
+    .nav-button:hover{
+        // border-bottom: $primary;
     }
-}
-
-
-.profile .name{
-    @include media-breakpoint-down(sm){
-        margin-bottom: 8px;
+    
+    .nav-member-color .nav-link:hover, .nav-member-color .nav-link:focus, .nav-member-color .nav-link:active, .nav-member-color .nav-link.active {
+        border-bottom-color: $primary;
     }
+    
+    .nav-underline .nav-link.active, .nav-underline .show > .nav-link{
+        border-bottom-color: $primary;
+    }
+    
+    .nav-pills .nav-member-item .button{
+        color:#4B4B4B;
+    }
+    
+    .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+        color: var(--bs-nav-pills-link-active-color);
+        border-radius: 50em;
+    }
+    
+    
+    
+    .progress{
+        flex-grow: 1;
+        width: 50%;
+        height: 8px;
+    }
+    
+    .pencil{
+        width: 44px;
+        height: 44px;
+        align-items: center;
+        text-align: center;
+    
+        @include media-breakpoint-down(sm){
+            width: 35px;
+            height: 35px;
+        }
+    }
+    
+    .active-page.active {
+        background-color: $primary; /* 選中狀態的背景顏色 */
+        color: white; /* 選中狀態的文字顏色 */
+    }
+    
+    
+    .avatar-img img{
+        width: 163px;
+        height: 163px;
+        
+        @include media-breakpoint-down(sm){
+            width: 94px;
+            height: 94px;
+        }
+    }
+    
+    .profile .name{
+        @include media-breakpoint-down(sm){
+            margin-bottom: 8px;
+        }
+    }
+    
+    .fs-7 {
+        font-size: 12px;
+      }
+    
+    .card-img{
+        @include media-breakpoint-down(lg){
+            min-width: 111px;
+            width: 32%;
+        }
+    }
+    
+    .card-img img{
+        @include media-breakpoint-down(lg){
+            aspect-ratio: 1 / 1;
+        }
+    }
+    
+      .membership-container .photos{
+        height: auto;
+      }
+    
+      .evaluate-icon img{
+    
+        @include media-breakpoint-down(lg){
+            width: 11px;
+        }
+      }
+      
 }
-
-.fs-7 {
-    font-size: 12px;
-  }
