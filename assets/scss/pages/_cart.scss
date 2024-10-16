@@ -1,6 +1,18 @@
 .cart-img {
-    width: 164px;
-    height: 148px;
+    width: 30%;
+    height: auto;
+    aspect-ratio: 10/9;
     object-fit: cover;
     border-radius: 8px;
+}
+.price-text {
+    min-width: 120px;
+    text-align: right;
+}
+
+@media (min-width: 992px) {
+    .cart-img {
+        width: auto;
+        max-width: 164px;
+    }
 }

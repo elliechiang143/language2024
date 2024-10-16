@@ -12,7 +12,13 @@
 }
 
 .card-info-title {
-    min-width: 140px;
+    min-width: 120px;
+}
+
+@media (min-width: 992px) {
+    .card-info-title {
+        min-width: 140px;
+    }
 }
 
 
@@ -24,4 +30,9 @@
 .deco-img-bottom {
     right: 1.5rem;
     bottom: -3rem;
+}
+
+.price-text{
+    min-width: 120px;
+    text-align: right;
 }
