@@ -9,61 +9,61 @@
   </head>
   <body class="bg-primary-bg overflow-x-hidden">
     <%- include('./layout/navbar_search'); -%>
-    <section class="nav-top"></section>
-      <div class="container mt-10 position-relative">
+    <div class="container mt-10 position-relative">
+      <section class="nav-top">
         <h2>購物車</h2>
-        <hr class="my-6">
-        <div class="row mt-16 mb-20">
-          <div class="col-md-6 nav-mt">
-            <div class="d-flex align-items-center mb-3">
-              <input type="checkbox" class="form-check-input me-2">
-              <label class="form-check-label fw-bold">選取全部</label>
+        <hr class="my-6" />
+        <div class="row mb-20 align-items-center">
+          <div class="col-lg-6">
+            <div class="d-flex gap-2 gap-lg-5 align-items-center p-2 p-lg-6 mb-5 mb-lg-4">
+              <input type="checkbox" id="selectAllitem" class="form-check-input border-2 border-neutral-gray" onclick="toggleSelectAll()" />
+              <label for="selectAllitem" class="form-check-label fs-6 fw-bold">選取全部</label>
             </div>
-            <div class="card mb-3">
-              <div class="d-flex gap-5 align-items-center p-6">
-                <input type="checkbox" class="form-check-input me-3">
-                <img src="../assets/images/card-cover_10.jpg" alt="Course Image" class="cart-img" >
+            <label for="buyitem1" class="card border-0 mb-3">
+              <div class="d-flex gap-2 gap-lg-5 align-items-center p-2 p-lg-6">
+                <input type="checkbox" id="buyitem1" class="buyitem form-check-input border-2 border-neutral-gray" />
+                <img src="../assets/images/card-cover_10.jpg" alt="Course Image" class="cart-img img-fluid" />
                 <div class="ms-3 flex-grow-1">
-                  <div class="mb-1 fs-6 fw-bold">TOPIK II 高分技巧：成為單字富翁的祕密</div>
-                  <p class="mb-1">Willson</p>
-                  <p class="text-primary-blue fw-bolder fs-5">NT$ 2,990</p>
+                  <div class="mb-1 fs-9 fs-lg-6 fw-bold">TOPIK II 高分技巧：成為單字富翁的祕密</div>
+                  <p class="mb-1 fs-9 fs-lg-7">Willson</p>
+                  <p class="text-primary-blue fw-bolder fs-7 fs-lg-5">NT$ 2,990</p>
                 </div>
-                <button class="btn btn-link text-primary-blue align-self-start"><span class="material-symbols-outlined">delete</span></button>
+                <button class="btn btn-link text-primary-blue align-self-start"><span class="material-symbols-outlined .fill">delete</span></button>
               </div>
-            </div>
-            <div class="card mb-3">
-              <div class="d-flex gap-5 align-items-center p-6">
-                <input type="checkbox" class="form-check-input me-3">
-                <img src="../assets/images/card-cover_11.jpg" alt="Course Image" class="cart-img" >
+            </label>
+            <label for="buyitem2" class="card border-0 mb-3">
+              <div class="d-flex gap-2 gap-lg-5 align-items-center p-2 p-lg-6">
+                <input type="checkbox" id="buyitem2" class="buyitem form-check-input border-2 border-neutral-gray" />
+                <img src="../assets/images/card-cover_11.jpg" alt="Course Image" class="cart-img img-fluid" />
                 <div class="ms-3 flex-grow-1">
-                  <div class="mb-1 fs-6 fw-bold">看動畫看日劇，零到 N4 道地說日文</div>
-                  <p class="mb-1">John</p>
-                  <p class="text-primary-blue fw-bolder fs-5">NT$ 1,980</p>
+                  <div class="mb-1 fs-9 fs-lg-6 fw-bold">看動畫看日劇，零到 N4 道地說日文</div>
+                  <p class="mb-1 fs-9 fs-lg-7">John</p>
+                  <p class="text-primary-blue fw-bolder fs-7 fs-lg-5">NT$ 1,980</p>
                 </div>
-                <button class="btn btn-link text-primary-blue align-self-start"><span class="material-symbols-outlined">delete</span></button>
+                <button class="btn btn-link text-primary-blue align-self-start"><span class="material-symbols-outlined .fill">delete</span></button>
               </div>
-            </div>
-            <div class="card mb-3">
-              <div class="d-flex gap-5 align-items-center p-6">
-                <input type="checkbox" class="form-check-input me-3">
-                <img src="../assets/images/card-cover_12.jpg" alt="Course Image" class="cart-img" >
+            </label>
+            <label for="buyitem3" class="card border-0 mb-3">
+              <div class="d-flex gap-2 gap-lg-5 align-items-center p-2 p-lg-6">
+                <input type="checkbox" id="buyitem3" class="buyitem form-check-input border-2 border-neutral-gray" />
+                <img src="../assets/images/card-cover_12.jpg" alt="Course Image" class="cart-img img-fluid" />
                 <div class="ms-3 flex-grow-1">
-                  <div class="mb-1 fs-6 fw-bold">破解道地英文對話！八大主題輕鬆聽懂開口說</div>
-                  <p class="mb-1">Stacy</p>
-                  <p class="text-primary-blue fw-bolder fs-5">NT$ 990</p>
+                  <div class="mb-1 fs-9 fs-lg-6 fw-bold">破解道地英文對話！八大主題輕鬆聽懂開口說</div>
+                  <p class="mb-1 fs-9 fs-lg-7">Stacy</p>
+                  <p class="text-primary-blue fw-bolder fs-7 fs-lg-5">NT$ 990</p>
                 </div>
-                <button class="btn btn-link text-primary-blue align-self-start"><span class="material-symbols-outlined">delete</span></button>
+                <button class="btn btn-link text-primary-blue align-self-start"><span class="material-symbols-outlined .fill">delete</span></button>
               </div>
-            </div>
+            </label>
           </div>
-          <div class="col-md-6">
-            <div class="card py-10 px-6 mb-4 border-0">
+          <div class="col-lg-6">
+            <div class="card py-6 px-3 py-lg-10 px-lg-6 mb-4 border-0">
               <h3 class="mb-3 fs-5 fw-bold">您的訂單</h3>
               <div class="d-flex justify-content-between fw-bold mt-6 mb-2">
                 <span class="fs-6 fw-bold">課程</span>
                 <span class="fs-6 fw-bold">售價</span>
               </div>
-              <hr>
+              <hr />
               <ul class="list-group mb-24">
                 <li class="list-group-item px-0 border-0 d-flex justify-content-between">
                   <span>TOPIK II 高分技巧：成為單字富翁的祕密</span>
@@ -82,7 +82,7 @@
                 <span class="fs-6 fw-bold">折扣</span>
                 <span class="fs-6 fw-bold">售價</span>
               </div>
-              <hr>
+              <hr />
               <ul class="list-group mb-24">
                 <li class="list-group-item px-0 border-0 d-flex justify-content-between">
                   <span>歪國人優惠卷 (IMGOOD666)</span>
@@ -90,11 +90,11 @@
                 </li>
               </ul>
               <div class="mb-3 d-flex flex-grow-1 align-items-center">
-                <label for="discountCode" class="form-label me-3 mb-0" style="min-width: 50px;">折扣碼</label>
-                <input type="text" class="form-control me-2" id="discountCode" placeholder="輸入折扣碼">
-                <button class="btn btn-primary-blue" type="button" style="white-space: nowrap;">輸入</button>
+                <label for="discountCode" class="form-label me-3 mb-0" style="min-width: 50px">折扣碼</label>
+                <input type="text" class="form-control me-2" id="discountCode" placeholder="IMGOOD666" />
+                <button class="btn btn-primary-blue" type="button" style="white-space: nowrap">輸入</button>
               </div>
-              <hr>
+              <hr />
               <div class="d-flex justify-content-between fw-bold">
                 <span class="fs-6 fw-bold">總計</span>
                 <span class="fs-6 fw-bolder text-primary-blue">NT$ 5,910</span>
@@ -107,11 +107,19 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
     <%- include('./layout/footer'); -%>
-
+    <script>
+      function toggleSelectAll() {
+        var selectAll = document.getElementById("selectAllitem").checked;
+        var items = document.querySelectorAll(".buyitem");
+        items.forEach(function (item) {
+          item.checked = selectAll;
+        });
+      }
+    </script>
     <script type="module" src="../main.js"></script>
   </body>
 </html>
