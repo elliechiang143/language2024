@@ -5,6 +5,10 @@
     object-fit: cover;
     border-radius: 8px;
 }
+.price-text {
+    min-width: 120px;
+    text-align: right;
+}
 
 @media (min-width: 992px) {
     .cart-img {
