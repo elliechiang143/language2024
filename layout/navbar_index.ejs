@@ -1,14 +1,14 @@
-<nav class="navbar navbar-expand-lg bg-white border-bottom border-neutral-gray-3 fixed-top">
+<nav class="navbar-search navbar navbar-expand-lg bg-white border-bottom border-neutral-gray-3 fixed-top">
   <div class="container-lg">
     <a class="navbar-brand" href="index.html">
       <img src="/assets/images/logo.svg" alt="語言+" class="nav-logo" />
     </a>
-    <!-- 手機板購物車 -->
+    <!-- 手機板購物車，取消hover選單，直接點擊icon連結至購物車頁面 -->
     <div class="position-relative shoppingCart-dropdown d-lg-none ms-auto me-2">
-      <a class="nav-link text-secondary-darkblue p-0 shoppingCart-dropdown-btn lh-1" href="#">
+      <a class="nav-link text-secondary-darkblue p-0 shoppingCart-dropdown-btn lh-1" href="cart.html">
         <span class="position-relative d-inline-block">
           <span class="material-symbols-outlined fill lh-1">shopping_cart</span>
-          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger shoppingCart-badge px-1">3</span>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger shoppingCart-badge px-1 d-flex align-items-center justify-content-center">3</span>
         </span>
       </a>
     </div>
@@ -17,93 +17,102 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse mt-2 mt-lg-0" id="navbarContent">
-      <ul class="navbar-nav ms-auto gap-lg-1 align-items-lg-center">
-        <li class="nav-item d-lg-none d-flex align-items-center gap-3 border-bottom border-neutral-gray-3 py-3">
+    <div class="collapse navbar-collapse mt-2 mt-lg-0 align-items-stretch" id="navbarContent">
+    
+    <ul class="navbar-nav gap-lg-8 align-items-lg-center ms-auto">
+      <li class="nav-item d-lg-none d-block border-bottom border-neutral-gray-3 py-3">
+        <a href="/pages/membership.html" class="d-flex align-items-center gap-3">
           <img src="/assets/images/profileimg.jpg" alt="stacy" class="object-fit-cover rounded-pill" style="width: 50px; height: 50px" />
           <div>
             <p class="fs-5 lh-sm">Stacy Lin</p>
             <p>學員Lv2</p>
           </div>
-        </li>
-        <li class="nav-item py-lg-0 py-2">
-          <a class="nav-link" href="#">成為老師</a>
-        </li>
-        <li class="nav-item d-lg-none border-bottom border-top border-neutral-gray-3 py-3">
-          <p class="fw-medium py-2">課程分類</p>
-          <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>英文</a>
-          <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>日文</a>
-          <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>韓文</a>
-          <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>西班牙文</a>
-          <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>法文</a>
-          <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>德文</a>
-          <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>阿拉伯文</a>
-        </li>
-        <!-- 電腦版購物車，手機版時隱藏 -->
-        <li class="nav-item position-relative shoppingCart-dropdown d-none d-lg-block">
-          <a class="nav-link text-secondary-darkblue shoppingCart-dropdown-btn px-3 lh-1" href="#">
-            <span class="position-relative d-inline-block">
-              <span class="material-symbols-outlined fill lh-1">shopping_cart</span>
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger shoppingCart-badge px-1">3</span>
-            </span>
-          </a>
-          <div class="shoppingCart position-absolute bg-white rounded-3 shadow z-1 overflow-hidden">
-            <ul class="shoppingCart-list list-unstyled">
-              <li class="position-relative">
-                <a href="#" class="d-flex gap-5 p-6">
-                  <div class="flex-shrink-0">
-                    <img src="/assets/images/card-cover_05.jpg" alt="Me revoila！用法文暢談日常：對話·文法·動詞" class="rounded-1 object-fit-cover" style="width: 114px; height: 92px" />
-                  </div>
-                  <div class="d-flex flex-column gap-1">
-                    <p>Me revoila！用法文暢談日常：對話·文法·動詞</p>
-                    <p class="fs-9">Peng Xiao</p>
-                    <p class="fw-900">NT$ 2,800</p>
-                  </div>
-                </a>
-              </li>
-              <li class="position-relative">
-                <a href="#" class="d-flex gap-5 p-6">
-                  <div class="flex-shrink-0">
-                    <img src="/assets/images/card-cover_08.jpg" alt="征服多益首部曲：文法字彙一網打盡！" class="rounded-1 object-fit-cover" style="width: 114px; height: 92px" />
-                  </div>
-                  <div class="d-flex flex-column gap-1">
-                    <p>征服多益首部曲：文法字彙一網打盡！</p>
-                    <p class="fs-9">Tony Wang</p>
-                    <p class="fw-900">NT$ 3,400</p>
-                  </div>
-                </a>
-              </li>
-              <li class="position-relative">
-                <a href="#" class="d-flex gap-5 p-6">
-                  <div class="flex-shrink-0">
-                    <img src="/assets/images/card-cover_15.jpg" alt="雅思基礎套裝課程 快速養成奪分寶典" class="rounded-1 object-fit-cover" style="width: 114px; height: 92px" />
-                  </div>
-                  <div class="d-flex flex-column gap-1">
-                    <p>雅思基礎套裝課程 快速養成奪分寶典</p>
-                    <p class="fs-9">Amie Wu</p>
-                    <p class="fw-900">NT$ 5,800</p>
-                  </div>
-                </a>
-              </li>
-            </ul>
-            <div class="p-6">
-              <h3 class="fs-5 mb-6">總計：<span class="text-primary-blue fw-900">NT$ 12,000</span></h3>
-              <a href="cart.html" class="btn btn-primary-blue w-100 d-flex justify-content-center align-items-center text-decoration-none">
-                <span class="material-symbols-outlined me-1">shopping_cart_checkout</span>前往購物車
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link px-0" href="#">成為老師</a>
+      </li>
+      <li class="nav-item d-lg-none border-bottom border-top border-neutral-gray-3 py-3">
+        <p class="fw-medium py-2">課程分類</p>
+        <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>英文</a>
+        <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>日文</a>
+        <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>韓文</a>
+        <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>西班牙文</a>
+        <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>法文</a>
+        <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>德文</a>
+        <a class="nav-link" href="#"><span class="material-symbols-outlined me-2 fs-8">keyboard_arrow_right</span>阿拉伯文</a>
+      </li>
+      <!-- 電腦版購物車，手機版時隱藏 -->
+      <li class="nav-item position-relative shoppingCart-dropdown d-none d-lg-block">
+        <a class="nav-link text-secondary-darkblue shoppingCart-dropdown-btn px-3 ps-0" href="cart.html">
+          <span class="position-relative d-flex align-items-center">
+            <span class="material-symbols-outlined fill lh-1">shopping_cart</span>
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger shoppingCart-badge px-1 d-flex align-items-center justify-content-center">3</span>
+          </span>
+        </a>
+        <div class="shoppingCart position-absolute bg-white rounded-3 shadow z-1 overflow-hidden">
+          <ul class="shoppingCart-list list-unstyled">
+            <li class="position-relative">
+              <a href="#" class="d-flex gap-5 p-6">
+                <div class="flex-shrink-0">
+                  <img src="/assets/images/card-cover_05.jpg" alt="Me revoila！用法文暢談日常：對話·文法·動詞" class="rounded-1 object-fit-cover" style="width: 114px; height: 92px" />
+                </div>
+                <div class="d-flex flex-column gap-1">
+                  <p>Me revoila！用法文暢談日常：對話·文法·動詞</p>
+                  <p class="fs-9">Peng Xiao</p>
+                  <p class="fw-900">NT$ 2,800</p>
+                </div>
               </a>
-            </div>
+            </li>
+            <li class="position-relative">
+              <a href="#" class="d-flex gap-5 p-6">
+                <div class="flex-shrink-0">
+                  <img src="/assets/images/card-cover_08.jpg" alt="征服多益首部曲：文法字彙一網打盡！" class="rounded-1 object-fit-cover" style="width: 114px; height: 92px" />
+                </div>
+                <div class="d-flex flex-column gap-1">
+                  <p>征服多益首部曲：文法字彙一網打盡！</p>
+                  <p class="fs-9">Tony Wang</p>
+                  <p class="fw-900">NT$ 3,400</p>
+                </div>
+              </a>
+            </li>
+            <li class="position-relative">
+              <a href="#" class="d-flex gap-5 p-6">
+                <div class="flex-shrink-0">
+                  <img src="/assets/images/card-cover_15.jpg" alt="雅思基礎套裝課程 快速養成奪分寶典" class="rounded-1 object-fit-cover" style="width: 114px; height: 92px" />
+                </div>
+                <div class="d-flex flex-column gap-1">
+                  <p>雅思基礎套裝課程 快速養成奪分寶典</p>
+                  <p class="fs-9">Amie Wu</p>
+                  <p class="fw-900">NT$ 5,800</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="p-6">
+            <h3 class="fs-5 mb-6">總計：<span class="text-primary-blue fw-900">NT$ 12,000</span></h3>
+            <a href="cart.html" class="btn btn-primary-blue w-100 d-flex justify-content-center align-items-center text-decoration-none">
+              <span class="material-symbols-outlined me-1">shopping_cart_checkout</span>前往購物車
+            </a>
           </div>
-        </li>
+        </div>
+      </li>
 
-        <li class="nav-item">
-          <a class="nav-link d-none d-lg-block" href="#">登入/註冊</a>
-          <a class="nav-link d-flex align-items-center d-lg-none" href="#"><span class="material-symbols-outlined">logout</span>登出</a>
-        </li>
-        <!-- 登入後 -->
-        <!-- <li class="nav-item d-none d-lg-flex align-items-center gap-3">
-            <img src="/assets/images/profileimg.jpg" alt="stacy" class="object-fit-cover rounded-pill" style="width: 50px; height: 50px;">
-          </li> -->
-      </ul>
+      <li class="nav-item d-lg-none">
+        <a class="nav-link d-none" href="#">登入/註冊</a>
+        <a class="nav-link d-flex align-items-center" href="#"><span class="material-symbols-outlined">logout</span>登出</a>
+      </li>
+      <!-- 登入後 -->
+      <li class="nav-item d-none d-lg-block">
+        <a href="membership.html" class="d-flex align-items-center gap-3">
+          <img src="/assets/images/profileimg.jpg" alt="stacy" class="object-fit-cover rounded-pill" style="width: 50px; height: 50px;">
+          <!-- <div>
+            <p class="lh-sm">Stacy Lin</p>
+            <p class="lh-sm">學員 Lv2</p>
+          </div> -->
+        </a>
+      </li>
+    </ul>
     </div>
   </div>
 </nav>
