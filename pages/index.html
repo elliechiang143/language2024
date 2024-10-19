@@ -95,11 +95,11 @@
     </section>
     <!-- banner and search section end -->
     <!-- course topic swiper -->
-    <section class="py-11 py-lg-20">
+    <section class="py-11 py-lg-20 overflow-x-hidden">
       <div class="container position-relative">
         <h2 class="course-titlte text-center fs-5 fs-md-1 mb-16">課程主題</h2>
         <!-- swiper section -->
-        <div class="swiper topicSwiper me-0 me-md-n3">
+        <div class="swiper topicSwiper swiper-margin-end">
           <div class="swiper-wrapper">
             <div class="swiper-slide position-relative">
               <!-- topic card component -->
@@ -241,7 +241,7 @@
     </section>
     <!-- course topic end swiper -->
     <!-- new course section swiper -->
-    <section class="py-11 py-lg-20 bg-secondary-blue">
+    <section class="py-11 py-lg-20 bg-secondary-blue overflow-x-hidden">
       <div class="container pb-21 position-relative">
         <!-- new course background image -->
         <img
@@ -257,7 +257,7 @@
         <!-- new course background image end -->
         <h2 class="course-titlte text-center fs-5 fs-md-1 mb-16">最新課程</h2>
         <!-- swiper section -->
-        <div class="swiper courseSwiper me-0 me-md-n3">
+        <div class="swiper courseSwiper swiper-margin-end">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <!-- card component -->
@@ -436,7 +436,7 @@
     </section>
     <!-- new course section swiper end -->
     <!-- discount course section -->
-    <section class="py-11 py-lg-20">
+    <section class="py-11 py-lg-20 overflow-x-hidden">
       <div class="container pb-21 position-relative">
         <!-- discount course background image -->
         <img
@@ -451,7 +451,7 @@
         />
         <!-- discount course background image end -->
         <h2 class="course-titlte text-center fs-5 fs-md-1 mb-16">優惠課程</h2>
-        <div class="swiper courseSwiper me-0 me-md-n3">
+        <div class="swiper courseSwiper swiper-margin-end">
           <!-- swiper section -->
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -645,7 +645,10 @@
 
     <!-- discount course section end -->
     <!-- featured course section -->
-    <section id="featured-course" class="py-11 py-lg-20 bg-secondary-blue">
+    <section
+      id="featured-course"
+      class="py-11 py-lg-20 bg-secondary-blue overflow-x-hidden"
+    >
       <div class="container pb-21 position-relative">
         <!-- featured course background image -->
         <img
@@ -661,7 +664,7 @@
         <!-- featured course background image end -->
         <h2 class="course-titlte text-center fs-5 fs-md-1 mb-16">精選課程</h2>
         <!-- swiper section -->
-        <div class="swiper courseSwiper me-0 me-md-n3">
+        <div class="swiper courseSwiper swiper-margin-end">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <!-- card component -->
@@ -995,7 +998,7 @@
     </section>
     <!-- course evaluation section end -->
     <!-- course Q & A section -->
-    <section class="py-11 py-lg-20">
+    <section class="py-11 py-lg-20 overflow-x-hidden">
       <div class="container qa-section">
         <h2 class="fs-5 fs-md-1 text-center mb-6">Q&A</h2>
         <!-- QA accordion section -->
@@ -1181,6 +1184,7 @@
         loop: true,
         slidesPerView: "auto",
         spaceBetween: 24,
+        freeMode: true,
       });
       const evaluateSwiper = new Swiper(".courseReviews-swiper", {
         slidesPerView: "auto",

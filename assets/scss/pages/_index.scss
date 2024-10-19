@@ -2,6 +2,14 @@
   font-size: 100px;
 }
 
+.swiper-margin-end {
+  margin-right: -0.75rem;
+
+  @include media-breakpoint-up(sm) {
+    margin-right: calc((-1 * 100% - 516px) / 2 - 12px);
+  }
+}
+
 ::placeholder {
   color: #ACACAC !important;
 }
