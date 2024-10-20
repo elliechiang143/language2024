@@ -307,6 +307,8 @@ $dark: $gray-900 !default;
 
 $primary-bg: #F4F6FB;
 $secondary-darkblue: #0049BC;
+$secondary-elemental-blue: #4B91FF;
+$secondary-elemental-blue-2: #DCE2EE;
 $secondary-blue: #E4EEFF;
 $secondary-orange-2: #FFA135;
 $secondary-orange-3: #F9D4AB;
@@ -333,6 +335,8 @@ $theme-colors: (
   "primary-yellow": $yellow,
   "primary-bg": $primary-bg,
   "secondary-darkblue": $secondary-darkblue,
+  "secondary-elemental-blue": $secondary-elemental-blue,
+  "secondary-elemental-blue-2": $secondary-elemental-blue-2,
   "secondary-blue": $secondary-blue,
   "secondary-green": $green,
   "secondary-orange": $orange,
@@ -410,7 +414,8 @@ $enable-grid-classes: true !default;
 $enable-container-classes: true !default;
 $enable-cssgrid: false !default;
 $enable-button-pointers: true !default;
-$enable-rfs: true !default;
+/* $enable-rfs: true !default; */
+$enable-rfs: false !default;
 $enable-validation-icons: true !default;
 // $enable-negative-margins: false !default;
 $enable-negative-margins: true !default;
@@ -686,7 +691,9 @@ $aspect-ratios: (
 //   "Segoe UI Emoji",
 //   "Segoe UI Symbol",
 //   "Noto Color Emoji" !default;
-$font-family-sans-serif: "Mulish", "Noto Sans TC", system-ui,
+$font-family-sans-serif: "Mulish",
+  "Noto Sans TC",
+  system-ui,
   -apple-system,
   "Segoe UI",
   Roboto,
@@ -1345,7 +1352,7 @@ $navbar-toggler-transition: box-shadow .15s ease-in-out !default;
 // $navbar-light-hover-color: rgba(var(--#{$prefix}emphasis-color-rgb), .8) !default;
 // $navbar-light-active-color: rgba(var(--#{$prefix}emphasis-color-rgb), 1) !default;
 $navbar-light-color: var(--#{$prefix}neutral-gray-rgb) !default;
-$navbar-light-hover-color:  $primary !default;
+$navbar-light-hover-color: $primary !default;
 $navbar-light-active-color: $primary !default;
 $navbar-light-disabled-color: rgba(var(--#{$prefix}emphasis-color-rgb), .3) !default;
 $navbar-light-icon-color: rgba($body-color, .75) !default;
