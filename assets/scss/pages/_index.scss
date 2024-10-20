@@ -148,6 +148,38 @@
   }
 }
 
+.new-course::before {
+  content: '';
+  background-image: url(/assets/images/circle_02.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: block;
+  width: 254px;
+  height: 213px;
+  left: 1rem;
+  bottom: 1.5rem;
+
+  @include media-breakpoint-up(lg) {
+    width: 370px;
+    height: 370px;
+    bottom: 0rem;
+  }
+}
+
+.new-course::after {
+  content: '';
+  background-image: url(/assets/images/circle_01.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: block;
+  width: 110px;
+  height: 76px;
+  right: 1rem;
+  top: 2rem;
+}
+
 .newCourse-bgi-startbottom {
   left: 1rem;
   bottom: 0;
