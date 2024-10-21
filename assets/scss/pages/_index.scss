@@ -49,10 +49,10 @@
     background-size: cover;
     position: absolute;
     display: block;
-    width: 3rem;
-    height: 2rem;
-    top: -0.5rem;
-    right: -2rem;
+    width: 48px;
+    height: 32px;
+    top: 8px;
+    right: -16px;
     transform: scale(0.8) rotate(20deg);
 
     @include media-breakpoint-up(md) {
@@ -75,12 +75,6 @@
   display: flex;
   align-items: center;
   gap: 2px;
-}
-
-.nt-dollars {
-  display: flex;
-  align-items: center;
-  gap: 0.25rem;
 }
 
 .courseSwiper {
@@ -180,36 +174,75 @@
   top: 2rem;
 }
 
-.newCourse-bgi-startbottom {
+.discount-section::before {
+  content: '';
+  background-image: url(/assets/images/circle_03.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: block;
+  width: 172px;
+  height: 126px;
   left: 1rem;
+  top: 2.5rem;
+
+  @include media-breakpoint-up(lg) {
+    width: 190px;
+    height: 140px;
+    top: 4rem;
+  }
+}
+
+.discount-section::after {
+  content: '';
+  background-image: url(/assets/images/circle_04.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: block;
+  width: 264px;
+  height: 237px;
+  right: 2.5rem;
   bottom: 0;
+
+  @include media-breakpoint-up(lg) {
+    width: 294px;
+    height: 264px;
+    right: 2.75rem;
+  }
 }
 
-.newCourse-bgi-endtop {
-  right: 1rem;
+.featured-section::before {
+  content: '';
+  background-image: url(/assets/images/circle_05.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: block;
+  width: 106px;
+  height: 64px;
   top: 2rem;
-}
-
-.featuredCourse-bgi-starttop {
-  left: 1rem;
-  top: 2rem;
-}
-
-.featuredCourse-bgi-endbottom {
-  right: 1rem;
-  bottom: 0;
-}
-
-.discount-img-starttop {
-  top: 4.875rem;
   left: 2rem;
 }
 
-.discount-img-endbottom {
-  right: 2.75rem;
-  bottom: 0;
-}
+.featured-section::after {
+  content: '';
+  background-image: url(/assets/images/circle_02.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: block;
+  width: 254px;
+  height: 213px;
+  right: 1rem;
+  bottom: 1.5rem;
 
+  @include media-breakpoint-up(lg) {
+    width: 370px;
+    height: 370px;
+    bottom: 0rem;
+  }
+}
 
 .topicSwiper {
   .swiper-slide {
