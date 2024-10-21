@@ -14,7 +14,14 @@
 }
 
 .banner-section {
-  background: no-repeat left 0 bottom 0 url(/assets/images/hero_bg_01.png), no-repeat right 0 top 4.125rem url(/assets/images/hero_bg_02.png), linear-gradient(to bottom, #78adff, #4b91ff);
+  // background: no-repeat left 0 bottom 0 url(/assets/images/hero_bg_01.png), no-repeat right 0 top 4.125rem url(/assets/images/hero_bg_02.png), linear-gradient(to bottom, #78adff, #4b91ff);
+  background: no-repeat left bottom url(/assets/images/hero_bg_01.png), no-repeat right top url(/assets/images/hero_bg_02.png), linear-gradient(to bottom, #78adff, #4b91ff);
+  @include media-breakpoint-down(xl){
+    background-size: 11%, 6.8%, contain;
+  }
+  @include media-breakpoint-down(lg){
+    background-size: 18%, 15%, contain;
+  }
 
   .topic-title::before {
     content: '';
@@ -259,6 +266,7 @@
 .courseSwiper {
   .swiper-slide {
     width: 327px;
+    height: auto;
 
     @include media-breakpoint-up(md) {
       width: 416px;
