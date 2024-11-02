@@ -60,8 +60,8 @@
     display: block;
     width: 48px;
     height: 32px;
-    top: 8px;
-    right: -16px;
+    top: 0px;
+    right: -40px;
     transform: scale(0.8) rotate(20deg);
 
     @include media-breakpoint-up(md) {
